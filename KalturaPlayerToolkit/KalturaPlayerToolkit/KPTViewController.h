@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <KalPlayerSDK/KalPlayerViewController.h>
 
-@interface KPTViewController : UIViewController
+@interface KPTViewController : UIViewController <KalPlayerViewControllerDelegate>
 
 @end

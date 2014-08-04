@@ -11,6 +11,7 @@
 @interface KPTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, strong) NSDictionary *urlSchemeParameters;
+//@property (nonatomic, strong) NSDictionary *urlSchemeParameters;
+@property (nonatomic, strong) NSString *urlSchemeIframeUrlParam;
 
 @end

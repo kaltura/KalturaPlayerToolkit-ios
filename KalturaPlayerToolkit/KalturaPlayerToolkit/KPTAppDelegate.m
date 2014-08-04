@@ -9,7 +9,8 @@
 #import "KPTAppDelegate.h"
 
 @implementation KPTAppDelegate
-@synthesize urlSchemeParameters;
+//@synthesize urlSchemeParameters;
+@synthesize urlSchemeIframeUrlParam;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -19,15 +20,20 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     
-    NSMutableDictionary *parameters = [NSMutableDictionary new];
-    for (NSString *param in [[url query] componentsSeparatedByString:@"&"]) {
-        NSArray *paramSplitted = [param componentsSeparatedByString:@"="];
-        // in url space (' ') is represented by '+'
-        [parameters setObject:[[[paramSplitted objectAtIndex:1] stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] forKey:[paramSplitted objectAtIndex:0]];
-    }
+//    NSMutableDictionary *parameters = [NSMutableDictionary new];
+//    for (NSString *param in [[url query] componentsSeparatedByString:@"&"]) {
+//        NSArray *paramSplitted = [param componentsSeparatedByString:@"="];
+//        // in url space (' ') is represented by '+'
+//        [parameters setObject:[[[paramSplitted objectAtIndex:1] stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] forKey:[paramSplitted objectAtIndex:0]];
+//    }
     
-    NSLog(@"%@", parameters);
-    urlSchemeParameters = [[NSDictionary alloc] initWithDictionary:parameters];
+    NSArray *paramSplitted = [[url query] componentsSeparatedByString:@","];
+    paramSplitted = [[url query] componentsSeparatedByString:@"="];
+    
+    
+    NSLog(@"%@", [paramSplitted objectAtIndex:1]);
+    urlSchemeIframeUrlParam = [paramSplitted objectAtIndex:1];
+//    urlSchemeParameters = [[NSDictionary alloc] initWithDictionary:parameters];
     
     return YES;
 }
