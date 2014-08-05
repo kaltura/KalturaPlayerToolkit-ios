@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF23DBC61990D63E00842759 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF23DBC51990D63E00842759 /* libstdc++.dylib */; };
+		BF23DBC91990D65200842759 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF23DBC81990D65200842759 /* libxml2.dylib */; };
 		BF299EA11989602500474BE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA01989602500474BE5 /* Foundation.framework */; };
 		BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA21989602500474BE5 /* CoreGraphics.framework */; };
 		BF299EA51989602500474BE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA41989602500474BE5 /* UIKit.framework */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF23DBC51990D63E00842759 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		BF23DBC81990D65200842759 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF299E9D1989602500474BE5 /* KalturaPlayerToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalturaPlayerToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF299EA01989602500474BE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF299EA21989602500474BE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF23DBC91990D65200842759 /* libxml2.dylib in Frameworks */,
+				BF23DBC61990D63E00842759 /* libstdc++.dylib in Frameworks */,
 				BFB91FC8198E61D2000EBC65 /* libKalPlayerSDK.a in Frameworks */,
 				BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */,
 				BF299EA51989602500474BE5 /* UIKit.framework in Frameworks */,
@@ -128,6 +134,8 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF23DBC81990D65200842759 /* libxml2.dylib */,
+				BF23DBC51990D63E00842759 /* libstdc++.dylib */,
 				BF299EA01989602500474BE5 /* Foundation.framework */,
 				BF299EA21989602500474BE5 /* CoreGraphics.framework */,
 				BF299EA41989602500474BE5 /* UIKit.framework */,
@@ -410,9 +418,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -446,6 +455,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -457,7 +467,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -471,6 +483,7 @@
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
