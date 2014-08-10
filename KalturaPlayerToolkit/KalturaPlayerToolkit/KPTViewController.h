@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <KalPlayerSDK/KalPlayerViewController.h>
 
-@interface KPTViewController : UIViewController <KalPlayerViewControllerDelegate>
+@interface KPTViewController : UIViewController <KalPlayerViewControllerDelegate> {
+    NSString *url;
+}
 
+@property (retain, nonatomic) KalPlayerViewController *player;
+
+
+- (void)setUrl:(NSString*)str;
 @end
