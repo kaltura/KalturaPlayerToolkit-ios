@@ -57,15 +57,9 @@
     if (delegate.urlSchemeIframeUrlParam == nil) {
         return;
     }
+    [self dismissViewControllerAnimated:NO completion:nil];
     [self playWithUrl:delegate.urlSchemeIframeUrlParam];
     delegate.urlSchemeIframeUrlParam = nil;
-    
-    //    if (delegate.urlSchemeParameters) {
-    //        // Came  from url.
-    //        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome from url!" message:[NSString stringWithFormat:@"Hello, %@. How is it in %@?", [delegate.urlSchemeParameters objectForKey:@"name"], [delegate.urlSchemeParameters objectForKey:@"city"]] delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
-    //        [alert show];
-    //        delegate.urlSchemeParameters = nil;
-    //    }
 }
 
 - (void)didReceiveMemoryWarning

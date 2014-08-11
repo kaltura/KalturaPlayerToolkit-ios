@@ -42,6 +42,7 @@
         self.player = [[KalPlayerViewController alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) forView: self.view];
         [self.player setNativeFullscreen];
         [self.player setDelegate: self];
+        [self.player setWebViewURL: url];
     }
 }
 
