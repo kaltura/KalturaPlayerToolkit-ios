@@ -10,11 +10,11 @@
 #import <KalPlayerSDK/KalPlayerViewController.h>
 
 @interface KPTViewController : UIViewController <KalPlayerViewControllerDelegate> {
-    NSString *url;
+    NSString *iframeUrl;
 }
 
 @property (retain, nonatomic) KalPlayerViewController *player;
 
+- (void)setIframeUrl:(NSString*)url;
 
-- (void)setUrl:(NSString*)str;
 @end

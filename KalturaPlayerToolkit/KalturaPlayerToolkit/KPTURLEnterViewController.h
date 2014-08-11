@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface KPTURLEnterViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
-- (IBAction)enterClicked:(id)sender;
+
+- (IBAction)enterClicked: (id)sender;
 
 @end

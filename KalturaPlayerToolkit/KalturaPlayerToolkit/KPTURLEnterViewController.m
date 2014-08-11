@@ -10,76 +10,77 @@
 #import "KPTAppDelegate.h"
 #import "KPTViewController.h"
 
-@interface KPTURLEnterViewController () {
-    NSString *url;
+@interface KPTURLEnterViewController() {
+    NSString *iframeUrl;
 }
 
 @end
 
 @implementation KPTURLEnterViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+- (id)initWithNibName: (NSString *)nibNameOrNil bundle: (NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
+    
+    if ( self ) {
         // Custom initialization
     }
+    
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
-	// Do any additional setup after loading the view, typically from a nib.
-  
+    [[NSNotificationCenter defaultCenter] addObserver: self
+                                             selector: @selector(appDidBecomeActive:)
+                                                 name: UIApplicationDidBecomeActiveNotification
+                                               object: nil];
 }
 
-- (void) playWithUrl:(NSString *)str {
-    url = str;
-    [self performSegueWithIdentifier:@"showPlayer" sender:self];
+- (void) playWithUrl:(NSString *)url {
+    iframeUrl = url;
+    [self performSegueWithIdentifier: @"showPlayer" sender: self];
 }
 
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"showPlayer"]) {
-        if (![segue.destinationViewController isKindOfClass:[KPTViewController class]]) {
-            return;
-        }
-        [(KPTViewController *)segue.destinationViewController setUrl:url];
-    }
-}
-
-- (void)appDidBecomeActive:(NSNotification *)notification {
+- (void)appDidBecomeActive: (NSNotification *)notification {
     NSLog(@"did become active notification");
+    
     KPTAppDelegate *delegate = (KPTAppDelegate *)[UIApplication sharedApplication].delegate;
+    
     if (delegate.urlSchemeIframeUrlParam == nil) {
         return;
     }
-    [self dismissViewControllerAnimated:NO completion:nil];
-    [self playWithUrl:delegate.urlSchemeIframeUrlParam];
+    
+    [self dismissViewControllerAnimated: NO completion: nil];
+    [self playWithUrl: delegate.urlSchemeIframeUrlParam];
     delegate.urlSchemeIframeUrlParam = nil;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue: (UIStoryboardSegue *)segue sender: (id)sender {
+    if ( [segue.identifier isEqualToString: @"showPlayer"] ) {
+        if ( ![segue.destinationViewController isKindOfClass: [KPTViewController class]] ) {
+            return;
+        }
+        
+        [(KPTViewController *)segue.destinationViewController setIframeUrl: iframeUrl];
+    }
 }
-*/
 
-- (IBAction)enterClicked:(id)sender {
-    [self playWithUrl:self.urlTextField.text];
+
+- (IBAction)enterClicked: (id)sender {
+    NSLog(@"enterClicked Enter");
+    
+    [self playWithUrl: self.urlTextField.text];
+    
+    NSLog(@"enterClicked Exit");
 }
+
 @end

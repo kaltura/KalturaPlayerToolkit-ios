@@ -7,7 +7,6 @@
 //
 
 #import "KPTViewController.h"
-#import "KPTAppDelegate.h"
 
 @interface KPTViewController ()
 
@@ -18,19 +17,14 @@
 
 @synthesize player;
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(toggleFullscreen:)
-                                                 name:@"toggleFullscreenNotification"
-                                               object:nil];
-}
-
-- (BOOL)shouldAutorotate {
-    return YES;
+//    [[NSNotificationCenter defaultCenter] addObserver: self
+//                                             selector: @selector(toggleFullscreen:)
+//                                                 name: @"toggleFullscreenNotification"
+//                                               object: nil];
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
@@ -38,44 +32,47 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    if (self.player == nil) {
-        self.player = [[KalPlayerViewController alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) forView: self.view];
+    if ( self.player == nil ) {
+        CGRect playerFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        self.player = [[KalPlayerViewController alloc] initWithFrame: playerFrame forView: self.view];
         [self.player setNativeFullscreen];
         [self.player setDelegate: self];
-        [self.player setWebViewURL: url];
+        [self.player setWebViewURL: iframeUrl];
     }
 }
 
-- (void)setUrl:(NSString*)str {
-    url = str;
+- (void)setIframeUrl: (NSString*)url {
+    NSLog(@"setIframeUrl Enter");
+    
+    iframeUrl = url;
+    
+    NSLog(@"setIframeUrl Exit");
 }
 
 -(NSURL *)getInitialKIframeUrl {
-//    http://cdnapi.kaltura.com/html5/html5lib/v2.15/mwEmbedFrame.php?wid=_243342&uiconf_id=23389712&entry_id=0_uka1msg4
-    return [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    return [NSURL URLWithString: [iframeUrl stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
 }
 
-- (void)toggleFullscreen:(NSNotification *)note {
+- (void)toggleFullscreen: (NSNotification *)note {
     NSLog(@"toggleFullscreen Enter");
     
     NSDictionary *theData = [note userInfo];
     if (theData != nil) {
-        NSNumber *n = [theData objectForKey:@"isFullScreen"];
+        NSNumber *n = [theData objectForKey: @"isFullScreen"];
         BOOL isFullScreen = [n boolValue];
         
         if ( isFullScreen ) {
-            [[[UIApplication sharedApplication] delegate].window addSubview:player.view];
+            [[[UIApplication sharedApplication] delegate].window addSubview: self.player.view];
         }
-        else if( !isFullScreen ){
-            [self.view addSubview:player.view];
+        else if( !isFullScreen ) {
+            [self.view addSubview: self.player.view];
         }
     }
     
     NSLog(@"toggleFullscreen Exit");
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
