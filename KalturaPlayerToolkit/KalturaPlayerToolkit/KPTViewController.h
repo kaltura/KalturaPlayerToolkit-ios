@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <KalPlayerSDK/KalPlayerViewController.h>
 
-@interface KPTViewController : UIViewController <KalPlayerViewControllerDelegate> {
+@interface KPTViewController : UIViewController {
     NSString *iframeUrl;
 }
 

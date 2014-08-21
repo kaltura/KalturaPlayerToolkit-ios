@@ -27,8 +27,8 @@
 //        [parameters setObject:[[[paramSplitted objectAtIndex:1] stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] forKey:[paramSplitted objectAtIndex:0]];
 //    }
     
-    NSArray *paramSplitted = [[url query] componentsSeparatedByString:@","];
-    paramSplitted = [[url query] componentsSeparatedByString:@"="];
+    NSArray *paramSplitted = [[url query] componentsSeparatedByString:@":="];
+//    paramSplitted = [[url query] componentsSeparatedByString:@"="];
     
     
     NSLog(@"%@", [paramSplitted objectAtIndex:1]);
