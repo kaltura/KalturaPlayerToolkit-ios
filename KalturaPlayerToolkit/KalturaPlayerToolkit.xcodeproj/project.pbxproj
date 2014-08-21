@@ -24,9 +24,10 @@
 		BF299EC51989602500474BE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA41989602500474BE5 /* UIKit.framework */; };
 		BF299ECD1989602500474BE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF299ECB1989602500474BE5 /* InfoPlist.strings */; };
 		BF299ECF1989602500474BE5 /* KalturaPlayerToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF299ECE1989602500474BE5 /* KalturaPlayerToolkitTests.m */; };
-		BFB91FC8198E61D2000EBC65 /* libKalPlayerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB91FC3198E618E000EBC65 /* libKalPlayerSDK.a */; };
 		BFC574AE19980ED8000511B8 /* KPTURLEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */; };
 		BFC574B119980F14000511B8 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */; };
+		BFE3E2F9199CC96000666F32 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE3E2F8199CC96000666F32 /* GoogleCast.framework */; };
+		BFE3E307199D09B900666F32 /* libKalPlayerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE3E304199D096E00666F32 /* libKalPlayerSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,23 +38,23 @@
 			remoteGlobalIDString = BF299E9C1989602500474BE5;
 			remoteInfo = KalturaPlayerToolkit;
 		};
-		BFB91FC2198E618E000EBC65 /* PBXContainerItemProxy */ = {
+		BFE3E303199D096E00666F32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BFB91FBD198E618E000EBC65 /* KalPlayerSDK.xcodeproj */;
+			containerPortal = BFE3E2FE199D096E00666F32 /* KalPlayerSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BFFFA727182F9E31005B3B24;
 			remoteInfo = KalPlayerSDK;
 		};
-		BFB91FC4198E618E000EBC65 /* PBXContainerItemProxy */ = {
+		BFE3E305199D096E00666F32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BFB91FBD198E618E000EBC65 /* KalPlayerSDK.xcodeproj */;
+			containerPortal = BFE3E2FE199D096E00666F32 /* KalPlayerSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BFFFA738182F9E31005B3B24;
 			remoteInfo = KalPlayerSDKTests;
 		};
-		BFB91FC6198E61CA000EBC65 /* PBXContainerItemProxy */ = {
+		BFE3E308199D09BC00666F32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BFB91FBD198E618E000EBC65 /* KalPlayerSDK.xcodeproj */;
+			containerPortal = BFE3E2FE199D096E00666F32 /* KalPlayerSDK.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = BFFFA726182F9E31005B3B24;
 			remoteInfo = KalPlayerSDK;
@@ -83,10 +84,11 @@
 		BF299ECA1989602500474BE5 /* KalturaPlayerToolkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KalturaPlayerToolkitTests-Info.plist"; sourceTree = "<group>"; };
 		BF299ECC1989602500474BE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF299ECE1989602500474BE5 /* KalturaPlayerToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalturaPlayerToolkitTests.m; sourceTree = "<group>"; };
-		BFB91FBD198E618E000EBC65 /* KalPlayerSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KalPlayerSDK.xcodeproj; path = "../../player-sdk-native-ios/PlayerSDK/KalPlayerSDK.xcodeproj"; sourceTree = "<group>"; };
 		BFC574AC19980ED8000511B8 /* KPTURLEnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTURLEnterViewController.h; sourceTree = "<group>"; };
 		BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTURLEnterViewController.m; sourceTree = "<group>"; };
 		BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		BFE3E2F8199CC96000666F32 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = KalturaPlayerToolkit/GoogleCast.framework; sourceTree = "<group>"; };
+		BFE3E2FE199D096E00666F32 /* KalPlayerSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KalPlayerSDK.xcodeproj; path = "../../player-sdk-native-ios/PlayerSDK/KalPlayerSDK.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +96,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE3E307199D09B900666F32 /* libKalPlayerSDK.a in Frameworks */,
+				BFE3E2F9199CC96000666F32 /* GoogleCast.framework in Frameworks */,
 				BFC574B119980F14000511B8 /* libstdc++.6.0.9.dylib in Frameworks */,
 				BF23DBC91990D65200842759 /* libxml2.dylib in Frameworks */,
 				BF23DBC61990D63E00842759 /* libstdc++.dylib in Frameworks */,
-				BFB91FC8198E61D2000EBC65 /* libKalPlayerSDK.a in Frameworks */,
 				BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */,
 				BF299EA51989602500474BE5 /* UIKit.framework in Frameworks */,
 				BF299EA11989602500474BE5 /* Foundation.framework in Frameworks */,
@@ -120,7 +123,7 @@
 		BF299E941989602400474BE5 = {
 			isa = PBXGroup;
 			children = (
-				BFB91FBD198E618E000EBC65 /* KalPlayerSDK.xcodeproj */,
+				BFE3E2FE199D096E00666F32 /* KalPlayerSDK.xcodeproj */,
 				BF299EA61989602500474BE5 /* KalturaPlayerToolkit */,
 				BF299EC81989602500474BE5 /* KalturaPlayerToolkitTests */,
 				BF299E9F1989602500474BE5 /* Frameworks */,
@@ -140,6 +143,7 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFE3E2F8199CC96000666F32 /* GoogleCast.framework */,
 				BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */,
 				BF23DBC81990D65200842759 /* libxml2.dylib */,
 				BF23DBC51990D63E00842759 /* libstdc++.dylib */,
@@ -197,11 +201,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BFB91FBE198E618E000EBC65 /* Products */ = {
+		BFE3E2FF199D096E00666F32 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFB91FC3198E618E000EBC65 /* libKalPlayerSDK.a */,
-				BFB91FC5198E618E000EBC65 /* KalPlayerSDKTests.octest */,
+				BFE3E304199D096E00666F32 /* libKalPlayerSDK.a */,
+				BFE3E306199D096E00666F32 /* KalPlayerSDKTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,7 +224,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BFB91FC7198E61CA000EBC65 /* PBXTargetDependency */,
+				BFE3E309199D09BC00666F32 /* PBXTargetDependency */,
 			);
 			name = KalturaPlayerToolkit;
 			productName = KalturaPlayerToolkit;
@@ -273,8 +277,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = BFB91FBE198E618E000EBC65 /* Products */;
-					ProjectRef = BFB91FBD198E618E000EBC65 /* KalPlayerSDK.xcodeproj */;
+					ProductGroup = BFE3E2FF199D096E00666F32 /* Products */;
+					ProjectRef = BFE3E2FE199D096E00666F32 /* KalPlayerSDK.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -286,18 +290,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		BFB91FC3198E618E000EBC65 /* libKalPlayerSDK.a */ = {
+		BFE3E304199D096E00666F32 /* libKalPlayerSDK.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libKalPlayerSDK.a;
-			remoteRef = BFB91FC2198E618E000EBC65 /* PBXContainerItemProxy */;
+			remoteRef = BFE3E303199D096E00666F32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BFB91FC5198E618E000EBC65 /* KalPlayerSDKTests.octest */ = {
+		BFE3E306199D096E00666F32 /* KalPlayerSDKTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = KalPlayerSDKTests.octest;
-			remoteRef = BFB91FC4198E618E000EBC65 /* PBXContainerItemProxy */;
+			remoteRef = BFE3E305199D096E00666F32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -352,10 +356,10 @@
 			target = BF299E9C1989602500474BE5 /* KalturaPlayerToolkit */;
 			targetProxy = BF299EC61989602500474BE5 /* PBXContainerItemProxy */;
 		};
-		BFB91FC7198E61CA000EBC65 /* PBXTargetDependency */ = {
+		BFE3E309199D09BC00666F32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KalPlayerSDK;
-			targetProxy = BFB91FC6198E61CA000EBC65 /* PBXContainerItemProxy */;
+			targetProxy = BFE3E308199D09BC00666F32 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,7 +415,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eliza Sapir (JNZ3J44F89)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Eliza Sapir (JNZ3J44F89)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -429,7 +434,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "E249E98B-32A3-4C45-AF5F-BDC3B732674C";
+				PROVISIONING_PROFILE = "FB38731B-333F-4F8A-9414-CA051B73328C";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
@@ -464,7 +469,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "E249E98B-32A3-4C45-AF5F-BDC3B732674C";
+				PROVISIONING_PROFILE = "FB38731B-333F-4F8A-9414-CA051B73328C";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -477,12 +482,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eliza Sapir (JNZ3J44F89)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KalturaPlayerToolkit",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E249E98B-32A3-4C45-AF5F-BDC3B732674C";
+				PROVISIONING_PROFILE = "FB38731B-333F-4F8A-9414-CA051B73328C";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,11 +505,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Kaltura, Inc.";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KalturaPlayerToolkit",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E249E98B-32A3-4C45-AF5F-BDC3B732674C";
+				PROVISIONING_PROFILE = "FB38731B-333F-4F8A-9414-CA051B73328C";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

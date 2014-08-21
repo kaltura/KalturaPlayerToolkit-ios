@@ -64,6 +64,18 @@
 - (void)connect;
 
 /**
+ * Connects to the device overriding the default inactivity timeout interval. This timer is reset
+ * whenever there is any incoming activity from the receciver.
+ * The SDK will send a heartbeat PING before this timeout to actively test the connection, if no
+ * PONG (or other message) is received before this timeout then we close the connection. When this
+ * happens didDisconnectWithError is fired with GCKErrorCodeTimeout as the error code.
+ *
+ * @param inactivityTimeout Timeout for inactivity from the receiver. Should be positive and
+ * greater than 5 seconds.
+ */
+- (void)connectWithInactivityTimeout:(NSTimeInterval)inactivityTimeout;
+
+/**
  * Disconnects from the device.
  */
 - (void)disconnect;

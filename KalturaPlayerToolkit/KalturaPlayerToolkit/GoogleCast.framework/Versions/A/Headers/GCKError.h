@@ -78,11 +78,6 @@ typedef NS_ENUM(NSInteger, GCKErrorCode) {
 };
 
 /**
- * The key for the customData JSON object associated with the error in the userInfo dictionary.
- */
-extern NSString *const kGCKErrorCustomDataKey;
-
-/**
  * The class for all GCK framework errors.
  *
  * @ingroup Utilities

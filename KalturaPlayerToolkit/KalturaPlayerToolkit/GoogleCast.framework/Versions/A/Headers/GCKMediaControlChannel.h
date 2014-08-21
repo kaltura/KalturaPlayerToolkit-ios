@@ -7,11 +7,6 @@
 
 @protocol GCKMediaControlChannelDelegate;
 
-/**
- * The receiver application ID for the Default Media Receiver.
- */
-extern NSString *const kGCKMediaDefaultReceiverApplicationID;
-
 typedef NS_ENUM(NSInteger, GCKMediaControlChannelResumeState) {
   /** A resume state indicating that the player state should be left unchanged. */
   GCKMediaControlChannelResumeStateUnchanged = 0,
@@ -72,6 +67,7 @@ typedef NS_ENUM(NSInteger, GCKMediaControlChannelResumeState) {
  * @param mediaInfo An object describing the media item to load.
  * @param autoplay Whether playback should start immediately.
  * @param playPosition The initial playback position.
+ * @param customData Custom application-specific data to pass along with the request.
  * @return The request ID, or kGCKInvalidRequestID if the message could not be sent.
  */
 - (NSInteger)loadMedia:(GCKMediaInformation *)mediaInfo
@@ -81,7 +77,6 @@ typedef NS_ENUM(NSInteger, GCKMediaControlChannelResumeState) {
 /**
  * Loads, enqueues, and optionally starts playback of a new media item.
  *
- * @param mediaInfo An object describing the media item to load.
  * @param autoplay Whether playback should start immediately.
  * @param playPosition The initial playback position.
  * @param customData Custom application-specific data to pass along with the request.
@@ -251,8 +246,7 @@ typedef NS_ENUM(NSInteger, GCKMediaControlChannelResumeState) {
  * Called when a request fails.
  *
  * @param requestID The request ID that failed. This is the ID returned when the request was made.
- * @param error The error. If any custom data was associated with the error, it will be in the
- * error's userInfo dictionary with the key {@code kGCKErrorCustomDataKey}.
+ * @param error The error.
  */
 - (void)mediaControlChannel:(GCKMediaControlChannel *)mediaControlChannel
        requestDidFailWithID:(NSInteger)requestID

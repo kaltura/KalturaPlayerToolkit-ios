@@ -29,7 +29,14 @@
 /** The device's model name. */
 @property(nonatomic, copy) NSString *modelName;
 
-/** An array of GCKImage objects containing icons for the device. */
+/** @cond INTERNAL */
+
+/** The application URL for this device. */
+@property(nonatomic, copy) NSURL *applicationURL;
+
+/** @endcond */
+
+/** An array of GCKDeviceIcon objects containing icons for the device. */
 @property(nonatomic, copy) NSArray *icons;
 
 /** Designated initializer. Constructs a new GCKDevice with the given IP address.
