@@ -83,4 +83,12 @@
     NSLog(@"enterClicked Exit");
 }
 
+- (IBAction)hereClicked:(id)sender {
+    NSLog(@"enterClicked Enter");
+    
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http://player.kaltura.com/docs/NativeCallout"]];
+    
+    NSLog(@"enterClicked Exit");
+}
+
 @end

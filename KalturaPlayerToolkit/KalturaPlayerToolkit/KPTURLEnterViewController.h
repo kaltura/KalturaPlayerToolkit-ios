@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
 
 - (IBAction)enterClicked: (id)sender;
+- (IBAction)hereClicked:(id)sender;
 
 @end
