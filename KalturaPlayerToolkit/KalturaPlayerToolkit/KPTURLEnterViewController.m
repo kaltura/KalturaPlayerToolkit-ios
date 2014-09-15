@@ -74,11 +74,14 @@
     }
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
 
 - (IBAction)enterClicked: (id)sender {
     NSLog(@"enterClicked Enter");
     
-    [self playWithUrl: self.urlTextField.text];
+    [self playWithUrl: @"http://kgit.html5video.org/tags/playerToolkit-v2.19.1/mwEmbedFrame.php/wid/_243342/uiconf_id/21099702/entry_id/0_c0r624gh/?&flashvars%5BconfFilePath%5D=%7BlibPath%7D%2Fmodules%2FKalturaSupport%2Ftests%2FconfFiles%2FjsonConfig.json&flashvars%5BKaltura.UseAppleAdaptive%5D=false&flashvars%5Bks%5D=MjYyNjQ4NTY1MzQxODMxNTM0ODhiYjNkZjk4YTg2ZDYzODU2M2NlM3wyNDMzNDI7MjQzMzQyOzE0MTA4MTEzNjY7MDsxNDEwNzI0OTY2LjI2NzU7MDt2aWV3Oiosd2lkZ2V0OjE7Ow%3D%3D&flashvars%5Bchromecast.plugin%5D=true"];
     
     NSLog(@"enterClicked Exit");
 }

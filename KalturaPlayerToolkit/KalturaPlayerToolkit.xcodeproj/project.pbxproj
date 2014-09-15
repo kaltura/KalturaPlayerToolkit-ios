@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF18436519C6DD2E00E712C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA01989602500474BE5 /* Foundation.framework */; };
 		BF23DBC61990D63E00842759 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF23DBC51990D63E00842759 /* libstdc++.dylib */; };
 		BF23DBC91990D65200842759 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF23DBC81990D65200842759 /* libxml2.dylib */; };
-		BF299EA11989602500474BE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA01989602500474BE5 /* Foundation.framework */; };
 		BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA21989602500474BE5 /* CoreGraphics.framework */; };
 		BF299EA51989602500474BE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA41989602500474BE5 /* UIKit.framework */; };
 		BF299EAB1989602500474BE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF299EA91989602500474BE5 /* InfoPlist.strings */; };
@@ -29,6 +29,15 @@
 		BFC574B119980F14000511B8 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */; };
 		BFDF5FD719B33D9200C9F9AC /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDF5FD619B33D9200C9F9AC /* GoogleCast.framework */; };
 		BFDF5FD919B33FF600C9F9AC /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDF5FD819B33FF600C9F9AC /* MediaAccessibility.framework */; };
+		BFEA7A1019C6280A00684FC6 /* bg-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0819C6280A00684FC6 /* bg-568h@2x~iphone.png */; };
+		BFEA7A1419C6280A00684FC6 /* bg-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0C19C6280A00684FC6 /* bg-Portrait@2x~ipad.png */; };
+		BFEA7A1519C6280A00684FC6 /* bg-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0D19C6280A00684FC6 /* bg-Portrait~ipad.png */; };
+		BFEA7A1619C6280A00684FC6 /* bg@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0E19C6280A00684FC6 /* bg@2x~iphone.png */; };
+		BFEA7A1719C6280A00684FC6 /* bg~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0F19C6280A00684FC6 /* bg~iphone.png */; };
+		BFEA7A1B19C6291900684FC6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A1A19C6291900684FC6 /* logo.png */; };
+		BFEA7A2119C6CFEF00684FC6 /* demo_button.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A1E19C6CFEF00684FC6 /* demo_button.png */; };
+		BFEA7A2219C6CFEF00684FC6 /* demo_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A1F19C6CFEF00684FC6 /* demo_button@2x.png */; };
+		BFEA7A2319C6CFEF00684FC6 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A2019C6CFEF00684FC6 /* logo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +101,15 @@
 		BFDF5FD619B33D9200C9F9AC /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../player-sdk-native-ios/PlayerSDK/GoogleCast.framework"; sourceTree = "<group>"; };
 		BFDF5FD819B33FF600C9F9AC /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
 		BFE3E2F8199CC96000666F32 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = KalturaPlayerToolkit/GoogleCast.framework; sourceTree = "<group>"; };
+		BFEA7A0819C6280A00684FC6 /* bg-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-568h@2x~iphone.png"; path = "images/bg-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		BFEA7A0C19C6280A00684FC6 /* bg-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-Portrait@2x~ipad.png"; path = "images/bg-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		BFEA7A0D19C6280A00684FC6 /* bg-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-Portrait~ipad.png"; path = "images/bg-Portrait~ipad.png"; sourceTree = "<group>"; };
+		BFEA7A0E19C6280A00684FC6 /* bg@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x~iphone.png"; path = "images/bg@2x~iphone.png"; sourceTree = "<group>"; };
+		BFEA7A0F19C6280A00684FC6 /* bg~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg~iphone.png"; path = "images/bg~iphone.png"; sourceTree = "<group>"; };
+		BFEA7A1A19C6291900684FC6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = images/logo.png; sourceTree = "<group>"; };
+		BFEA7A1E19C6CFEF00684FC6 /* demo_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo_button.png; path = images/demo_button.png; sourceTree = "<group>"; };
+		BFEA7A1F19C6CFEF00684FC6 /* demo_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "demo_button@2x.png"; path = "images/demo_button@2x.png"; sourceTree = "<group>"; };
+		BFEA7A2019C6CFEF00684FC6 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "images/logo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF18436519C6DD2E00E712C9 /* Foundation.framework in Frameworks */,
 				BF9DC00119BC532B00E39F6C /* libKALPlayerSDK.a in Frameworks */,
 				BFDF5FD919B33FF600C9F9AC /* MediaAccessibility.framework in Frameworks */,
 				BFDF5FD719B33D9200C9F9AC /* GoogleCast.framework in Frameworks */,
@@ -107,7 +126,6 @@
 				BF23DBC61990D63E00842759 /* libstdc++.dylib in Frameworks */,
 				BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */,
 				BF299EA51989602500474BE5 /* UIKit.framework in Frameworks */,
-				BF299EA11989602500474BE5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +191,7 @@
 				BF299EB81989602500474BE5 /* KPTViewController.h */,
 				BF299EB91989602500474BE5 /* KPTViewController.m */,
 				BF299EBB1989602500474BE5 /* Images.xcassets */,
+				BFEA7A1919C6281400684FC6 /* images */,
 				BF299EA71989602500474BE5 /* Supporting Files */,
 			);
 			path = KalturaPlayerToolkit;
@@ -214,6 +233,22 @@
 				BF9DBFFE19BC527600E39F6C /* KalKALPlayerSDKTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BFEA7A1919C6281400684FC6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BFEA7A1E19C6CFEF00684FC6 /* demo_button.png */,
+				BFEA7A1F19C6CFEF00684FC6 /* demo_button@2x.png */,
+				BFEA7A2019C6CFEF00684FC6 /* logo@2x.png */,
+				BFEA7A1A19C6291900684FC6 /* logo.png */,
+				BFEA7A0819C6280A00684FC6 /* bg-568h@2x~iphone.png */,
+				BFEA7A0C19C6280A00684FC6 /* bg-Portrait@2x~ipad.png */,
+				BFEA7A0D19C6280A00684FC6 /* bg-Portrait~ipad.png */,
+				BFEA7A0E19C6280A00684FC6 /* bg@2x~iphone.png */,
+				BFEA7A0F19C6280A00684FC6 /* bg~iphone.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,10 +352,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFEA7A1B19C6291900684FC6 /* logo.png in Resources */,
+				BFEA7A1519C6280A00684FC6 /* bg-Portrait~ipad.png in Resources */,
+				BFEA7A1719C6280A00684FC6 /* bg~iphone.png in Resources */,
 				BF299EB71989602500474BE5 /* Main_iPad.storyboard in Resources */,
 				BF299EBC1989602500474BE5 /* Images.xcassets in Resources */,
+				BFEA7A1419C6280A00684FC6 /* bg-Portrait@2x~ipad.png in Resources */,
+				BFEA7A1619C6280A00684FC6 /* bg@2x~iphone.png in Resources */,
+				BFEA7A2319C6CFEF00684FC6 /* logo@2x.png in Resources */,
 				BF299EB41989602500474BE5 /* Main_iPhone.storyboard in Resources */,
+				BFEA7A2119C6CFEF00684FC6 /* demo_button.png in Resources */,
+				BFEA7A2219C6CFEF00684FC6 /* demo_button@2x.png in Resources */,
 				BF299EAB1989602500474BE5 /* InfoPlist.strings in Resources */,
+				BFEA7A1019C6280A00684FC6 /* bg-568h@2x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "FB38731B-333F-4F8A-9414-CA051B73328C";
 				SDKROOT = iphoneos;
@@ -474,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PROVISIONING_PROFILE = "FB38731B-333F-4F8A-9414-CA051B73328C";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,6 +541,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,6 +565,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "FB38731B-333F-4F8A-9414-CA051B73328C";
