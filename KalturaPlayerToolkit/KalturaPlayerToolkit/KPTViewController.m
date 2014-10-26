@@ -34,7 +34,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     if ( self.player == nil ) {
         CGRect playerFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-        self.player = [[KalPlayerViewController alloc] initWithFrame: playerFrame forView: self.view];
+        self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
         [self.player setNativeFullscreen];
         [self.player setWebViewURL: iframeUrl];
     }

@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <KalPlayerSDK/KalPlayerViewController.h>
+#import <KALTURAPlayerSDK/KPViewController.h>
 
 @interface KPTViewController : UIViewController {
     NSString *iframeUrl;
 }
 
-@property (retain, nonatomic) KalPlayerViewController *player;
+@property (retain, nonatomic) KPViewController *player;
 
 - (void)setIframeUrl:(NSString*)url;
 
