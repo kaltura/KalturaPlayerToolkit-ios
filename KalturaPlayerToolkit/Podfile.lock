@@ -1,0 +1,16 @@
+PODS:
+  - google-cast-sdk (2.3.0.1)
+  - GoogleAds-IMA-iOS-SDK (3.0.beta.4)
+  - KalturaPlayerSDK (0.8.1):
+    - google-cast-sdk (= 2.3.0.1)
+    - GoogleAds-IMA-iOS-SDK (= 3.0.beta.4)
+
+DEPENDENCIES:
+  - KalturaPlayerSDK (~> 0.8)
+
+SPEC CHECKSUMS:
+  google-cast-sdk: 20d8139aec779470d4a49c5d85f3eb0e63654e6c
+  GoogleAds-IMA-iOS-SDK: 9e761c020091c2c33b274c0da7ea53f3766b6bf1
+  KalturaPlayerSDK: 6e13bafe31f3193b1e7226c853c69e5a544c28ce
+
+COCOAPODS: 0.34.4
