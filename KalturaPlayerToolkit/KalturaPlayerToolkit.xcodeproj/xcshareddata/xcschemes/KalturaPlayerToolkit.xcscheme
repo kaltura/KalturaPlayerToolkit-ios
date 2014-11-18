@@ -20,6 +20,20 @@
                ReferencedContainer = "container:KalturaPlayerToolkit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BF299EC01989602500474BE5"
+               BuildableName = "KalturaPlayerToolkitTests.xctest"
+               BlueprintName = "KalturaPlayerToolkitTests"
+               ReferencedContainer = "container:KalturaPlayerToolkit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +42,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BF299EC01989602500474BE5"
+               BuildableName = "KalturaPlayerToolkitTests.xctest"
+               BlueprintName = "KalturaPlayerToolkitTests"
+               ReferencedContainer = "container:KalturaPlayerToolkit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

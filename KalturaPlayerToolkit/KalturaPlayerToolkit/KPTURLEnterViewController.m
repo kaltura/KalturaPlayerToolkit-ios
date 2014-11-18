@@ -81,7 +81,7 @@
 - (IBAction)enterClicked: (id)sender {
     NSLog(@"enterClicked Enter");
     
-    [self playWithUrl: @"http://kgit.html5video.org/tags/playerToolkit-v2.19.1/mwEmbedFrame.php/wid/_243342/uiconf_id/21099702/entry_id/0_c0r624gh/?&flashvars%5BconfFilePath%5D=%7BlibPath%7D%2Fmodules%2FKalturaSupport%2Ftests%2FconfFiles%2FjsonConfig.json%26flashvars%5BKaltura.UseAppleAdaptive%5D%3Dfalse%26flashvars%5Bchromecast.plugin%5D%3Dtrue"];
+    [self playWithUrl: @"http://localhost:80/html5.kaltura/mwEmbed/mwEmbedFrame.php/wid/_1831271/uiconf_id/26698911/entry_id/0_kxnolg69/?&flashvars%5BconfFilePath%5D=%7BlibPath%7D%2Fmodules%2FKalturaSupport%2Ftests%2FconfFiles%2FjsonConfig.json&flashvars%5BKaltura.UseAppleAdaptive%5D=false&flashvars%5BdjJ8MTgzMTI3MXxCr9fKa_8y6chkmClaI8bKMW_Lu_M0fmN5P5RbXlIVyOnsI2yQosYfLn7g0Ku9AagBk6eTgtqbJKKgRRDVjsnC_jNtikrWe8JKY5AAJMaqTmT_BH22x2-h5z7tGUPv3sQKTXjr95998R3wzZHjw7ch&flashvars%5Bchromecast.plugin%5D=true"];
     
     NSLog(@"enterClicked Exit");
 }
