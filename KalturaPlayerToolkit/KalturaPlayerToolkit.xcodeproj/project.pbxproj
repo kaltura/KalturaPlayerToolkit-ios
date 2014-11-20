@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B33E5DA81A1CDF5300A14A1B /* Test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3D758981A1CBF1800CA5A96 /* Test.bundle */; };
 		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
 		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
 		BF18436519C6DD2E00E712C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA01989602500474BE5 /* Foundation.framework */; };
@@ -43,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B3D758971A1CBF1800CA5A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE5C65B19F802D600710815 /* KALTURAPlayerSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3D7588B1A1CBEDF00CA5A96;
+			remoteInfo = Test;
+		};
 		BF299EC61989602500474BE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF299E951989602400474BE5 /* Project object */;
@@ -239,6 +247,7 @@
 			children = (
 				BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */,
 				BFE5C66319F802D700710815 /* KalKALTURAPlayerSDKTests.octest */,
+				B3D758981A1CBF1800CA5A96 /* Test.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,6 +351,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		B3D758981A1CBF1800CA5A96 /* Test.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Test.bundle;
+			remoteRef = B3D758971A1CBF1800CA5A96 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -363,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33E5DA81A1CDF5300A14A1B /* Test.bundle in Resources */,
 				BFEA7A1B19C6291900684FC6 /* logo.png in Resources */,
 				BFEA7A1519C6280A00684FC6 /* bg-Portrait~ipad.png in Resources */,
 				BFEA7A1719C6280A00684FC6 /* bg~iphone.png in Resources */,
