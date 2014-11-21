@@ -81,7 +81,7 @@
 - (IBAction)enterClicked: (id)sender {
     NSLog(@"enterClicked Enter");
     
-    [self playWithUrl: @"http://kgit.html5video.org/tags/playerToolkit-v2.19.1/mwEmbedFrame.php/wid/_243342/uiconf_id/21099702/entry_id/0_c0r624gh/?&flashvars%5BconfFilePath%5D=%7BlibPath%7D%2Fmodules%2FKalturaSupport%2Ftests%2FconfFiles%2FjsonConfig.json%26flashvars%5BKaltura.UseAppleAdaptive%5D%3Dfalse%26flashvars%5Bchromecast.plugin%5D%3Dtrue"];
+    [self playWithUrl: @"http://kgit.html5video.org/tags/v2.21/mwEmbedFrame.php/wid/_243342/uiconf_id/21099702/entry_id/0_c0r624gh/?&flashvars%5BconfFilePath%5D=%7BlibPath%7D%2Fmodules%2FKalturaSupport%2Ftests%2FconfFiles%2FjsonConfig.json%26flashvars%5BKaltura.UseAppleAdaptive%5D%3Dfalse%26flashvars%5Bchromecast.plugin%5D%3Dtrue"];
     
     NSLog(@"enterClicked Exit");
 }
