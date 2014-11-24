@@ -29,6 +29,8 @@
 		BF299EC51989602500474BE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA41989602500474BE5 /* UIKit.framework */; };
 		BF299ECD1989602500474BE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF299ECB1989602500474BE5 /* InfoPlist.strings */; };
 		BF299ECF1989602500474BE5 /* KalturaPlayerToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF299ECE1989602500474BE5 /* KalturaPlayerToolkitTests.m */; };
+		BFBE4BC51A2F43C0001CD0D5 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */; };
+		BFBE4BC71A2F43C9001CD0D5 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4BC61A2F43C9001CD0D5 /* libxml2.2.dylib */; };
 		BFC574AE19980ED8000511B8 /* KPTURLEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */; };
 		BFC574B119980F14000511B8 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */; };
 		BFDF5FD719B33D9200C9F9AC /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDF5FD619B33D9200C9F9AC /* GoogleCast.framework */; };
@@ -110,6 +112,8 @@
 		BF299ECA1989602500474BE5 /* KalturaPlayerToolkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KalturaPlayerToolkitTests-Info.plist"; sourceTree = "<group>"; };
 		BF299ECC1989602500474BE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF299ECE1989602500474BE5 /* KalturaPlayerToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalturaPlayerToolkitTests.m; sourceTree = "<group>"; };
+		BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		BFBE4BC61A2F43C9001CD0D5 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		BFC574AC19980ED8000511B8 /* KPTURLEnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTURLEnterViewController.h; sourceTree = "<group>"; };
 		BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTURLEnterViewController.m; sourceTree = "<group>"; };
 		BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
@@ -133,6 +137,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBE4BC71A2F43C9001CD0D5 /* libxml2.2.dylib in Frameworks */,
+				BFBE4BC51A2F43C0001CD0D5 /* libc++.dylib in Frameworks */,
 				B39393211A2C59DD00B32686 /* AdSupport.framework in Frameworks */,
 				B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */,
 				B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */,
@@ -185,6 +191,8 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFBE4BC61A2F43C9001CD0D5 /* libxml2.2.dylib */,
+				BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */,
 				B39393201A2C59DD00B32686 /* AdSupport.framework */,
 				B32A5CE81A27219E0051DC7F /* WebKit.framework */,
 				B39BEC901A0B77A90085BA26 /* MessageUI.framework */,
@@ -501,7 +509,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nissim Pardo (RE8H8PHRCC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eliza Sapir (2FQZ6B8TJ4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nissim Pardo (RE8H8PHRCC)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -520,10 +528,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "aa312f52-6115-48bc-97da-a6d9a8b55cd9";
+				PROVISIONING_PROFILE = "e10f2022-7a77-4a4b-ba40-e1b14ddb4329";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -543,7 +550,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nissim Pardo (RE8H8PHRCC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eliza Sapir (2FQZ6B8TJ4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nissim Pardo (RE8H8PHRCC)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -555,11 +562,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PROVISIONING_PROFILE = "aa312f52-6115-48bc-97da-a6d9a8b55cd9";
+				PROVISIONING_PROFILE = "e10f2022-7a77-4a4b-ba40-e1b14ddb4329";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -568,7 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nissim Pardo (RE8H8PHRCC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eliza Sapir (2FQZ6B8TJ4)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KalturaPlayerToolkit",
@@ -579,10 +585,13 @@
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "aa312f52-6115-48bc-97da-a6d9a8b55cd9";
-				VALID_ARCHS = armv7;
+				PROVISIONING_PROFILE = "e10f2022-7a77-4a4b-ba40-e1b14ddb4329";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -592,7 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nissim Pardo (RE8H8PHRCC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eliza Sapir (2FQZ6B8TJ4)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KalturaPlayerToolkit",
@@ -602,10 +611,13 @@
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "aa312f52-6115-48bc-97da-a6d9a8b55cd9";
-				VALID_ARCHS = armv7;
+				PROVISIONING_PROFILE = "e10f2022-7a77-4a4b-ba40-e1b14ddb4329";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
