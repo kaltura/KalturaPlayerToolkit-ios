@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A5CE81A27219E0051DC7F /* WebKit.framework */; };
 		B33E5DA81A1CDF5300A14A1B /* Test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3D758981A1CBF1800CA5A96 /* Test.bundle */; };
 		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
 		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
@@ -82,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B32A5CE81A27219E0051DC7F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B39BEC7E1A0A7F890085BA26 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B39BEC901A0B77A90085BA26 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		BF23DBC51990D63E00842759 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
@@ -129,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */,
 				B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */,
 				B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */,
 				BFE5C66619F802F800710815 /* libKALTURAPlayerSDK.a in Frameworks */,
@@ -179,6 +182,7 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B32A5CE81A27219E0051DC7F /* WebKit.framework */,
 				B39BEC901A0B77A90085BA26 /* MessageUI.framework */,
 				B39BEC7E1A0A7F890085BA26 /* Social.framework */,
 				BFDF5FD819B33FF600C9F9AC /* MediaAccessibility.framework */,
