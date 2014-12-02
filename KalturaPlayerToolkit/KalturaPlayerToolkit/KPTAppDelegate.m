@@ -7,6 +7,7 @@
 //
 
 #import "KPTAppDelegate.h"
+#import <KALTURAPlayerSDK/KPViewController.h>
 
 @implementation KPTAppDelegate
 //@synthesize urlSchemeParameters;
@@ -26,7 +27,7 @@
 //        // in url space (' ') is represented by '+'
 //        [parameters setObject:[[[paramSplitted objectAtIndex:1] stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] forKey:[paramSplitted objectAtIndex:0]];
 //    }
-    
+    KPViewController.URLScheme = url;
     NSArray *paramSplitted = [[url query] componentsSeparatedByString:@":="];
 //    paramSplitted = [[url query] componentsSeparatedByString:@"="];
     
