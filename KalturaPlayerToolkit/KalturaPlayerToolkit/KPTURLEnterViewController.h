@@ -15,4 +15,6 @@
 - (IBAction)enterClicked: (id)sender;
 - (IBAction)hereClicked:(id)sender;
 
++ (void)setURLScheme:(NSURL *)url;
++ (NSURL *)URLScheme;
 @end

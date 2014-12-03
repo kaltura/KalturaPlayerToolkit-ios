@@ -7,8 +7,9 @@
 //
 
 #import "KPTURLEnterViewController.h"
-#import "KPTAppDelegate.h"
 #import "KPTViewController.h"
+
+static NSURL *urlScheme;
 
 @interface KPTURLEnterViewController() {
     NSString *iframeUrl;
@@ -28,12 +29,30 @@
     return self;
 }
 
++ (void)setURLScheme:(NSURL *)url {
+    @synchronized(self) {
+        NSArray *components = [url.absoluteString componentsSeparatedByString:@":="];
+        if (components.count == 2) {
+            urlScheme = [NSURL URLWithString:components.lastObject];
+        } else {
+            urlScheme = nil;
+        }
+    }
+}
+
++ (NSURL *)URLScheme {
+    @synchronized(self) {
+        return urlScheme;
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver: self
                                              selector: @selector(appDidBecomeActive:)
                                                  name: UIApplicationDidBecomeActiveNotification
                                                object: nil];
+    //[self appDidBecomeActive:nil];
 }
 
 - (void) playWithUrl:(NSString *)url {
@@ -43,16 +62,15 @@
 
 - (void)appDidBecomeActive: (NSNotification *)notification {
     NSLog(@"did become active notification");
+
     
-    KPTAppDelegate *delegate = (KPTAppDelegate *)[UIApplication sharedApplication].delegate;
-    
-    if (delegate.urlSchemeIframeUrlParam == nil) {
+    if (!self.class.URLScheme) {
         return;
     }
     
     [self dismissViewControllerAnimated: NO completion: nil];
-    [self playWithUrl: delegate.urlSchemeIframeUrlParam];
-    delegate.urlSchemeIframeUrlParam = nil;
+    [self playWithUrl: self.class.URLScheme.absoluteString];//delegate.urlSchemeIframeUrlParam];
+    self.class.URLScheme = nil;
 }
 
 - (void)didReceiveMemoryWarning {
