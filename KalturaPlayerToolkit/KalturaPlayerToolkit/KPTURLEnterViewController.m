@@ -9,6 +9,7 @@
 #import "KPTURLEnterViewController.h"
 #import "KPTViewController.h"
 
+/// Sotres the urlScheme value
 static NSURL *urlScheme;
 
 @interface KPTURLEnterViewController() {
@@ -29,6 +30,8 @@ static NSURL *urlScheme;
     return self;
 }
 
+
+#pragma mark URLScheme
 + (void)setURLScheme:(NSURL *)url {
     @synchronized(self) {
         NSArray *components = [url.absoluteString componentsSeparatedByString:@":="];
@@ -46,13 +49,14 @@ static NSURL *urlScheme;
     }
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver: self
                                              selector: @selector(appDidBecomeActive:)
                                                  name: UIApplicationDidBecomeActiveNotification
                                                object: nil];
-    //[self appDidBecomeActive:nil];
 }
 
 - (void) playWithUrl:(NSString *)url {
@@ -63,13 +67,13 @@ static NSURL *urlScheme;
 - (void)appDidBecomeActive: (NSNotification *)notification {
     NSLog(@"did become active notification");
 
-    
+    // Checks if received url scheme
     if (!self.class.URLScheme) {
         return;
     }
     
     [self dismissViewControllerAnimated: NO completion: nil];
-    [self playWithUrl: self.class.URLScheme.absoluteString];//delegate.urlSchemeIframeUrlParam];
+    [self playWithUrl: self.class.URLScheme.absoluteString];
     self.class.URLScheme = nil;
 }
 

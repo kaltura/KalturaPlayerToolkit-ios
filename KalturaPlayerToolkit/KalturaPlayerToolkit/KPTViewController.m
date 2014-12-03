@@ -30,6 +30,8 @@
     return _requestConfig;
 }
 
+
+// Parses the params of the url scheme into NSDictionary
 - (NSDictionary *)urlSchemeQueryParams {
     if (!_urlSchemeQueryParams) {
         NSMutableDictionary *queryDict = [NSMutableDictionary new];
@@ -40,6 +42,9 @@
                 NSString *key = keyValue[0];
                 NSString *value = keyValue.lastObject;
                 if ([key hasPrefix:@"flashvars"]) {
+                    key = [key stringByRemovingPercentEncoding];
+                    key = [key stringByReplacingOccurrencesOfString:@"flashvars[" withString:@""];
+                    key = [key stringByReplacingOccurrencesOfString:@"]" withString:@""];
                     [self.requestConfig addConfigKey:key withValue:value];
                 } else {
                     queryDict[key] = value;
@@ -51,6 +56,7 @@
     return _urlSchemeQueryParams;
 }
 
+// Extract the domain from the video url
 - (NSString *)domain {
     NSArray *components = [iframeUrl componentsSeparatedByString:@"?"];
     if (!_domain && components.count == 2) {
@@ -64,11 +70,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-//    [[NSNotificationCenter defaultCenter] addObserver: self
-//                                             selector: @selector(toggleFullscreen:)
-//                                                 name: @"toggleFullscreenNotification"
-//                                               object: nil];
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
@@ -80,7 +81,6 @@
         CGRect playerFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
         self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
         [self.player setNativeFullscreen];
-        [self.player setWebViewURL: iframeUrl];
         self.player.datasource = self;
         [self.player load];
     }
@@ -94,9 +94,9 @@
     NSLog(@"setIframeUrl Exit");
 }
 
--(NSURL *)getInitialKIframeUrl {
-    return [NSURL URLWithString: [iframeUrl stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
-}
+//-(NSURL *)getInitialKIframeUrl {
+//    return [NSURL URLWithString: [iframeUrl stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+//}
 
 - (void)toggleFullscreen: (NSNotification *)note {
     NSLog(@"toggleFullscreen Enter");
