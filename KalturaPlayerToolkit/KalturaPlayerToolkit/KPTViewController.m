@@ -124,7 +124,7 @@
 
 
 #pragma mark KPViewControllerDatasource
-- (NSString *)root {
+- (NSString *)serverAddress {
     return self.domain.copy;
 }
 
