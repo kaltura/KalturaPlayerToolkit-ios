@@ -7,6 +7,8 @@
 //
 
 #import "KPTAppDelegate.h"
+#import "KPTURLEnterViewController.h"
+
 
 @implementation KPTAppDelegate
 //@synthesize urlSchemeParameters;
@@ -26,14 +28,16 @@
 //        // in url space (' ') is represented by '+'
 //        [parameters setObject:[[[paramSplitted objectAtIndex:1] stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] forKey:[paramSplitted objectAtIndex:0]];
 //    }
-    
-    NSArray *paramSplitted = [[url query] componentsSeparatedByString:@":="];
-//    paramSplitted = [[url query] componentsSeparatedByString:@"="];
-    
-    
-    NSLog(@"%@", [paramSplitted objectAtIndex:1]);
-    urlSchemeIframeUrlParam = [paramSplitted objectAtIndex:1];
-//    urlSchemeParameters = [[NSDictionary alloc] initWithDictionary:parameters];
+
+    KPTURLEnterViewController.URLScheme = url;
+//    NSArray *paramSplitted = [[url query] componentsSeparatedByString:@":="];
+////    paramSplitted = [[url query] componentsSeparatedByString:@"="];
+//    
+//    
+//    NSLog(@"%@", [paramSplitted objectAtIndex:1]);
+//    urlSchemeIframeUrlParam = [paramSplitted objectAtIndex:1];
+////    urlSchemeParameters = [[NSDictionary alloc] initWithDictionary:parameters];
+
     
     return YES;
 }

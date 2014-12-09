@@ -15,4 +15,13 @@
 - (IBAction)enterClicked: (id)sender;
 - (IBAction)hereClicked:(id)sender;
 
+
+
+/** Setter for the url scheme (used by the appDlegate)
+ *
+ *  @param NSURL the url from the urlScheme stored into static var
+ */
++ (void)setURLScheme:(NSURL *)url;
+
+
 @end
