@@ -81,6 +81,7 @@
         CGRect playerFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
         self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
         [self.player setNativeFullscreen];
+        //self.player
         self.player.datasource = self;
         [self.player load];
     }
