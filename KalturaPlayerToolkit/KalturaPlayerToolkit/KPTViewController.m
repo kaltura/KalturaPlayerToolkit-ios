@@ -7,7 +7,7 @@
 //
 
 #import "KPTViewController.h"
-#import <KALTURAPlayerSDK/KPPlayerDatasource.h>
+
 
 @interface KPTViewController () <KPViewControllerDatasource>
 
@@ -102,18 +102,18 @@
 - (void)toggleFullscreen: (NSNotification *)note {
     NSLog(@"toggleFullscreen Enter");
     
-    NSDictionary *theData = [note userInfo];
-    if (theData != nil) {
-        NSNumber *n = [theData objectForKey: @"isFullScreen"];
-        BOOL isFullScreen = [n boolValue];
-        
-        if ( isFullScreen ) {
-            [[[UIApplication sharedApplication] delegate].window addSubview: self.player.view];
-        }
-        else if( !isFullScreen ) {
-            [self.view addSubview: self.player.view];
-        }
-    }
+//    NSDictionary *theData = [note userInfo];
+//    if (theData != nil) {
+//        NSNumber *n = [theData objectForKey: @"isFullScreen"];
+//        BOOL isFullScreen = [n boolValue];
+//        
+//        if ( isFullScreen ) {
+//            [[[UIApplication sharedApplication] delegate].window addSubview: self.player.view];
+//        }
+//        else if( !isFullScreen ) {
+//            [self.view addSubview: self.player.view];
+//        }
+//    }
     
     NSLog(@"toggleFullscreen Exit");
 }
