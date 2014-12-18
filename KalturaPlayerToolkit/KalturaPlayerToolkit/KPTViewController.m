@@ -123,7 +123,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+//http://apache-testing.dev.kaltura.com/html5/html5lib/v2.24.rc5/mwEmbedFrame.php?&wid=_1091&uiconf_id=15065771&cache_st=1404213421&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1404213421&forceMobileHTML5=true&urid=2.24.rc5&flashvars%5Bchromecast.plugin%5D=true
 #pragma mark KPViewControllerDatasource
 - (NSString *)serverAddress {
     return self.domain.copy;
