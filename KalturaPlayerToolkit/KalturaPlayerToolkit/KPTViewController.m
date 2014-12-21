@@ -79,7 +79,9 @@
 - (void)viewDidAppear:(BOOL)animated {
     if ( self.player == nil ) {
         CGRect playerFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        KPViewController.logLevel = KPLogLevelAll;
         self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
+        
         [self.player setNativeFullscreen];
         //self.player
         self.player.datasource = self;
@@ -88,11 +90,9 @@
 }
 
 - (void)setIframeUrl: (NSString*)url {
-    NSLog(@"setIframeUrl Enter");
-    
+    KPLogTrace(@"Enter");
     iframeUrl = url;
-    
-    NSLog(@"setIframeUrl Exit");
+    KPLogTrace(@"Exit");
 }
 
 //-(NSURL *)getInitialKIframeUrl {
@@ -100,8 +100,7 @@
 //}
 
 - (void)toggleFullscreen: (NSNotification *)note {
-    NSLog(@"toggleFullscreen Enter");
-    
+    KPLogTrace(@"Enter");
 //    NSDictionary *theData = [note userInfo];
 //    if (theData != nil) {
 //        NSNumber *n = [theData objectForKey: @"isFullScreen"];
@@ -114,8 +113,7 @@
 //            [self.view addSubview: self.player.view];
 //        }
 //    }
-    
-    NSLog(@"toggleFullscreen Exit");
+    KPLogTrace(@"Exit");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -126,19 +124,23 @@
 //http://apache-testing.dev.kaltura.com/html5/html5lib/v2.24.rc5/mwEmbedFrame.php?&wid=_1091&uiconf_id=15065771&cache_st=1404213421&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1404213421&forceMobileHTML5=true&urid=2.24.rc5&flashvars%5Bchromecast.plugin%5D=true
 #pragma mark KPViewControllerDatasource
 - (NSString *)serverAddress {
-    return self.domain.copy;
+    NSString *serverAddress = self.domain.copy;
+    return serverAddress;
 }
 
 - (NSString *)wid {
-    return self.urlSchemeQueryParams[KPPlayerDatasourceWidKey];
+    NSString *wid = self.urlSchemeQueryParams[KPPlayerDatasourceWidKey];
+    return wid;
 }
 
 - (NSString *)uiConfId {
-    return self.urlSchemeQueryParams[KPPlayerDatasourceUiConfIdKey];
+    NSString *uiConfId = self.urlSchemeQueryParams[KPPlayerDatasourceUiConfIdKey];
+    return uiConfId;
 }
 
 - (NSString *)cacheSt {
-    return self.urlSchemeQueryParams[KPPlayerDatasourceCacheStKey];
+    NSString *cacheSt = self.urlSchemeQueryParams[KPPlayerDatasourceCacheStKey];
+    return cacheSt;
 }
 
 - (NSString *)entryId {
