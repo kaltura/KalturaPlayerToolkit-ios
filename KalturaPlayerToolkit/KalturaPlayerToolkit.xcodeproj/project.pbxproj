@@ -31,6 +31,10 @@
 		BF299ECF1989602500474BE5 /* KalturaPlayerToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF299ECE1989602500474BE5 /* KalturaPlayerToolkitTests.m */; };
 		BFBE4BC51A2F43C0001CD0D5 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */; };
 		BFBE4BC71A2F43C9001CD0D5 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4BC61A2F43C9001CD0D5 /* libxml2.2.dylib */; };
+		BFBE4BFD1A30BA26001CD0D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4BFC1A30BA26001CD0D5 /* SystemConfiguration.framework */; };
+		BFBE4BFF1A30BA47001CD0D5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4BFE1A30BA47001CD0D5 /* AVFoundation.framework */; };
+		BFBE4C101A30BA98001CD0D5 /* libGoogleIMA3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4C0F1A30BA98001CD0D5 /* libGoogleIMA3.a */; };
+		BFBE4C121A30BB05001CD0D5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4C111A30BB05001CD0D5 /* CoreMedia.framework */; };
 		BFC574AE19980ED8000511B8 /* KPTURLEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */; };
 		BFC574B119980F14000511B8 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */; };
 		BFDF5FD719B33D9200C9F9AC /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDF5FD619B33D9200C9F9AC /* GoogleCast.framework */; };
@@ -114,6 +118,25 @@
 		BF299ECE1989602500474BE5 /* KalturaPlayerToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalturaPlayerToolkitTests.m; sourceTree = "<group>"; };
 		BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		BFBE4BC61A2F43C9001CD0D5 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		BFBE4BF81A30BA17001CD0D5 /* libGoogleIMA3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleIMA3.a; path = "../../player-sdk-native-ios/PlayerSDK/libGoogleIMA3.a"; sourceTree = "<group>"; };
+		BFBE4BFC1A30BA26001CD0D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BFBE4BFE1A30BA47001CD0D5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BFBE4C011A30BA98001CD0D5 /* IMAAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAd.h; sourceTree = "<group>"; };
+		BFBE4C021A30BA98001CD0D5 /* IMAAdDisplayContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAdDisplayContainer.h; sourceTree = "<group>"; };
+		BFBE4C031A30BA98001CD0D5 /* IMAAdError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAdError.h; sourceTree = "<group>"; };
+		BFBE4C041A30BA98001CD0D5 /* IMAAdEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAdEvent.h; sourceTree = "<group>"; };
+		BFBE4C051A30BA98001CD0D5 /* IMAAdPlaybackInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAdPlaybackInfo.h; sourceTree = "<group>"; };
+		BFBE4C061A30BA98001CD0D5 /* IMAAdPodInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAdPodInfo.h; sourceTree = "<group>"; };
+		BFBE4C071A30BA98001CD0D5 /* IMAAdsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAdsLoader.h; sourceTree = "<group>"; };
+		BFBE4C081A30BA98001CD0D5 /* IMAAdsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAdsManager.h; sourceTree = "<group>"; };
+		BFBE4C091A30BA98001CD0D5 /* IMAAdsRenderingSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAdsRenderingSettings.h; sourceTree = "<group>"; };
+		BFBE4C0A1A30BA98001CD0D5 /* IMAAdsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAdsRequest.h; sourceTree = "<group>"; };
+		BFBE4C0B1A30BA98001CD0D5 /* IMAAVPlayerContentPlayhead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAAVPlayerContentPlayhead.h; sourceTree = "<group>"; };
+		BFBE4C0C1A30BA98001CD0D5 /* IMACompanionAdSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMACompanionAdSlot.h; sourceTree = "<group>"; };
+		BFBE4C0D1A30BA98001CD0D5 /* IMAContentPlayhead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAContentPlayhead.h; sourceTree = "<group>"; };
+		BFBE4C0E1A30BA98001CD0D5 /* IMAUiElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAUiElements.h; sourceTree = "<group>"; };
+		BFBE4C0F1A30BA98001CD0D5 /* libGoogleIMA3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleIMA3.a; sourceTree = "<group>"; };
+		BFBE4C111A30BB05001CD0D5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		BFC574AC19980ED8000511B8 /* KPTURLEnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTURLEnterViewController.h; sourceTree = "<group>"; };
 		BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTURLEnterViewController.m; sourceTree = "<group>"; };
 		BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
@@ -137,8 +160,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBE4C121A30BB05001CD0D5 /* CoreMedia.framework in Frameworks */,
+				BFBE4BFF1A30BA47001CD0D5 /* AVFoundation.framework in Frameworks */,
+				BFBE4BFD1A30BA26001CD0D5 /* SystemConfiguration.framework in Frameworks */,
 				BFBE4BC71A2F43C9001CD0D5 /* libxml2.2.dylib in Frameworks */,
 				BFBE4BC51A2F43C0001CD0D5 /* libc++.dylib in Frameworks */,
+				BFBE4C101A30BA98001CD0D5 /* libGoogleIMA3.a in Frameworks */,
 				B39393211A2C59DD00B32686 /* AdSupport.framework in Frameworks */,
 				B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */,
 				B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */,
@@ -191,6 +218,10 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFBE4C111A30BB05001CD0D5 /* CoreMedia.framework */,
+				BFBE4BFE1A30BA47001CD0D5 /* AVFoundation.framework */,
+				BFBE4BFC1A30BA26001CD0D5 /* SystemConfiguration.framework */,
+				BFBE4BF81A30BA17001CD0D5 /* libGoogleIMA3.a */,
 				BFBE4BC61A2F43C9001CD0D5 /* libxml2.2.dylib */,
 				BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */,
 				B39393201A2C59DD00B32686 /* AdSupport.framework */,
@@ -214,6 +245,7 @@
 		BF299EA61989602500474BE5 /* KalturaPlayerToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				BFBE4C001A30BA89001CD0D5 /* ima */,
 				BF299EAF1989602500474BE5 /* KPTAppDelegate.h */,
 				BF299EB01989602500474BE5 /* KPTAppDelegate.m */,
 				BF299EB21989602500474BE5 /* Main_iPhone.storyboard */,
@@ -256,6 +288,28 @@
 				BF299ECB1989602500474BE5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFBE4C001A30BA89001CD0D5 /* ima */ = {
+			isa = PBXGroup;
+			children = (
+				BFBE4C011A30BA98001CD0D5 /* IMAAd.h */,
+				BFBE4C021A30BA98001CD0D5 /* IMAAdDisplayContainer.h */,
+				BFBE4C031A30BA98001CD0D5 /* IMAAdError.h */,
+				BFBE4C041A30BA98001CD0D5 /* IMAAdEvent.h */,
+				BFBE4C051A30BA98001CD0D5 /* IMAAdPlaybackInfo.h */,
+				BFBE4C061A30BA98001CD0D5 /* IMAAdPodInfo.h */,
+				BFBE4C071A30BA98001CD0D5 /* IMAAdsLoader.h */,
+				BFBE4C081A30BA98001CD0D5 /* IMAAdsManager.h */,
+				BFBE4C091A30BA98001CD0D5 /* IMAAdsRenderingSettings.h */,
+				BFBE4C0A1A30BA98001CD0D5 /* IMAAdsRequest.h */,
+				BFBE4C0B1A30BA98001CD0D5 /* IMAAVPlayerContentPlayhead.h */,
+				BFBE4C0C1A30BA98001CD0D5 /* IMACompanionAdSlot.h */,
+				BFBE4C0D1A30BA98001CD0D5 /* IMAContentPlayhead.h */,
+				BFBE4C0E1A30BA98001CD0D5 /* IMAUiElements.h */,
+				BFBE4C0F1A30BA98001CD0D5 /* libGoogleIMA3.a */,
+			);
+			name = ima;
 			sourceTree = "<group>";
 		};
 		BFE5C65C19F802D600710815 /* Products */ = {
@@ -584,6 +638,11 @@
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/elizasapir/Desktop/GitRepositories/player-sdk-native-ios/PlayerSDK",
+					"$(PROJECT_DIR)/KalturaPlayerToolkit",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -611,6 +670,11 @@
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/elizasapir/Desktop/GitRepositories/player-sdk-native-ios/PlayerSDK",
+					"$(PROJECT_DIR)/KalturaPlayerToolkit",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
