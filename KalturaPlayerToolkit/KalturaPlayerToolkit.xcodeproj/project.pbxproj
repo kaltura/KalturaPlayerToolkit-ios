@@ -262,7 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */,
-				BFE5C66319F802D700710815 /* KalKALTURAPlayerSDKTests.octest */,
+				BFE5C66319F802D700710815 /* .octest */,
 				B3D758981A1CBF1800CA5A96 /* Test.bundle */,
 			);
 			name = Products;
@@ -382,10 +382,10 @@
 			remoteRef = BFE5C66019F802D700710815 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BFE5C66319F802D700710815 /* KalKALTURAPlayerSDKTests.octest */ = {
+		BFE5C66319F802D700710815 /* .octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = KalKALTURAPlayerSDKTests.octest;
+			path = .octest;
 			remoteRef = BFE5C66219F802D700710815 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -591,7 +591,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0b67b489-d740-4904-8b0a-57b389ea691b";
+				PROVISIONING_PROFILE = "54eeb41e-9b6b-4baa-913b-9212cadce521";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -618,7 +618,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0b67b489-d740-4904-8b0a-57b389ea691b";
+				PROVISIONING_PROFILE = "54eeb41e-9b6b-4baa-913b-9212cadce521";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};

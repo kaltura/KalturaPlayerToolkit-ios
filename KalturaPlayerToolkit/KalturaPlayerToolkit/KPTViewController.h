@@ -15,6 +15,6 @@
 
 @property (retain, nonatomic) KPViewController *player;
 
-- (void)setIframeUrl:(NSString*)url;
+- (void)setIframeUrl:(NSString *)url;
 
 @end

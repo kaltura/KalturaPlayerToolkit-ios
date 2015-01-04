@@ -79,13 +79,18 @@
 - (void)viewDidAppear:(BOOL)animated {
     if ( self.player == nil ) {
         CGRect playerFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        KPViewController.logLevel = KPLogLevelDebug;
+#if DEBUG
         KPViewController.logLevel = KPLogLevelAll;
+#endif
         self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
         
         [self.player setNativeFullscreen];
         //self.player
-        self.player.datasource = self;
-        [self.player load];
+        //self.player.datasource = self;
+        
+        [self.player setWebViewURL:iframeUrl];
+        //[self.player load];
     }
 }
 
@@ -157,5 +162,13 @@
 
 - (KPPlayerConfig *)configFlags {
     return self.requestConfig;
+}
+
+- (NSString *)debug {
+    return self.urlSchemeQueryParams[KPPlayerDatasourceDebugKey];
+}
+
+- (NSString *)forceMobileHTML5 {
+    return self.urlSchemeQueryParams[KPPlayerDatasourceForceHtml5Key];
 }
 @end
