@@ -102,7 +102,7 @@ static NSURL *urlScheme;
 
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
-    [self playWithUrl: @"http://kgit.html5video.org/tags/v2.22/mwEmbedFrame.php/wid/_243342/uiconf_id/21099702/entry_id/0_c0r624gh/?&flashvars%5BconfFilePath%5D=%7BlibPath%7D%2Fmodules%2FKalturaSupport%2Ftests%2FconfFiles%2FjsonConfig.json%26flashvars%5BKaltura.UseAppleAdaptive%5D%3Dfalse%26flashvars%5Bchromecast.plugin%5D%3Dtrue"];
+    [self playWithUrl: @"http://50.19.86.65/kgit/tags/v2.25.rc4/mwEmbedFrame.php?&wid=_243342&uiconf_id=13306622&entry_id=0_uka1msg4&flashvars[vast]={\"numPreroll\":\"1\",\"prerollInterval\":\"1\",\"prerollStartWith\":\"1\",\"prerollUrl\":\"http://projects.kaltura.com/MichalR/vast3_demo.xml\",\"overlayStartAt\":\"20\",\"overlayInterval\":\"300\",\"overlayUrl\":\"http://projects.kaltura.com/MichalR/vast_overlay.xml\",\"numPostroll\":\"1\",\"preSequence\":\"1\",\"postSequence\":\"1\",\"timeout\":\"4\"}&flashvars[adsOnReplay]=true&flashvars[nativeCallout]={\"plugin\":true}&playerId=myVideoTarget&forceMobileHTML5=true&urid=2.25.rc4__57a0ab85&flashvars[chromecast.plugin]=true"];
     KPLogTrace(@"Exit");
 }
 
