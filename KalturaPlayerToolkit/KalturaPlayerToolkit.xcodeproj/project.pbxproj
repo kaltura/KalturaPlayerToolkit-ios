@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A5CE81A27219E0051DC7F /* WebKit.framework */; };
 		B33E5DA81A1CDF5300A14A1B /* Test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3D758981A1CBF1800CA5A96 /* Test.bundle */; };
+		B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */; };
+		B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */; };
+		B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3F1A6C10FA00275F00 /* CoreFoundation.framework */; };
+		B3410D421A6C111300275F00 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D411A6C111300275F00 /* CoreMedia.framework */; };
+		B3410D441A6C113000275F00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D431A6C113000275F00 /* QuartzCore.framework */; };
+		B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D451A6C114400275F00 /* SystemConfiguration.framework */; };
 		B39393211A2C59DD00B32686 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39393201A2C59DD00B32686 /* AdSupport.framework */; };
 		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
 		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
@@ -87,6 +93,13 @@
 
 /* Begin PBXFileReference section */
 		B32A5CE81A27219E0051DC7F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B3410D261A6C0E7900275F00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B3410D3F1A6C10FA00275F00 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B3410D411A6C111300275F00 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B3410D431A6C113000275F00 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B3410D451A6C114400275F00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B39393201A2C59DD00B32686 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B39BEC7E1A0A7F890085BA26 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B39BEC901A0B77A90085BA26 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -137,11 +150,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */,
+				B3410D441A6C113000275F00 /* QuartzCore.framework in Frameworks */,
+				B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */,
+				B3410D421A6C111300275F00 /* CoreMedia.framework in Frameworks */,
+				B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */,
+				B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */,
+				B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */,
 				BFBE4BC71A2F43C9001CD0D5 /* libxml2.2.dylib in Frameworks */,
 				BFBE4BC51A2F43C0001CD0D5 /* libc++.dylib in Frameworks */,
 				B39393211A2C59DD00B32686 /* AdSupport.framework in Frameworks */,
 				B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */,
-				B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */,
 				B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */,
 				BFE5C66619F802F800710815 /* libKALTURAPlayerSDK.a in Frameworks */,
 				BF18436519C6DD2E00E712C9 /* Foundation.framework in Frameworks */,
@@ -191,6 +210,13 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3410D451A6C114400275F00 /* SystemConfiguration.framework */,
+				B3410D431A6C113000275F00 /* QuartzCore.framework */,
+				B3410D411A6C111300275F00 /* CoreMedia.framework */,
+				B3410D3F1A6C10FA00275F00 /* CoreFoundation.framework */,
+				B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */,
+				B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */,
+				B3410D261A6C0E7900275F00 /* CFNetwork.framework */,
 				BFBE4BC61A2F43C9001CD0D5 /* libxml2.2.dylib */,
 				BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */,
 				B39393201A2C59DD00B32686 /* AdSupport.framework */,
@@ -580,12 +606,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KalturaPlayerToolkit",
-					"/Users/elizasapir/Desktop/GitRepositories/player-sdk-native-ios/PlayerSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -608,12 +637,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KalturaPlayerToolkit",
-					"/Users/elizasapir/Desktop/GitRepositories/player-sdk-native-ios/PlayerSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
