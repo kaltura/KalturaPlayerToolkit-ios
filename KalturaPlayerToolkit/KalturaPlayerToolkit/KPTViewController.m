@@ -87,8 +87,10 @@
         //self.player.datasource = self;
         //[self.player load];
         [self.player setWebViewURL:iframeUrl];
+        
     }
 }
+
 
 - (void)setIframeUrl: (NSString*)url {
     KPLogTrace(@"Enter");
