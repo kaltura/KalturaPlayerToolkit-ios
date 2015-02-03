@@ -95,7 +95,7 @@
 - (void)setIframeUrl: (NSString*)url {
     KPLogTrace(@"Enter");
     
-    iframeUrl = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    iframeUrl = url;//[url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     KPLogTrace(@"Exit");
 }
 
