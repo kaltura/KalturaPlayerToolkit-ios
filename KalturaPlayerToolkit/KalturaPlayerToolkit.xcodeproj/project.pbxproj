@@ -18,6 +18,7 @@
 		B3410D9E1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3410D9D1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m */; };
 		B3410DA61A71248C00275F00 /* libKALTURAPlayerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */; };
 		B3410DA71A71250900275F00 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDF5FD619B33D9200C9F9AC /* GoogleCast.framework */; };
+		B372888F1A84DB340076DD33 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B372888E1A84DB340076DD33 /* CoreData.framework */; };
 		B39393211A2C59DD00B32686 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39393201A2C59DD00B32686 /* AdSupport.framework */; };
 		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
 		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
@@ -101,6 +102,7 @@
 		B3410D991A7123F600275F00 /* KalturaPlayerToolkit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KalturaPlayerToolkit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3410D9C1A7123F600275F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3410D9D1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalturaPlayerToolkit_Tests.m; sourceTree = "<group>"; };
+		B372888E1A84DB340076DD33 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B39393201A2C59DD00B32686 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B39BEC7E1A0A7F890085BA26 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B39BEC901A0B77A90085BA26 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -156,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B372888F1A84DB340076DD33 /* CoreData.framework in Frameworks */,
 				B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */,
 				B3410D441A6C113000275F00 /* QuartzCore.framework in Frameworks */,
 				B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */,
@@ -223,6 +226,7 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B372888E1A84DB340076DD33 /* CoreData.framework */,
 				B3410D451A6C114400275F00 /* SystemConfiguration.framework */,
 				B3410D431A6C113000275F00 /* QuartzCore.framework */,
 				B3410D411A6C111300275F00 /* CoreMedia.framework */,
