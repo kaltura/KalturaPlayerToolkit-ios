@@ -520,8 +520,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/player-sdk-native-ios/PlayerSDK\"",
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"../../../../player-sdk-native-ios/PlayerSDK",
+					"$(inherited)",
+					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -547,8 +549,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/player-sdk-native-ios/PlayerSDK\"",
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"../../../../player-sdk-native-ios/PlayerSDK",
+					"$(inherited)",
+					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
 				);
 				INFOPLIST_FILE = "KalturaPlayerToolkit Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
