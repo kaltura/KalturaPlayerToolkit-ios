@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A5CE81A27219E0051DC7F /* WebKit.framework */; };
-		B3301D4E1AB5DEE900E9778C /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3301D4D1AB5DEE900E9778C /* GoogleCast.framework */; };
+		B3301D5A1AB6F07000E9778C /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3301D591AB6F07000E9778C /* GoogleCast.framework */; };
 		B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */; };
 		B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */; };
 		B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3F1A6C10FA00275F00 /* CoreFoundation.framework */; };
@@ -91,7 +91,7 @@
 
 /* Begin PBXFileReference section */
 		B32A5CE81A27219E0051DC7F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		B3301D4D1AB5DEE900E9778C /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../player-sdk-native-ios/PlayerSDK/GoogleCast.framework"; sourceTree = "<group>"; };
+		B3301D591AB6F07000E9778C /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../player-sdk-native-ios/PlayerSDK/GoogleCast.framework"; sourceTree = "<group>"; };
 		B3410D261A6C0E7900275F00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -158,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3301D4E1AB5DEE900E9778C /* GoogleCast.framework in Frameworks */,
+				B3301D5A1AB6F07000E9778C /* GoogleCast.framework in Frameworks */,
 				B3CC33771A8A276800CC66CD /* libSystem.dylib in Frameworks */,
 				B3CC33751A8A272400CC66CD /* libz.dylib in Frameworks */,
 				B3CC33711A8A229F00CC66CD /* libc++.dylib in Frameworks */,
@@ -226,7 +226,7 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3301D4D1AB5DEE900E9778C /* GoogleCast.framework */,
+				B3301D591AB6F07000E9778C /* GoogleCast.framework */,
 				B3CC33761A8A276800CC66CD /* libSystem.dylib */,
 				B3CC33741A8A272400CC66CD /* libz.dylib */,
 				B3CC336F1A8A209E00CC66CD /* libstdc++.6.dylib */,
@@ -643,11 +643,12 @@
 		BF299ED31989602500474BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "../../../../player-sdk-native-ios/PlayerSDK";
+				FRAMEWORK_SEARCH_PATHS = "./**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
@@ -671,11 +672,12 @@
 		BF299ED41989602500474BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "../../../../player-sdk-native-ios/PlayerSDK";
+				FRAMEWORK_SEARCH_PATHS = "./**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
