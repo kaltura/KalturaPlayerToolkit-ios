@@ -81,13 +81,14 @@
         CGRect playerFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
         KPViewController.logLevel = KPLogLevelAll;
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
-            
-            [self.player setNativeFullscreen];
+            //self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
+            self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
+            //[self.player setNativeFullscreen];
             //self.player
             //self.player.datasource = self;
             //[self.player load];
-            [self.player setWebViewURL:iframeUrl];
+            //[self.player setWebViewURL:iframeUrl];
+            [self presentViewController:self.player animated:YES completion:nil];
         });
         
         
