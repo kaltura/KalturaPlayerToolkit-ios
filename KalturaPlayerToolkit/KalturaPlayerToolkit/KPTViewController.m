@@ -88,9 +88,9 @@
             //self.player.datasource = self;
             //[self.player load];
             //[self.player setWebViewURL:iframeUrl];
-//            [self presentViewController:self.player animated:YES completion:nil];
-            UIView *playerView = [self.player playerViewForParentViewController:self frame:(CGRect){0, 100, 320, 180}];
-            [self.view addSubview:playerView];
+            [self presentViewController:self.player animated:YES completion:nil];
+//            UIView *playerView = [self.player playerViewForParentViewController:self frame:(CGRect){0, 100, 320, 180}];
+//            [self.view addSubview:playerView];
         });
         
         
