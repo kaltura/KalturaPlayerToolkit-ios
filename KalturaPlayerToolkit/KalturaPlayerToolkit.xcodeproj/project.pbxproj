@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A5CE81A27219E0051DC7F /* WebKit.framework */; };
-		B33E5DA81A1CDF5300A14A1B /* Test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3D758981A1CBF1800CA5A96 /* Test.bundle */; };
 		B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */; };
 		B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */; };
 		B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3F1A6C10FA00275F00 /* CoreFoundation.framework */; };
@@ -66,12 +65,12 @@
 			remoteGlobalIDString = BFFFA726182F9E31005B3B24;
 			remoteInfo = KALTURAPlayerSDK;
 		};
-		B3D758971A1CBF1800CA5A96 /* PBXContainerItemProxy */ = {
+		B35A5D9D1AC12798001E7D98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFE5C65B19F802D600710815 /* KALTURAPlayerSDK.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = B3D7588B1A1CBEDF00CA5A96;
-			remoteInfo = Test;
+			remoteGlobalIDString = B372892E1A8787D00076DD33;
+			remoteInfo = KPlayerResources;
 		};
 		BFE5C66019F802D700710815 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -283,7 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */,
-				B3D758981A1CBF1800CA5A96 /* Test.bundle */,
+				B35A5D9E1AC12798001E7D98 /* KALTURAPlayerSDK.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -389,11 +388,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B3D758981A1CBF1800CA5A96 /* Test.bundle */ = {
+		B35A5D9E1AC12798001E7D98 /* KALTURAPlayerSDK.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = Test.bundle;
-			remoteRef = B3D758971A1CBF1800CA5A96 /* PBXContainerItemProxy */;
+			path = KALTURAPlayerSDK.bundle;
+			remoteRef = B35A5D9D1AC12798001E7D98 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */ = {
@@ -417,7 +416,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B33E5DA81A1CDF5300A14A1B /* Test.bundle in Resources */,
 				BFEA7A1B19C6291900684FC6 /* logo.png in Resources */,
 				BFEA7A1519C6280A00684FC6 /* bg-Portrait~ipad.png in Resources */,
 				BFEA7A1719C6280A00684FC6 /* bg~iphone.png in Resources */,
@@ -511,10 +509,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/player-sdk-native-ios/PlayerSDK\"",
+					"./**",
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -537,10 +533,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/player-sdk-native-ios/PlayerSDK\"",
+					"./**",
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
 				);
 				INFOPLIST_FILE = "KalturaPlayerToolkit Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
