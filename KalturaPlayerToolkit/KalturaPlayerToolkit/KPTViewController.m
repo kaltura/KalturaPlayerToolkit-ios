@@ -82,15 +82,15 @@
         CGRect playerFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
         KPViewController.logLevel = KPLogLevelAll;
         dispatch_async(dispatch_get_main_queue(), ^{
-            //self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
+//            self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
             self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
             //[self.player setNativeFullscreen];
             //self.player
             //self.player.datasource = self;
             //[self.player load];
-            //[self.player setWebViewURL:iframeUrl];
-//            [self presentViewController:self.player animated:YES completion:nil];
-            _playerView = [self.player playerViewForParentViewController:self frame:(CGRect){0, 100, 320, 180}];
+//            [self.player setWebViewURL:iframeUrl];
+            [self presentViewController:self.player animated:YES completion:nil];
+//            _playerView = [self.player playerViewForParentViewController:self frame:(CGRect){0, 100, 320, 180}];
             [self.view addSubview:_playerView];
         });
         
@@ -133,7 +133,7 @@
 }
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-    //_playerView.frame = (CGRect){0, UIInterfaceOrientationIsLandscape(toInterfaceOrientation) ? 0 : 100, 320, 180};
+    _playerView.frame = (CGRect){0, UIInterfaceOrientationIsLandscape(toInterfaceOrientation) ? 0 : 100, 320, 180};
 }
 
 //http://apache-testing.dev.kaltura.com/html5/html5lib/v2.24.rc5/mwEmbedFrame.php?&wid=_1091&uiconf_id=15065771&cache_st=1404213421&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1404213421&forceMobileHTML5=true&urid=2.24.rc5&flashvars%5Bchromecast.plugin%5D=true
