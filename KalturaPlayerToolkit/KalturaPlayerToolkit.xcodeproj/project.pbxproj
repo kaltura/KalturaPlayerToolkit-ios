@@ -651,7 +651,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/nissopa/Desktop/KalturaIOSProjects/,
+					"./**",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -680,7 +680,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/nissopa/Desktop/KalturaIOSProjects/,
+					"./**",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",

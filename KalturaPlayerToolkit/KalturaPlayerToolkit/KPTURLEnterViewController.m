@@ -102,9 +102,6 @@ static NSURL *urlScheme;
 
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
-    //[self playWithUrl: @"http://cdnbakmi.kaltura.com/html5/html5lib/v2.28/mwEmbedFrame.php?wid=_243342&uiconf_id=21384602&entry_id=0_c0r624gh"];
-//    [self playWithUrl: @"http://kgit.html5video.org/tags/v2.29.rc2/mwEmbedFrame.php/p/1862501/uiconf_id/28336441/entry_id/0_h9f7iu2n?wid=_1862501&iframeembed=true&playerId=kaltura_player&entry_id=0_h9f7iu2n"];
-    
     [self playWithUrl: @"https://cdnapisec.kaltura.com/p/243342/sp/24334200/embedIframeJs/uiconf_id/12905712/partner_id/243342?iframeembed=true&entry_id=1_sf5ovm7u"];
     KPLogTrace(@"Exit");
 }
