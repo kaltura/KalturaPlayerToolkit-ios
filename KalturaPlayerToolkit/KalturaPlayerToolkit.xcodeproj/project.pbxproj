@@ -366,7 +366,7 @@
 						TestTargetID = BF299E9C1989602500474BE5;
 					};
 					BF299E9C1989602500474BE5 = {
-						DevelopmentTeam = BT5J4WV2RB;
+						DevelopmentTeam = X8RDCFJK95;
 					};
 				};
 			};

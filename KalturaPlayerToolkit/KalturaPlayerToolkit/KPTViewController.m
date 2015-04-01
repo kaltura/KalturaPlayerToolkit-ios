@@ -132,45 +132,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-    _playerView.frame = (CGRect){0, UIInterfaceOrientationIsLandscape(toInterfaceOrientation) ? 0 : 100, 320, 180};
-}
+//- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+//    _playerView.frame = (CGRect){0, UIInterfaceOrientationIsLandscape(toInterfaceOrientation) ? 0 : 100, 320, 180};
+//}
 
 //http://apache-testing.dev.kaltura.com/html5/html5lib/v2.24.rc5/mwEmbedFrame.php?&wid=_1091&uiconf_id=15065771&cache_st=1404213421&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1404213421&forceMobileHTML5=true&urid=2.24.rc5&flashvars%5Bchromecast.plugin%5D=true
-#pragma mark KPViewControllerDatasource
-- (NSString *)serverAddress {
-    NSString *serverAddress = self.domain.copy;
-    return serverAddress;
-}
 
-- (NSString *)wid {
-    NSString *wid = self.urlSchemeQueryParams[KPPlayerDatasourceWidKey];
-    return wid;
-}
-
-- (NSString *)uiConfId {
-    NSString *uiConfId = self.urlSchemeQueryParams[KPPlayerDatasourceUiConfIdKey];
-    return uiConfId;
-}
-
-- (NSString *)cacheSt {
-    NSString *cacheSt = self.urlSchemeQueryParams[KPPlayerDatasourceCacheStKey];
-    return cacheSt;
-}
-
-- (NSString *)entryId {
-    return self.urlSchemeQueryParams[KPPlayerDatasourceEntryId];
-}
-
-- (NSString *)playerId {
-    return self.urlSchemeQueryParams[KPPlayerDatasourcePlayerIdKey];
-}
-
-- (NSString *)urid {
-    return self.urlSchemeQueryParams[KPPlayerDatasourceUridKey];
-}
-
-- (KPPlayerConfig *)configFlags {
-    return self.requestConfig;
-}
 @end
