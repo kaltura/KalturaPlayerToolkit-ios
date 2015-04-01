@@ -99,7 +99,7 @@
     //Expectation
     _excectation = [self expectationWithDescription:@"Testing Async Method Works!"];
     // This is an example of a functional test case.
-    [testController setIframeUrl: @"http://localhost/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15068991&cache_st=1406638062&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1406638062&debug=true&forceMobileHTML5=true&urid=2.26.rc9&flashvars%5Bchromecast.plugin%5D=true"];
+    [testController setIframeUrl: @"http://localhost/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15068991&cache_st=1406638062&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1406638062&forceMobileHTML5=true&flashvars%5Bchromecast.plugin%5D=true"];
     
     __weak KalturaPlayerToolkit_Tests *weakSelf = self;
     [self waitForExpectationsWithTimeout:90.0 handler:^(NSError *error) {
