@@ -31,14 +31,10 @@
 - (void)viewDidAppear:(BOOL)animated {
     if ( self.player == nil ) {
         KPViewController.logLevel = KPLogLevelAll;
-//        self.player = [[KPViewController alloc] initWithFrame: playerFrame forView: self.view];
-//        
-//        [self.player setNativeFullscreen];
-//        //self.player
-//        //self.player.datasource = self;
-//        //[self.player load];
-//        [self.player setWebViewURL:iframeUrl];
-        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
+            [self presentViewController:self.player animated:YES completion:nil];
+        });
     }
 }
 
