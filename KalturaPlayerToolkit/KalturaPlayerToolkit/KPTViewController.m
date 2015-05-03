@@ -33,6 +33,9 @@
         KPViewController.logLevel = KPLogLevelAll;
         dispatch_async(dispatch_get_main_queue(), ^{
             self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
+            self.player.configuration.enableHover = YES;
+            self.player.configuration.advertiserID = @"test";
+            self.player.configuration.enableOmniture = YES;
             [self presentViewController:self.player animated:YES completion:nil];
         });
     }
