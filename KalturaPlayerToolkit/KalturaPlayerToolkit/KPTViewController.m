@@ -36,6 +36,7 @@
             self.player.configuration.enableHover = YES;
             self.player.configuration.advertiserID = @"test";
             self.player.configuration.enableOmniture = YES;
+            self.player.configuration.supportedInterfaceOrientations = UIInterfaceOrientationMaskLandscape;
             [self presentViewController:self.player animated:YES completion:nil];
         });
     }
