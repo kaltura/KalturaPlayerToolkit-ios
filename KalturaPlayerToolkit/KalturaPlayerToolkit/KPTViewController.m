@@ -37,9 +37,11 @@
             self.player.configuration.advertiserID = @"test";
             self.player.configuration.enableOmniture = YES;
 //            self.player.configuration.supportedInterfaceOrientations = UIInterfaceOrientationMaskLandscape;
-            [self performSelector:@selector(seek) withObject:nil afterDelay:12];
+//            [self performSelector:@selector(seek) withObject:nil afterDelay:12];
+            
+            
+            self.player.currentPlaybackTime = 25;
             [self presentViewController:self.player animated:YES completion:nil];
-             
         });
     }
 }
