@@ -44,12 +44,12 @@
             [self presentViewController:self.player animated:YES completion:nil];
 //            [self.player addEventListener:@"Test"
 //                                  eventID:@"Test1"
-//                                  handler:^(NSString *eventName) {
-//                NSLog(@"%@", eventName);
+//                                  handler:^(NSString *eventName, NSString *params) {
+//                NSLog(@"%@", params);
 //            }];
-            [self.player registerReadyEvent:^{
-                [self.player setKDPAttribute:@"mediaProxy" propertyName:@"mediaPlayFrom" value:@"15"];
-            }];
+//            [self.player registerReadyEvent:^{
+//                [self.player setKDPAttribute:@"mediaProxy" propertyName:@"mediaPlayFrom" value:@"15"];
+//            }];
             
         });
     }
