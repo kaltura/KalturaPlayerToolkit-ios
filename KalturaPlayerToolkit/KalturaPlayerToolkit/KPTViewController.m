@@ -34,14 +34,23 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
 //            self.player.configuration.enableHover = YES;
-            self.player.configuration.advertiserID = @"test";
+//            self.player.configuration.advertiserID = @"test";
             self.player.configuration.enableOmniture = YES;
 //            self.player.configuration.supportedInterfaceOrientations = UIInterfaceOrientationMaskLandscape;
 //            [self performSelector:@selector(seek) withObject:nil afterDelay:12];
             
             
-            self.player.currentPlaybackTime = 25;
+//            self.player.currentPlaybackTime = 25;
             [self presentViewController:self.player animated:YES completion:nil];
+//            [self.player addEventListener:@"Test"
+//                                  eventID:@"Test1"
+//                                  handler:^(NSString *eventName) {
+//                NSLog(@"%@", eventName);
+//            }];
+            [self.player registerReadyEvent:^{
+                [self.player setKDPAttribute:@"mediaProxy" propertyName:@"mediaPlayFrom" value:@"15"];
+            }];
+            
         });
     }
 }
