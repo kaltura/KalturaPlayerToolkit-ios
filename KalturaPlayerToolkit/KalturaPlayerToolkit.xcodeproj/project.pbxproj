@@ -21,7 +21,7 @@
 		B39393211A2C59DD00B32686 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39393201A2C59DD00B32686 /* AdSupport.framework */; };
 		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
 		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
-		B3A701CC1A962E38007D48DA /* KALTURAPlayerSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3CC336A1A89022700CC66CD /* KALTURAPlayerSDK.bundle */; };
+		B3A701CC1A962E38007D48DA /* KALTURAPlayerSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3CC336A1A89022700CC66CD /* KALTURAPlayerSDKResources.bundle */; };
 		B3CC336B1A8A202400CC66CD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF23DBC81990D65200842759 /* libxml2.dylib */; };
 		B3CC336C1A8A204400CC66CD /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */; };
 		B3CC336D1A8A204400CC66CD /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF23DBC51990D63E00842759 /* libstdc++.dylib */; };
@@ -293,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */,
-				B3CC336A1A89022700CC66CD /* KALTURAPlayerSDK.bundle */,
+				B3CC336A1A89022700CC66CD /* KALTURAPlayerSDKResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -361,7 +361,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KPT;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Kaltura;
 				TargetAttributes = {
 					B3410D981A7123F600275F00 = {
@@ -400,10 +400,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B3CC336A1A89022700CC66CD /* KALTURAPlayerSDK.bundle */ = {
+		B3CC336A1A89022700CC66CD /* KALTURAPlayerSDKResources.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = KALTURAPlayerSDK.bundle;
+			path = KALTURAPlayerSDKResources.bundle;
 			remoteRef = B3CC33691A89022700CC66CD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -428,7 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3A701CC1A962E38007D48DA /* KALTURAPlayerSDK.bundle in Resources */,
+				B3A701CC1A962E38007D48DA /* KALTURAPlayerSDKResources.bundle in Resources */,
 				BFEA7A1B19C6291900684FC6 /* logo.png in Resources */,
 				BFEA7A1519C6280A00684FC6 /* bg-Portrait~ipad.png in Resources */,
 				BFEA7A1719C6280A00684FC6 /* bg~iphone.png in Resources */,
@@ -598,7 +598,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "80255368-65a0-4511-a5c2-129d7340e946";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

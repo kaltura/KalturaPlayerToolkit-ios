@@ -10,8 +10,6 @@
 
 
 @interface KPTViewController ()
-
-@property (nonatomic, strong) KPPlayerConfig *requestConfig;
 @property (nonatomic, strong) UIView *playerView;
 @end
 
@@ -35,7 +33,7 @@
             self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
 //            self.player.configuration.enableHover = YES;
 //            self.player.configuration.advertiserID = @"test";
-            self.player.configuration.enableOmniture = YES;
+//            self.player.configuration.enableOmniture = YES;
 //            self.player.configuration.supportedInterfaceOrientations = UIInterfaceOrientationMaskLandscape;
 //            [self performSelector:@selector(seek) withObject:nil afterDelay:12];
             
@@ -55,10 +53,6 @@
     }
 }
              
-- (void)seek {
-    NSLog(@"%f", self.player.currentPlaybackTime);
-    self.player.currentPlaybackTime = 25;
-}
 
 
 - (void)setIframeUrl: (NSString*)url {
