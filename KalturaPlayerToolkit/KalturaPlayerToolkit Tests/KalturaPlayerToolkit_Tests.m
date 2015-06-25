@@ -64,15 +64,15 @@
                             @"adErrorEvent",
                             @"playerPlayed",
                             @"firstPlay"];
-    __weak KalturaPlayerToolkit_Tests *weakSelf = self;
-    for (NSString *eventName in eventNames) {
-        [testController.player addEventListener:eventName eventID:eventName handler:^(NSString *eventName) {
-            [weakSelf.eventLog removeObject:eventName];
-            if (!weakSelf.eventLog.count) {
-                [weakSelf.excectation fulfill];
-            }
-        }];
-    }
+//    __weak KalturaPlayerToolkit_Tests *weakSelf = self;
+//    for (NSString *eventName in eventNames) {
+//        [testController.player addEventListener:eventName eventID:eventName handler:^(NSString *eventName) {
+//            [weakSelf.eventLog removeObject:eventName];
+//            if (!weakSelf.eventLog.count) {
+//                [weakSelf.excectation fulfill];
+//            }
+//        }];
+//    }
 }
 
 - (void)appendEvent:(NSString *)event {
