@@ -27,6 +27,7 @@
 		B3CC33711A8A229F00CC66CD /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */; };
 		B3CC33751A8A272400CC66CD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CC33741A8A272400CC66CD /* libz.dylib */; };
 		B3CC33771A8A276800CC66CD /* libSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CC33761A8A276800CC66CD /* libSystem.dylib */; };
+		B3DBE4601B6FA3ED00709E00 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B372888E1A84DB340076DD33 /* CoreData.framework */; };
 		B3FA59601B32BD55006FABEC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39393201A2C59DD00B32686 /* AdSupport.framework */; };
 		BF18436519C6DD2E00E712C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA01989602500474BE5 /* Foundation.framework */; };
 		BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA21989602500474BE5 /* CoreGraphics.framework */; };
@@ -160,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DBE4601B6FA3ED00709E00 /* CoreData.framework in Frameworks */,
 				B3FA59601B32BD55006FABEC /* AdSupport.framework in Frameworks */,
 				B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */,
 				B3301D5A1AB6F07000E9778C /* GoogleCast.framework in Frameworks */,
