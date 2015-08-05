@@ -102,7 +102,7 @@ static NSURL *urlScheme;
 
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
-    [self playWithUrl: @"http://10.0.20.250/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15094011&cache_st=1418629658&entry_id=0_czq4o7u6&flashvars%5BForceFlashOnDesktopSafari%5D=true&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1418629658&forceMobileHTML5=true&urid=2.31.rc8&flashvars%5Bchromecast.plugin%5D=true"];
+    [self playWithUrl: @"http://10.0.21.18/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15094011&cache_st=1418629658&entry_id=0_czq4o7u6&flashvars%5BForceFlashOnDesktopSafari%5D=true&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1418629658&forceMobileHTML5=true&urid=2.31.rc8&flashvars%5Bchromecast.plugin%5D=true"];
     KPLogTrace(@"Exit");
 }
 
