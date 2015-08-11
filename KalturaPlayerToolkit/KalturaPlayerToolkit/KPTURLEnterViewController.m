@@ -13,7 +13,7 @@
 static NSURL *urlScheme;
 
 @interface KPTURLEnterViewController() {
-    NSString *iframeUrl;
+    KPPlayerConfig *config;
 }
 
 @end
@@ -59,10 +59,10 @@ static NSURL *urlScheme;
                                                object: nil];
 }
 
-- (void) playWithUrl:(NSString *)url {
-    iframeUrl = url;
-    [self performSegueWithIdentifier: @"showPlayer" sender: self];
-}
+//- (void) playWithUrl:(NSString *)url {
+//    iframeUrl = url;
+//    [self performSegueWithIdentifier: @"showPlayer" sender: self];
+//}
 
 - (void)appDidBecomeActive: (NSNotification *)notification {
     KPLogDebug(@"did become active notification");
@@ -73,7 +73,6 @@ static NSURL *urlScheme;
     }
     
     [self dismissViewControllerAnimated: NO completion: nil];
-    [self playWithUrl: self.class.URLScheme.absoluteString];
     self.class.URLScheme = nil;
 }
 
@@ -92,7 +91,7 @@ static NSURL *urlScheme;
             return;
         }
         
-        [(KPTViewController *)segue.destinationViewController setIframeUrl: iframeUrl];
+        [(KPTViewController *)segue.destinationViewController setConfig: config];
     }
 }
 
@@ -102,7 +101,16 @@ static NSURL *urlScheme;
 
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
-    [self playWithUrl: @"http://10.0.21.18/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15094011&cache_st=1418629658&entry_id=0_czq4o7u6&flashvars%5BForceFlashOnDesktopSafari%5D=true&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1418629658&forceMobileHTML5=true&urid=2.31.rc8&flashvars%5Bchromecast.plugin%5D=true"];
+//    [self playWithUrl: @"http://10.0.21.18/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15094011&cache_st=1418629658&entry_id=0_czq4o7u6&flashvars%5BForceFlashOnDesktopSafari%5D=true&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1418629658&forceMobileHTML5=true&urid=2.31.rc8&flashvars%5Bchromecast.plugin%5D=true"];
+    config = [[KPPlayerConfig alloc] initWithDomain:@"http://10.0.20.226/html5.kaltura/mwEmbed/mwEmbedFrame.php"
+                                           uiConfID:@"15094011"
+                                           playerID:@"kaltura_player_1418629658"];
+    config.wid = @"_1091";
+    config.cacheSt = @"1418629658";
+    config.entryId = @"0_czq4o7u6";
+    config.urid = @"2.31.rc8";
+    config.cacheSize = 0.5;
+    [self performSegueWithIdentifier: @"showPlayer" sender: self];
     KPLogTrace(@"Exit");
 }
 

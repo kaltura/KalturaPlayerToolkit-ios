@@ -29,7 +29,11 @@
 - (void)viewDidAppear:(BOOL)animated {
     if ( self.player == nil ) {
         KPViewController.logLevel = KPLogLevelTrace;
-        self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
+        if (_config) {
+            self.player = [[KPViewController alloc] initWithConfiguration:_config];
+        } else {
+            self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
+        }
         [self presentViewController:self.player animated:YES completion:nil];
     }
 }
@@ -42,6 +46,8 @@
     iframeUrl = url;
     KPLogTrace(@"Exit");
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
