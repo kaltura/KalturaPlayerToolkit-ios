@@ -71,9 +71,12 @@ static NSURL *urlScheme;
     if (!self.class.URLScheme) {
         return;
     }
+    if (!self.childViewControllers.count) {
+        [self performSegueWithIdentifier: @"showPlayer" sender: self];
+    }
     
-    [self dismissViewControllerAnimated: NO completion: nil];
-    self.class.URLScheme = nil;
+//    [self dismissViewControllerAnimated: NO completion: nil];
+//    self.class.URLScheme = nil;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,11 +90,13 @@ static NSURL *urlScheme;
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue: (UIStoryboardSegue *)segue sender: (id)sender {
     if ( [segue.identifier isEqualToString: @"showPlayer"] ) {
-        if ( ![segue.destinationViewController isKindOfClass: [KPTViewController class]] ) {
-            return;
+        if (self.class.URLScheme) {
+            [(KPTViewController *)segue.destinationViewController setIframeUrl: self.class.URLScheme.absoluteString];
+        } else {
+            [(KPTViewController *)segue.destinationViewController setConfig: config];
         }
         
-        [(KPTViewController *)segue.destinationViewController setConfig: config];
+        
     }
 }
 
@@ -102,13 +107,13 @@ static NSURL *urlScheme;
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
 //    [self playWithUrl: @"http://10.0.21.18/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15094011&cache_st=1418629658&entry_id=0_czq4o7u6&flashvars%5BForceFlashOnDesktopSafari%5D=true&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1418629658&forceMobileHTML5=true&urid=2.31.rc8&flashvars%5Bchromecast.plugin%5D=true"];
-    config = [[KPPlayerConfig alloc] initWithDomain:@"http://10.0.20.226/html5.kaltura/mwEmbed/mwEmbedFrame.php"
-                                           uiConfID:@"15094011"
+    config = [[KPPlayerConfig alloc] initWithDomain:@"http://10.0.20.198/html5.kaltura/mwEmbed/mwEmbedFrame.php"
+                                           uiConfID:@"26698911"
                                            playerID:@"kaltura_player_1418629658"];
-    config.wid = @"_1091";
-    config.cacheSt = @"1418629658";
-    config.entryId = @"0_czq4o7u6";
-    config.urid = @"2.31.rc8";
+    config.wid = @"_1831271";
+    config.cacheSt = @"1427884676";
+    config.entryId = @"1_m1m2cnoz";
+    config.urid = @"2.33.rc24";
     config.cacheSize = 0.5;
     [self performSegueWithIdentifier: @"showPlayer" sender: self];
     KPLogTrace(@"Exit");
