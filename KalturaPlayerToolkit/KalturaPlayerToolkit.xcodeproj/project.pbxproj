@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */; };
 		B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A5CE81A27219E0051DC7F /* WebKit.framework */; };
-		B3301D5A1AB6F07000E9778C /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3301D591AB6F07000E9778C /* GoogleCast.framework */; };
 		B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */; };
 		B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */; };
 		B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3F1A6C10FA00275F00 /* CoreFoundation.framework */; };
-		B3410D421A6C111300275F00 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D411A6C111300275F00 /* CoreMedia.framework */; };
 		B3410D441A6C113000275F00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D431A6C113000275F00 /* QuartzCore.framework */; };
 		B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D451A6C114400275F00 /* SystemConfiguration.framework */; };
 		B3410D9E1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3410D9D1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m */; };
 		B3410DA61A71248C00275F00 /* libKALTURAPlayerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */; };
+		B35629081B846FAD00BBFBF8 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3301D591AB6F07000E9778C /* GoogleCast.framework */; };
+		B356290C1B846FBC00BBFBF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D411A6C111300275F00 /* CoreMedia.framework */; };
 		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
 		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
 		B3A701CC1A962E38007D48DA /* KALTURAPlayerSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3CC336A1A89022700CC66CD /* KALTURAPlayerSDKResources.bundle */; };
@@ -54,6 +54,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B338C60C1B846F0E00407F92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFE5C65B19F802D600710815 /* KALTURAPlayerSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF6759DE1B3ACFCA00528718;
+			remoteInfo = KALTURAPlayerSDKNoIMA;
+		};
 		B3410D9F1A7123F600275F00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF299E951989602400474BE5 /* Project object */;
@@ -95,6 +102,7 @@
 		B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B32A5CE81A27219E0051DC7F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B3301D591AB6F07000E9778C /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../player-sdk-native-ios/PlayerSDK/GoogleCast.framework"; sourceTree = "<group>"; };
+		B338C60E1B846F4C00407F92 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B3410D261A6C0E7900275F00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -161,10 +169,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B356290C1B846FBC00BBFBF8 /* CoreMedia.framework in Frameworks */,
+				B35629081B846FAD00BBFBF8 /* GoogleCast.framework in Frameworks */,
 				B3DBE4601B6FA3ED00709E00 /* CoreData.framework in Frameworks */,
 				B3FA59601B32BD55006FABEC /* AdSupport.framework in Frameworks */,
 				B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */,
-				B3301D5A1AB6F07000E9778C /* GoogleCast.framework in Frameworks */,
 				B3CC33771A8A276800CC66CD /* libSystem.dylib in Frameworks */,
 				B3CC33751A8A272400CC66CD /* libz.dylib in Frameworks */,
 				B3CC33711A8A229F00CC66CD /* libc++.dylib in Frameworks */,
@@ -174,7 +183,6 @@
 				B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */,
 				B3410D441A6C113000275F00 /* QuartzCore.framework in Frameworks */,
 				B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */,
-				B3410D421A6C111300275F00 /* CoreMedia.framework in Frameworks */,
 				B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */,
 				B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */,
 				B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */,
@@ -231,6 +239,7 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B338C60E1B846F4C00407F92 /* MobileCoreServices.framework */,
 				B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */,
 				B3301D591AB6F07000E9778C /* GoogleCast.framework */,
 				B3CC33761A8A276800CC66CD /* libSystem.dylib */,
@@ -296,6 +305,7 @@
 			children = (
 				BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */,
 				B3CC336A1A89022700CC66CD /* KALTURAPlayerSDKResources.bundle */,
+				B338C60D1B846F0E00407F92 /* libKALTURAPlayerSDKNoIMA.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -402,6 +412,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		B338C60D1B846F0E00407F92 /* libKALTURAPlayerSDKNoIMA.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKALTURAPlayerSDKNoIMA.a;
+			remoteRef = B338C60C1B846F0E00407F92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B3CC336A1A89022700CC66CD /* KALTURAPlayerSDKResources.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
@@ -650,7 +667,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "./**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"./**",
+					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
@@ -679,7 +699,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "./**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"./**",
+					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
