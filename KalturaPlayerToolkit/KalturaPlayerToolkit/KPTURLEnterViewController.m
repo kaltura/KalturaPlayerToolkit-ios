@@ -107,14 +107,35 @@ static NSURL *urlScheme;
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
 //    [self playWithUrl: @"http://10.0.21.18/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15094011&cache_st=1418629658&entry_id=0_czq4o7u6&flashvars%5BForceFlashOnDesktopSafari%5D=true&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1418629658&forceMobileHTML5=true&urid=2.31.rc8&flashvars%5Bchromecast.plugin%5D=true"];
-    config = [[KPPlayerConfig alloc] initWithDomain:@"http://10.0.20.155/html5.kaltura/mwEmbed/mwEmbedFrame.php"
+    config = [[KPPlayerConfig alloc] initWithDomain:@"http://cdnapi.kaltura.com/html5/html5lib/v2.33/mwEmbedFrame.php"
                                            uiConfID:@"26698911"
-                                           playerID:@"kaltura_player_1418629658"];
+                                           playerID:@"kaltura_player"];
+    config.cacheSt = @"1438268329";
     config.wid = @"_1831271";
-    config.cacheSt = @"1427884676";
-    config.entryId = @"1_m1m2cnoz";
-    config.urid = @"2.33.rc24";
-    config.cacheSize = 0.5;
+    config.debug = YES;
+    config.forceMobileHTML5 = YES;
+    
+    
+    // Video Entry
+    config.entryId = @"1_o426d3i4";
+    
+    
+    
+    // Double click params
+    [config addConfigKey:@"doubleClick.adTagUrl"
+               withValue:@"http://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/6062/iab_vast_samples/skippable&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]"];
+    
+    [config addConfigKey:@"doubleClick.plugin"
+               withValue:@"true"];
+    
+    [config addConfigKey:@"doubleClick.leadWithFlash"
+               withValue:@"false"];
+    
+    
+    // Configuration for Native app
+    [config addConfigKey:@"nativeCallout.plugin"
+               withValue:@"true"];
+//    config.cacheSize = 0.5;
     [self performSegueWithIdentifier: @"showPlayer" sender: self];
     KPLogTrace(@"Exit");
 }
