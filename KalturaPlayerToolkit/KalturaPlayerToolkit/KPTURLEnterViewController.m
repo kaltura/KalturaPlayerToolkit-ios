@@ -57,6 +57,11 @@ static NSURL *urlScheme;
                                              selector: @selector(appDidBecomeActive:)
                                                  name: UIApplicationDidBecomeActiveNotification
                                                object: nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test:) name:KPMediaPlaybackStateDidChangeNotification object:nil];
+}
+
+- (void)test:(NSNotification *)noti {
+    
 }
 
 //- (void) playWithUrl:(NSString *)url {
@@ -135,7 +140,7 @@ static NSURL *urlScheme;
     // Configuration for Native app
     [config addConfigKey:@"nativeCallout.plugin"
                withValue:@"true"];
-//    config.cacheSize = 0.5;
+    config.cacheSize = 0.8;
     [self performSegueWithIdentifier: @"showPlayer" sender: self];
     KPLogTrace(@"Exit");
 }
