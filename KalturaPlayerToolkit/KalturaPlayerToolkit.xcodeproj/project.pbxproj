@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */; };
+		B31D104C1BB0087D00D3955B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31D104B1BB0087D00D3955B /* StoreKit.framework */; };
 		B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A5CE81A27219E0051DC7F /* WebKit.framework */; };
 		B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */; };
 		B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */; };
@@ -23,7 +24,6 @@
 		B37A34DE1B8715E5000408C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */; };
 		B37A34E11B8715F8000408C9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DF1B8715F8000408C9 /* EventKit.framework */; };
 		B37A34E21B8715F8000408C9 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34E01B8715F8000408C9 /* EventKitUI.framework */; };
-		B37A34E41B871610000408C9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34E31B871610000408C9 /* StoreKit.framework */; };
 		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
 		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
 		B3A701CC1A962E38007D48DA /* KALTURAPlayerSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3CC336A1A89022700CC66CD /* KALTURAPlayerSDKResources.bundle */; };
@@ -99,6 +99,8 @@
 
 /* Begin PBXFileReference section */
 		B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B31D104A1BAFFECE00D3955B /* KalturaPlayerToolkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KalturaPlayerToolkit.entitlements; sourceTree = "<group>"; };
+		B31D104B1BB0087D00D3955B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B32A5CE81A27219E0051DC7F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B3301D591AB6F07000E9778C /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../player-sdk-native-ios/PlayerSDK/GoogleCast.framework"; sourceTree = "<group>"; };
 		B338C60E1B846F4C00407F92 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -118,7 +120,6 @@
 		B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B37A34DF1B8715F8000408C9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		B37A34E01B8715F8000408C9 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		B37A34E31B871610000408C9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B39393201A2C59DD00B32686 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B39BEC7E1A0A7F890085BA26 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B39BEC901A0B77A90085BA26 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -174,7 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37A34E41B871610000408C9 /* StoreKit.framework in Frameworks */,
+				B31D104C1BB0087D00D3955B /* StoreKit.framework in Frameworks */,
 				B37A34E11B8715F8000408C9 /* EventKit.framework in Frameworks */,
 				B37A34E21B8715F8000408C9 /* EventKitUI.framework in Frameworks */,
 				B37A34DE1B8715E5000408C9 /* CoreTelephony.framework in Frameworks */,
@@ -250,7 +251,7 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B37A34E31B871610000408C9 /* StoreKit.framework */,
+				B31D104B1BB0087D00D3955B /* StoreKit.framework */,
 				B37A34DF1B8715F8000408C9 /* EventKit.framework */,
 				B37A34E01B8715F8000408C9 /* EventKitUI.framework */,
 				B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */,
@@ -291,6 +292,7 @@
 		BF299EA61989602500474BE5 /* KalturaPlayerToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				B31D104A1BAFFECE00D3955B /* KalturaPlayerToolkit.entitlements */,
 				BF299EAF1989602500474BE5 /* KPTAppDelegate.h */,
 				BF299EB01989602500474BE5 /* KPTAppDelegate.m */,
 				BF299EB21989602500474BE5 /* Main_iPhone.storyboard */,
@@ -399,6 +401,14 @@
 					};
 					BF299E9C1989602500474BE5 = {
 						DevelopmentTeam = X8RDCFJK95;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -611,6 +621,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Nissim Pardo (LMX7GF45J3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nissim Pardo (LMX7GF45J3)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -652,6 +663,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Nissim Pardo (LMX7GF45J3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nissim Pardo (LMX7GF45J3)";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -674,8 +686,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = KalturaPlayerToolkit/KalturaPlayerToolkit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"./**",
 					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
@@ -707,8 +721,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = KalturaPlayerToolkit/KalturaPlayerToolkit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"./**",
 					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
