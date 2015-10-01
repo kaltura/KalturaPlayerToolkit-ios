@@ -42,6 +42,11 @@
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    KPTURLEnterViewController.URLScheme = url;
+    return YES;
+}
+
 - (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity restorationHandler:(nonnull void (^)(NSArray * _Nullable))restorationHandler {
     KPTURLEnterViewController.URLScheme = userActivity.webpageURL;
     return YES;

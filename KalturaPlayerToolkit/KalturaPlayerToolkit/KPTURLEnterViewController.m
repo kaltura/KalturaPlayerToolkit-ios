@@ -34,13 +34,16 @@ static NSURL *urlScheme;
 #pragma mark URLScheme
 + (void)setURLScheme:(NSURL *)url {
     @synchronized(self) {
-//        NSArray *components = [url.absoluteString componentsSeparatedByString:@"?"];
-//        if (components.count == 2) {
-//            urlScheme = [NSURL URLWithString:components.lastObject];
-//        } else {
-//            urlScheme = nil;
-//        }
-        urlScheme = [NSURL URLWithString:[url.absoluteString stringByReplacingOccurrencesOfString:@"https://kalturaplay.appspot.com/play?" withString:@""]];
+        if ([url.absoluteString hasPrefix:@"kalturaplayertoolkit"]) {
+            NSArray *components = [url.absoluteString componentsSeparatedByString:@":="];
+            if (components.count == 2) {
+                urlScheme = [NSURL URLWithString:components.lastObject];
+            } else {
+                urlScheme = nil;
+            }
+        } else {
+            urlScheme = [NSURL URLWithString:[url.absoluteString stringByReplacingOccurrencesOfString:@"https://kalturaplay.appspot.com/play?" withString:@""]];
+        }
     }
 }
 
@@ -58,17 +61,7 @@ static NSURL *urlScheme;
                                              selector: @selector(appDidBecomeActive:)
                                                  name: UIApplicationDidBecomeActiveNotification
                                                object: nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test:) name:KPMediaPlaybackStateDidChangeNotification object:nil];
 }
-
-- (void)test:(NSNotification *)noti {
-    
-}
-
-//- (void) playWithUrl:(NSString *)url {
-//    iframeUrl = url;
-//    [self performSegueWithIdentifier: @"showPlayer" sender: self];
-//}
 
 - (void)appDidBecomeActive: (NSNotification *)notification {
     KPLogDebug(@"did become active notification");
