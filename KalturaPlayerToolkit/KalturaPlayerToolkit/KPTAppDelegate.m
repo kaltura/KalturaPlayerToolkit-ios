@@ -41,6 +41,15 @@
     
     return YES;
 }
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity restorationHandler:(nonnull void (^)(NSArray * _Nullable))restorationHandler {
+    KPTURLEnterViewController.URLScheme = userActivity.webpageURL;
+    return YES;
+}
+
+- (void)application:(UIApplication *)application didFailToContinueUserActivityWithType:(NSString *)userActivityType error:(NSError *)error NS_AVAILABLE_IOS(8_0) {
+    
+}
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

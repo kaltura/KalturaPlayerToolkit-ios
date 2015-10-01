@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "KPTViewController.h"
+//#import "KPTViewController.h"
 
 @interface KalturaPlayerToolkit_Tests : XCTestCase {
-    KPTViewController *testController;
+//    KPTViewController *testController;
 }
 
 @property (nonatomic, strong) XCTestExpectation *excectation;
@@ -23,11 +23,11 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-    testController = [storyBoard instantiateViewControllerWithIdentifier:@"KPTViewController"];
-    [UIApplication sharedApplication].keyWindow.rootViewController = testController;
-    
-    [self eventsBinding];
+//    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+//    testController = [storyBoard instantiateViewControllerWithIdentifier:@"KPTViewController"];
+//    [UIApplication sharedApplication].keyWindow.rootViewController = testController;
+//    
+//    [self eventsBinding];
 }
 
 - (NSMutableArray *)eventLog {
@@ -38,11 +38,11 @@
 }
 
 - (void)eventsBinding {
-    if (testController.player) {
-        [self addObserverToIMAEvents];
-    } else {
-        [self performSelector:@selector(eventsBinding) withObject:nil afterDelay:1];
-    }
+//    if (testController.player) {
+//        [self addObserverToIMAEvents];
+//    } else {
+//        [self performSelector:@selector(eventsBinding) withObject:nil afterDelay:1];
+//    }
 }
 
 - (void)addObserverToIMAEvents {
@@ -66,12 +66,12 @@
                             @"firstPlay"];
     __weak KalturaPlayerToolkit_Tests *weakSelf = self;
     for (NSString *eventName in eventNames) {
-        [testController.player addKPlayerEventListener:eventName eventID:eventName handler:^(NSString *eventName, NSString *params) {
-            [weakSelf.eventLog removeObject:eventName];
-            if (!weakSelf.eventLog.count) {
-                [weakSelf.excectation fulfill];
-            }
-        }];
+//        [testController.player addKPlayerEventListener:eventName eventID:eventName handler:^(NSString *eventName, NSString *params) {
+//            [weakSelf.eventLog removeObject:eventName];
+//            if (!weakSelf.eventLog.count) {
+//                [weakSelf.excectation fulfill];
+//            }
+//        }];
     }
 }
 
@@ -99,7 +99,7 @@
     //Expectation
     _excectation = [self expectationWithDescription:@"Testing Async Method Works!"];
     // This is an example of a functional test case.
-    [testController setIframeUrl: @"http://localhost/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15068991&cache_st=1406638062&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1406638062&forceMobileHTML5=true&flashvars%5Bchromecast.plugin%5D=true"];
+//    [testController setIframeUrl: @"http://localhost/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15068991&cache_st=1406638062&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1406638062&forceMobileHTML5=true&flashvars%5Bchromecast.plugin%5D=true"];
     
     __weak KalturaPlayerToolkit_Tests *weakSelf = self;
     [self waitForExpectationsWithTimeout:90.0 handler:^(NSError *error) {
@@ -127,7 +127,7 @@
     //Expectation
     _excectation = [self expectationWithDescription:@"Testing Async Method Works!"];
     // This is an example of a functional test case.
-    [testController setIframeUrl: @"http://localhost/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15068991&cache_st=1406638062&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1406638062&debug=true&forceMobileHTML5=true&urid=2.26.rc9&flashvars%5Bchromecast.plugin%5D=true"];
+//    [testController setIframeUrl: @"http://localhost/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15068991&cache_st=1406638062&entry_id=0_0fq66zlh&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1406638062&debug=true&forceMobileHTML5=true&urid=2.26.rc9&flashvars%5Bchromecast.plugin%5D=true"];
     __weak KalturaPlayerToolkit_Tests *weakSelf = self;
     [self waitForExpectationsWithTimeout:40.0 handler:^(NSError *error) {
         weakSelf.eventLog = nil;

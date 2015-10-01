@@ -34,12 +34,13 @@ static NSURL *urlScheme;
 #pragma mark URLScheme
 + (void)setURLScheme:(NSURL *)url {
     @synchronized(self) {
-        NSArray *components = [url.absoluteString componentsSeparatedByString:@":="];
-        if (components.count == 2) {
-            urlScheme = [NSURL URLWithString:components.lastObject];
-        } else {
-            urlScheme = nil;
-        }
+//        NSArray *components = [url.absoluteString componentsSeparatedByString:@"?"];
+//        if (components.count == 2) {
+//            urlScheme = [NSURL URLWithString:components.lastObject];
+//        } else {
+//            urlScheme = nil;
+//        }
+        urlScheme = [NSURL URLWithString:[url.absoluteString stringByReplacingOccurrencesOfString:@"https://kalturaplay.appspot.com/play?" withString:@""]];
     }
 }
 
@@ -57,7 +58,7 @@ static NSURL *urlScheme;
                                              selector: @selector(appDidBecomeActive:)
                                                  name: UIApplicationDidBecomeActiveNotification
                                                object: nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test:) name:KPMediaPlaybackStateDidChangeNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(test:) name:KPMediaPlaybackStateDidChangeNotification object:nil];
 }
 
 - (void)test:(NSNotification *)noti {
@@ -111,32 +112,41 @@ static NSURL *urlScheme;
 
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
-//    [self playWithUrl: @"http://10.0.21.18/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_1091&uiconf_id=15094011&cache_st=1418629658&entry_id=0_czq4o7u6&flashvars%5BForceFlashOnDesktopSafari%5D=true&flashvars%5BnativeCallout%5D=%7B%22plugin%22%3Atrue%7D&playerId=kaltura_player_1418629658&forceMobileHTML5=true&urid=2.31.rc8&flashvars%5Bchromecast.plugin%5D=true"];
-    config = [[KPPlayerConfig alloc] initWithDomain:@"http://cdnapi.kaltura.com"
+    config = [[KPPlayerConfig alloc] initWithDomain:@"https://cdnapisec.kaltura.com"
                                            uiConfID:@"26698911"
-                                           partnerId:@"1831271"];
+                                          partnerId:@"1831271"];
+    config.entryId = @"1_1fncksnw";
+//    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
+//    [config addConfigKey:@"LeadWithHLSOnFlash" withValue:@"true"];
+//    [config addConfigKey:@"ks"
+//withValue:@"MGNiZDE3ODc2MzBkZTYyYjNkYTlmODIyNmY4MGMyYzdlZTZkNmI1OHwxNzgyMzkxOzE3ODIzOTE7MTQ0MzE2OTA0NzswOzE0NDMwODI2NDcuODU5NTtkb3VnLndvb2RhcmRAdmlzaW9ubWVkaWFtZ210LmNvbTtzdmlldzoqOzs="];
+//    [config addConfigKey:@"referenceId" withValue:@"9780133965803-9780133965803-2015-03-11-21-05-53-808772"];
     
+//     Video Entry
+//    config.entryId = @"1_o426d3i4";
     
-    // Video Entry
-    config.entryId = @"1_o426d3i4";
+//    http://192.168.161.80/html5.kaltura/mwEmbed/mwEmbedFrame.php?&entry_id=0_uka1msg4&uiconf_id=12905712&wid=_243342&p=243342&cache_st=1292436446&flashvars%5BexternalInterfaceDisabled%5D=false&flashvars%5BnativeCallout%5D=%257B%2522plugin%2522%253Atrue%257D&playerId=kaltura_player&debug=true&forceMobileHTML5=true&urid=2.35&flashvars%5Bchromecast.plugin%5D=true
     
-    
-    
-    // Double click params
-    [config addConfigKey:@"doubleClick.adTagUrl"
-               withValue:@"http://pubads.g.doubleclick.net/gampad/ads?sz=640x360&iu=/6062/iab_vast_samples/skippable&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]"];
-    
-    [config addConfigKey:@"doubleClick.plugin"
-               withValue:@"true"];
-    
-    [config addConfigKey:@"doubleClick.leadWithFlash"
-               withValue:@"false"];
-    
+//     Double click params
+//    [config addConfigKey:@"doubleClick.adTagUrl"
+//               withValue:@"http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=%2F3510761%2FadRulesSampleTags&ciu_szs=160x600%2C300x250%2C728x90&cust_params=adrule%3Dpremidpostwithpod&impl=s&gdfp_req=1&env=vp&ad_rule=1&vid=12345&cmsid=3601&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]"];
+//    
+//    [config addConfigKey:@"doubleClick.plugin"
+//               withValue:@"true"];
+//    
+//    [config addConfigKey:@"doubleClick.path"
+//               withValue:@"http://cdnbakmi.kaltura.com/content/uiconf/ps/veria/kdp3.9.1/plugins/doubleclickPlugin.swf"];
+//    [config addConfigKey:@"adsOnReplay" withValue:@"true"];
+//    
     
     // Configuration for Native app
-    [config addConfigKey:@"nativeCallout.plugin"
-               withValue:@"true"];
-    config.cacheSize = 0.8;
+//    [config addConfigKey:@"nativeCallout.plugin"
+//               withValue:@"true"];
+//    config.cacheSize = 0.8;
+//    NSString *link = @"http://10.0.0.8/html5.kaltura/mwEmbed/mwEmbedFrame.php?&wid=_243342&uiconf_id=25550701&entry_id=0_uka1msg4&flashvars[doubleClick]={\"plugin\":true,\"path\":\"http://cdnbakmi.kaltura.com/content/uiconf/ps/veria/kdp3.9.1/plugins/doubleclickPlugin.swf\",\"adTagUrl\":\"http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/3510761/adRulesSampleTags&ciu_szs=160x600,300x250,728x90&cust_params=adrule=premidpostwithpod&impl=s&gdfp_req=1&env=vp&ad_rule=1&vid=12345&cmsid=3601&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]\",\"disableCompanionAds\":false,\"debugMode\":false}&flashvars[adsOnReplay]=true&flashvars[nativeCallout]={\"plugin\":true}&playerId=myVideoTarget&debug=true&forceMobileHTML5=true&urid=2.35&flashvars[chromecast.plugin]=true";
+//    link = [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    urlScheme = [NSURL URLWithString:link];
+    
     [self performSegueWithIdentifier: @"showPlayer" sender: self];
     KPLogTrace(@"Exit");
 }

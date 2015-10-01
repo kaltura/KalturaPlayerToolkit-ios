@@ -709,7 +709,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5ca0749e-01f8-4556-acc5-a21eafbe6365";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -743,7 +743,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5ca0749e-01f8-4556-acc5-a21eafbe6365";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};

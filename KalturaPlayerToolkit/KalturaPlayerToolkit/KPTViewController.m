@@ -9,7 +9,7 @@
 #import "KPTViewController.h"
 
 
-@interface KPTViewController ()
+@interface KPTViewController () <KPControllerDelegate>
 @property (nonatomic, strong) UIView *playerView;
 @end
 
@@ -22,7 +22,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskAll;
 }
 
@@ -37,7 +37,6 @@
         [self presentViewController:self.player animated:YES completion:nil];
     }
 }
-             
 
 
 - (void)setIframeUrl: (NSString*)url {
