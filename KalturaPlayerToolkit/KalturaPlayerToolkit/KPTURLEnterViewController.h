@@ -23,5 +23,4 @@
  */
 + (void)setURLScheme:(NSURL *)url;
 
-- (void) playWithUrl:(NSString *)url;
 @end

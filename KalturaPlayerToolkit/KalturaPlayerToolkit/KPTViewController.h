@@ -17,4 +17,6 @@
 
 - (void)setIframeUrl:(NSString*)url;
 
+@property (nonatomic, strong) KPPlayerConfig *config;
+
 @end
