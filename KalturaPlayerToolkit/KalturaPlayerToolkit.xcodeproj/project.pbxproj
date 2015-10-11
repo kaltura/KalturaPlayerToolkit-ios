@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */; };
+		B31D104C1BB0087D00D3955B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31D104B1BB0087D00D3955B /* StoreKit.framework */; };
+		B3248E3D1BCAA010005A7C2F /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DB1B87158C000408C9 /* GoogleInteractiveMediaAds.framework */; };
+		B3248E411BCAA153005A7C2F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E401BCAA153005A7C2F /* libc++.tbd */; };
+		B3248E431BCAA284005A7C2F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E421BCAA284005A7C2F /* libxml2.tbd */; };
+		B3248E451BCAA29B005A7C2F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E441BCAA29B005A7C2F /* libresolv.tbd */; };
+		B3248E471BCAA2AB005A7C2F /* libSystem.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E461BCAA2AB005A7C2F /* libSystem.tbd */; };
+		B3248E491BCAA2B7005A7C2F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E481BCAA2B7005A7C2F /* libz.tbd */; };
 		B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A5CE81A27219E0051DC7F /* WebKit.framework */; };
 		B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */; };
 		B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */; };
 		B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3F1A6C10FA00275F00 /* CoreFoundation.framework */; };
-		B3410D421A6C111300275F00 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D411A6C111300275F00 /* CoreMedia.framework */; };
 		B3410D441A6C113000275F00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D431A6C113000275F00 /* QuartzCore.framework */; };
 		B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D451A6C114400275F00 /* SystemConfiguration.framework */; };
 		B3410D9E1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3410D9D1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m */; };
 		B3410DA61A71248C00275F00 /* libKALTURAPlayerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */; };
-		B39393211A2C59DD00B32686 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39393201A2C59DD00B32686 /* AdSupport.framework */; };
+		B35629081B846FAD00BBFBF8 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3301D591AB6F07000E9778C /* GoogleCast.framework */; };
+		B356290C1B846FBC00BBFBF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D411A6C111300275F00 /* CoreMedia.framework */; };
+		B37A34D81B871579000408C9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34D71B871579000408C9 /* GoogleMobileAds.framework */; };
+		B37A34DE1B8715E5000408C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */; };
+		B37A34E11B8715F8000408C9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DF1B8715F8000408C9 /* EventKit.framework */; };
+		B37A34E21B8715F8000408C9 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34E01B8715F8000408C9 /* EventKitUI.framework */; };
 		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
 		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
 		B3A701CC1A962E38007D48DA /* KALTURAPlayerSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3CC336A1A89022700CC66CD /* KALTURAPlayerSDKResources.bundle */; };
-		B3CC336B1A8A202400CC66CD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF23DBC81990D65200842759 /* libxml2.dylib */; };
-		B3CC336C1A8A204400CC66CD /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */; };
-		B3CC336D1A8A204400CC66CD /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF23DBC51990D63E00842759 /* libstdc++.dylib */; };
-		B3CC33711A8A229F00CC66CD /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */; };
-		B3CC33751A8A272400CC66CD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CC33741A8A272400CC66CD /* libz.dylib */; };
-		B3CC33771A8A276800CC66CD /* libSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CC33761A8A276800CC66CD /* libSystem.dylib */; };
+		B3DBE4601B6FA3ED00709E00 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B372888E1A84DB340076DD33 /* CoreData.framework */; };
+		B3FA59601B32BD55006FABEC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39393201A2C59DD00B32686 /* AdSupport.framework */; };
 		BF18436519C6DD2E00E712C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA01989602500474BE5 /* Foundation.framework */; };
 		BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA21989602500474BE5 /* CoreGraphics.framework */; };
 		BF299EA51989602500474BE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA41989602500474BE5 /* UIKit.framework */; };
@@ -36,9 +44,8 @@
 		BF299EB71989602500474BE5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF299EB51989602500474BE5 /* Main_iPad.storyboard */; };
 		BF299EBA1989602500474BE5 /* KPTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF299EB91989602500474BE5 /* KPTViewController.m */; };
 		BF299EBC1989602500474BE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF299EBB1989602500474BE5 /* Images.xcassets */; };
-		BF9D4E9E1B3C26C4008550BA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D4E9C1B3C2629008550BA /* MediaPlayer.framework */; };
-		BF9D4EA31B3C287F008550BA /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9D4EA21B3C287F008550BA /* GoogleCast.framework */; };
 		BFC574AE19980ED8000511B8 /* KPTURLEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */; };
+		BFDF5FD919B33FF600C9F9AC /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDF5FD819B33FF600C9F9AC /* MediaAccessibility.framework */; };
 		BFE5C66619F802F800710815 /* libKALTURAPlayerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */; };
 		BFEA7A1019C6280A00684FC6 /* bg-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0819C6280A00684FC6 /* bg-568h@2x~iphone.png */; };
 		BFEA7A1419C6280A00684FC6 /* bg-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0C19C6280A00684FC6 /* bg-Portrait@2x~ipad.png */; };
@@ -90,8 +97,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B31D104B1BB0087D00D3955B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B3248E3E1BCAA04C005A7C2F /* KalturaPlayerToolkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KalturaPlayerToolkit.entitlements; sourceTree = "<group>"; };
+		B3248E401BCAA153005A7C2F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B3248E421BCAA284005A7C2F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		B3248E441BCAA29B005A7C2F /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B3248E461BCAA2AB005A7C2F /* libSystem.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.tbd; path = usr/lib/libSystem.tbd; sourceTree = SDKROOT; };
+		B3248E481BCAA2B7005A7C2F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B32A5CE81A27219E0051DC7F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B3301D591AB6F07000E9778C /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../player-sdk-native-ios/PlayerSDK/GoogleCast.framework"; sourceTree = "<group>"; };
+		B338C60E1B846F4C00407F92 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B3410D261A6C0E7900275F00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -103,14 +119,14 @@
 		B3410D9C1A7123F600275F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3410D9D1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalturaPlayerToolkit_Tests.m; sourceTree = "<group>"; };
 		B372888E1A84DB340076DD33 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B37A34D71B871579000408C9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		B37A34DB1B87158C000408C9 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
+		B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B37A34DF1B8715F8000408C9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		B37A34E01B8715F8000408C9 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		B39393201A2C59DD00B32686 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B39BEC7E1A0A7F890085BA26 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B39BEC901A0B77A90085BA26 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		B3CC336F1A8A209E00CC66CD /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
-		B3CC33741A8A272400CC66CD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		B3CC33761A8A276800CC66CD /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
-		BF23DBC51990D63E00842759 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		BF23DBC81990D65200842759 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF299E9D1989602500474BE5 /* KalturaPlayerToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalturaPlayerToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF299EA01989602500474BE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF299EA21989602500474BE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,15 +142,8 @@
 		BF299EB81989602500474BE5 /* KPTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPTViewController.h; sourceTree = "<group>"; };
 		BF299EB91989602500474BE5 /* KPTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPTViewController.m; sourceTree = "<group>"; };
 		BF299EBB1989602500474BE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BF299EC21989602500474BE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		BF9D4E9C1B3C2629008550BA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		BF9D4E9F1B3C2836008550BA /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleCast.framework; sourceTree = "<group>"; };
-		BF9D4EA21B3C287F008550BA /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = KalturaPlayerToolkit/GoogleCast.framework; sourceTree = "<group>"; };
-		BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		BFBE4BC61A2F43C9001CD0D5 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		BFC574AC19980ED8000511B8 /* KPTURLEnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTURLEnterViewController.h; sourceTree = "<group>"; };
 		BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTURLEnterViewController.m; sourceTree = "<group>"; };
-		BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		BFDF5FD819B33FF600C9F9AC /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
 		BFE5C65B19F802D600710815 /* KALTURAPlayerSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KALTURAPlayerSDK.xcodeproj; path = "../../player-sdk-native-ios/PlayerSDK/KALTURAPlayerSDK.xcodeproj"; sourceTree = "<group>"; };
 		BFEA7A0819C6280A00684FC6 /* bg-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-568h@2x~iphone.png"; path = "images/bg-568h@2x~iphone.png"; sourceTree = "<group>"; };
@@ -161,26 +170,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF9D4EA31B3C287F008550BA /* GoogleCast.framework in Frameworks */,
-				BF9D4E9E1B3C26C4008550BA /* MediaPlayer.framework in Frameworks */,
-				B3CC33771A8A276800CC66CD /* libSystem.dylib in Frameworks */,
-				B3CC33751A8A272400CC66CD /* libz.dylib in Frameworks */,
-				B3CC33711A8A229F00CC66CD /* libc++.dylib in Frameworks */,
-				B3CC336C1A8A204400CC66CD /* libstdc++.6.0.9.dylib in Frameworks */,
-				B3CC336D1A8A204400CC66CD /* libstdc++.dylib in Frameworks */,
-				B3CC336B1A8A202400CC66CD /* libxml2.dylib in Frameworks */,
+				B3248E491BCAA2B7005A7C2F /* libz.tbd in Frameworks */,
+				B3248E471BCAA2AB005A7C2F /* libSystem.tbd in Frameworks */,
+				B3248E451BCAA29B005A7C2F /* libresolv.tbd in Frameworks */,
+				B3248E431BCAA284005A7C2F /* libxml2.tbd in Frameworks */,
+				B3248E411BCAA153005A7C2F /* libc++.tbd in Frameworks */,
+				B3248E3D1BCAA010005A7C2F /* GoogleInteractiveMediaAds.framework in Frameworks */,
+				B37A34D81B871579000408C9 /* GoogleMobileAds.framework in Frameworks */,
+				B31D104C1BB0087D00D3955B /* StoreKit.framework in Frameworks */,
+				B37A34E11B8715F8000408C9 /* EventKit.framework in Frameworks */,
+				B37A34E21B8715F8000408C9 /* EventKitUI.framework in Frameworks */,
+				B37A34DE1B8715E5000408C9 /* CoreTelephony.framework in Frameworks */,
+				B356290C1B846FBC00BBFBF8 /* CoreMedia.framework in Frameworks */,
+				B35629081B846FAD00BBFBF8 /* GoogleCast.framework in Frameworks */,
+				B3DBE4601B6FA3ED00709E00 /* CoreData.framework in Frameworks */,
+				B3FA59601B32BD55006FABEC /* AdSupport.framework in Frameworks */,
+				B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */,
 				B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */,
 				B3410D441A6C113000275F00 /* QuartzCore.framework in Frameworks */,
 				B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */,
-				B3410D421A6C111300275F00 /* CoreMedia.framework in Frameworks */,
 				B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */,
 				B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */,
 				B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */,
-				B39393211A2C59DD00B32686 /* AdSupport.framework in Frameworks */,
 				B32A5CE91A27219E0051DC7F /* WebKit.framework in Frameworks */,
 				B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */,
 				BFE5C66619F802F800710815 /* libKALTURAPlayerSDK.a in Frameworks */,
 				BF18436519C6DD2E00E712C9 /* Foundation.framework in Frameworks */,
+				BFDF5FD919B33FF600C9F9AC /* MediaAccessibility.framework in Frameworks */,
 				BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */,
 				BF299EA51989602500474BE5 /* UIKit.framework in Frameworks */,
 			);
@@ -229,13 +245,20 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF9D4EA21B3C287F008550BA /* GoogleCast.framework */,
-				BF9D4E9F1B3C2836008550BA /* GoogleCast.framework */,
-				BF9D4E9C1B3C2629008550BA /* MediaPlayer.framework */,
+				B3248E481BCAA2B7005A7C2F /* libz.tbd */,
+				B3248E461BCAA2AB005A7C2F /* libSystem.tbd */,
+				B3248E441BCAA29B005A7C2F /* libresolv.tbd */,
+				B3248E421BCAA284005A7C2F /* libxml2.tbd */,
+				B3248E401BCAA153005A7C2F /* libc++.tbd */,
+				B31D104B1BB0087D00D3955B /* StoreKit.framework */,
+				B37A34DF1B8715F8000408C9 /* EventKit.framework */,
+				B37A34E01B8715F8000408C9 /* EventKitUI.framework */,
+				B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */,
+				B37A34DB1B87158C000408C9 /* GoogleInteractiveMediaAds.framework */,
+				B37A34D71B871579000408C9 /* GoogleMobileAds.framework */,
+				B338C60E1B846F4C00407F92 /* MobileCoreServices.framework */,
+				B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */,
 				B3301D591AB6F07000E9778C /* GoogleCast.framework */,
-				B3CC33761A8A276800CC66CD /* libSystem.dylib */,
-				B3CC33741A8A272400CC66CD /* libz.dylib */,
-				B3CC336F1A8A209E00CC66CD /* libstdc++.6.dylib */,
 				B372888E1A84DB340076DD33 /* CoreData.framework */,
 				B3410D451A6C114400275F00 /* SystemConfiguration.framework */,
 				B3410D431A6C113000275F00 /* QuartzCore.framework */,
@@ -244,20 +267,14 @@
 				B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */,
 				B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */,
 				B3410D261A6C0E7900275F00 /* CFNetwork.framework */,
-				BFBE4BC61A2F43C9001CD0D5 /* libxml2.2.dylib */,
-				BFBE4BC41A2F43C0001CD0D5 /* libc++.dylib */,
 				B39393201A2C59DD00B32686 /* AdSupport.framework */,
 				B32A5CE81A27219E0051DC7F /* WebKit.framework */,
 				B39BEC901A0B77A90085BA26 /* MessageUI.framework */,
 				B39BEC7E1A0A7F890085BA26 /* Social.framework */,
 				BFDF5FD819B33FF600C9F9AC /* MediaAccessibility.framework */,
-				BFC574B019980F14000511B8 /* libstdc++.6.0.9.dylib */,
-				BF23DBC81990D65200842759 /* libxml2.dylib */,
-				BF23DBC51990D63E00842759 /* libstdc++.dylib */,
 				BF299EA01989602500474BE5 /* Foundation.framework */,
 				BF299EA21989602500474BE5 /* CoreGraphics.framework */,
 				BF299EA41989602500474BE5 /* UIKit.framework */,
-				BF299EC21989602500474BE5 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -265,6 +282,7 @@
 		BF299EA61989602500474BE5 /* KalturaPlayerToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				B3248E3E1BCAA04C005A7C2F /* KalturaPlayerToolkit.entitlements */,
 				BF299EAF1989602500474BE5 /* KPTAppDelegate.h */,
 				BF299EB01989602500474BE5 /* KPTAppDelegate.m */,
 				BF299EB21989602500474BE5 /* Main_iPhone.storyboard */,
@@ -363,7 +381,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KPT;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Kaltura;
 				TargetAttributes = {
 					B3410D981A7123F600275F00 = {
@@ -373,6 +391,14 @@
 					};
 					BF299E9C1989602500474BE5 = {
 						DevelopmentTeam = X8RDCFJK95;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -585,6 +611,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Nissim Pardo (LMX7GF45J3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nissim Pardo (LMX7GF45J3)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -600,8 +627,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "80255368-65a0-4511-a5c2-129d7340e946";
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -626,6 +653,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Nissim Pardo (LMX7GF45J3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nissim Pardo (LMX7GF45J3)";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -635,7 +663,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PROVISIONING_PROFILE = "80255368-65a0-4511-a5c2-129d7340e946";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -648,17 +676,19 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = KalturaPlayerToolkit/KalturaPlayerToolkit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"./**",
+					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/KalturaPlayerToolkit",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"./**",
@@ -667,7 +697,6 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
-					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -682,17 +711,19 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = KalturaPlayerToolkit/KalturaPlayerToolkit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"./**",
+					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/KalturaPlayerToolkit",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"./**",
@@ -700,7 +731,6 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
-					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

@@ -9,9 +9,7 @@
 #import "KPTViewController.h"
 
 
-@interface KPTViewController ()
-
-@property (nonatomic, strong) KPPlayerConfig *requestConfig;
+@interface KPTViewController () <KPControllerDelegate>
 @property (nonatomic, strong) UIView *playerView;
 @end
 
@@ -24,17 +22,19 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskAll;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     if ( self.player == nil ) {
-        KPViewController.logLevel = KPLogLevelAll;
-        dispatch_async(dispatch_get_main_queue(), ^{
+        KPViewController.logLevel = KPLogLevelTrace;
+        if (_config) {
+            self.player = [[KPViewController alloc] initWithConfiguration:_config];
+        } else {
             self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
+        }
             [self presentViewController:self.player animated:YES completion:nil];
-        });
     }
 }
 
@@ -45,6 +45,8 @@
     iframeUrl = url;
     KPLogTrace(@"Exit");
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
