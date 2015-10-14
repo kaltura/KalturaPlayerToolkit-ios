@@ -23,7 +23,6 @@
 		B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D451A6C114400275F00 /* SystemConfiguration.framework */; };
 		B3410D9E1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3410D9D1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m */; };
 		B3410DA61A71248C00275F00 /* libKALTURAPlayerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE5C66119F802D700710815 /* libKALTURAPlayerSDK.a */; };
-		B35629081B846FAD00BBFBF8 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3301D591AB6F07000E9778C /* GoogleCast.framework */; };
 		B356290C1B846FBC00BBFBF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D411A6C111300275F00 /* CoreMedia.framework */; };
 		B37A34D81B871579000408C9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34D71B871579000408C9 /* GoogleMobileAds.framework */; };
 		B37A34DE1B8715E5000408C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */; };
@@ -32,7 +31,7 @@
 		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
 		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
 		B3A701CC1A962E38007D48DA /* KALTURAPlayerSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3CC336A1A89022700CC66CD /* KALTURAPlayerSDKResources.bundle */; };
-		B3DBE4601B6FA3ED00709E00 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B372888E1A84DB340076DD33 /* CoreData.framework */; };
+		B3CECC2E1BCAC07C00C7043D /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CECC2D1BCAC07C00C7043D /* GoogleCast.framework */; };
 		B3FA59601B32BD55006FABEC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39393201A2C59DD00B32686 /* AdSupport.framework */; };
 		BF18436519C6DD2E00E712C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA01989602500474BE5 /* Foundation.framework */; };
 		BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA21989602500474BE5 /* CoreGraphics.framework */; };
@@ -127,6 +126,7 @@
 		B39393201A2C59DD00B32686 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B39BEC7E1A0A7F890085BA26 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B39BEC901A0B77A90085BA26 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B3CECC2D1BCAC07C00C7043D /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleCast.framework; sourceTree = "<group>"; };
 		BF299E9D1989602500474BE5 /* KalturaPlayerToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalturaPlayerToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF299EA01989602500474BE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF299EA21989602500474BE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -170,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CECC2E1BCAC07C00C7043D /* GoogleCast.framework in Frameworks */,
 				B3248E491BCAA2B7005A7C2F /* libz.tbd in Frameworks */,
 				B3248E471BCAA2AB005A7C2F /* libSystem.tbd in Frameworks */,
 				B3248E451BCAA29B005A7C2F /* libresolv.tbd in Frameworks */,
@@ -182,8 +183,6 @@
 				B37A34E21B8715F8000408C9 /* EventKitUI.framework in Frameworks */,
 				B37A34DE1B8715E5000408C9 /* CoreTelephony.framework in Frameworks */,
 				B356290C1B846FBC00BBFBF8 /* CoreMedia.framework in Frameworks */,
-				B35629081B846FAD00BBFBF8 /* GoogleCast.framework in Frameworks */,
-				B3DBE4601B6FA3ED00709E00 /* CoreData.framework in Frameworks */,
 				B3FA59601B32BD55006FABEC /* AdSupport.framework in Frameworks */,
 				B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */,
 				B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */,
@@ -245,6 +244,7 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3CECC2D1BCAC07C00C7043D /* GoogleCast.framework */,
 				B3248E481BCAA2B7005A7C2F /* libz.tbd */,
 				B3248E461BCAA2AB005A7C2F /* libSystem.tbd */,
 				B3248E441BCAA29B005A7C2F /* libresolv.tbd */,
