@@ -681,8 +681,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"./**",
-					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
+					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -691,7 +690,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"./**",
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -716,8 +715,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"./**",
-					"/Users/nissopa/Desktop/KalturaIOSProjects/player-sdk-native-ios/PlayerSDK",
+					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -726,7 +724,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"./**",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
