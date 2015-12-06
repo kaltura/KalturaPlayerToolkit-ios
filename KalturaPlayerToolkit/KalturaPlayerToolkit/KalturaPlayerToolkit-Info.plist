@@ -27,7 +27,7 @@
 			<string>com.kaltura.player.toolkit</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>kalturaPlayerToolkit</string>
+				<string>kalturaplay</string>
 			</array>
 		</dict>
 	</array>
