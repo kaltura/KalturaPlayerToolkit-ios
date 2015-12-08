@@ -30,21 +30,33 @@ static NSURL *urlScheme;
     return self;
 }
 
++(NSDictionary*)parseQueryString:(NSURL*)url {
+    
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+    for (NSString *pair in [url.query componentsSeparatedByString:@"&"]) {
+        NSArray* keyValue = [pair componentsSeparatedByString:@"="];
+        NSString *key = keyValue.firstObject;
+        NSString *value = keyValue.lastObject;
+        
+        value = [value stringByReplacingOccurrencesOfString:@"+" withString:@" "];
+        value = [value stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        
+        dict[key] = value;
+    }
+    
+    return dict;
+}
+
 
 #pragma mark URLScheme
 + (void)setURLScheme:(NSURL *)url {
     @synchronized(self) {
-        if ([url.absoluteString hasPrefix:@"kalturaplayertoolkit"]) {
-        NSArray *components = [url.absoluteString componentsSeparatedByString:@":="];
-        if (components.count == 2) {
-            urlScheme = [NSURL URLWithString:components.lastObject];
-        } else {
-            urlScheme = nil;
+        NSDictionary* parameters = [self parseQueryString:url];
+        NSString* embedFrameURL = parameters[@"embedFrameURL"];
+        if (embedFrameURL) {
+            urlScheme = [NSURL URLWithString:embedFrameURL];
         }
-        } else {
-            urlScheme = [NSURL URLWithString:[url.absoluteString stringByReplacingOccurrencesOfString:@"https://kalturaplay.appspot.com/play?" withString:@""]];
     }
-}
 }
 
 + (NSURL *)URLScheme {
