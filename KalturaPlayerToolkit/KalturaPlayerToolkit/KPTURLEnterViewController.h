@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QRCodeReaderDelegate.h"
 
-@interface KPTURLEnterViewController : UIViewController
+@interface KPTURLEnterViewController : UIViewController<QRCodeReaderDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
 
