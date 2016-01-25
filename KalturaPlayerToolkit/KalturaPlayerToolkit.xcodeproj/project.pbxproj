@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F2292E51C271A0800A3CB8D /* 0_5zfjxyk3_0_ek1xeib2_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5F2292E41C271A0800A3CB8D /* 0_5zfjxyk3_0_ek1xeib2_2.mp4 */; };
+		5F60F1FD1C2722200079D752 /* KALTURAPlayerSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFDBD6D81C1591DC00DC3629 /* KALTURAPlayerSDKResources.bundle */; };
+		5F64F4C61C30085F00BF6642 /* KPTAudioSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F64F4C51C30085F00BF6642 /* KPTAudioSelect.m */; };
+		5F64F4CB1C300BDB00BF6642 /* KPTAudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F64F4CA1C300BDB00BF6642 /* KPTAudioPlayerViewController.m */; };
+		5F64F4CE1C3020FF00BF6642 /* KPTRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F64F4CD1C3020FF00BF6642 /* KPTRequestBuilder.m */; };
+		5FF325091C318A32003446A1 /* KPTAudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF325041C318A32003446A1 /* KPTAudioPlayerViewController.m */; };
+		5FF3250A1C318A32003446A1 /* KPTAudioSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF325061C318A32003446A1 /* KPTAudioSelect.m */; };
+		5FF3250B1C318A32003446A1 /* KPTRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF325081C318A32003446A1 /* KPTRequestBuilder.m */; };
 		B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */; };
 		B31D104C1BB0087D00D3955B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31D104B1BB0087D00D3955B /* StoreKit.framework */; };
 		B3248E3D1BCAA010005A7C2F /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DB1B87158C000408C9 /* GoogleInteractiveMediaAds.framework */; };
@@ -56,6 +64,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5F2292EA1C271B8300A3CB8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDBD6CE1C1591DC00DC3629 /* KALTURAPlayerSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B372892D1A8787D00076DD33;
+			remoteInfo = KALTURAPlayerSDKResources;
+		};
 		B3410D9F1A7123F600275F00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF299E951989602400474BE5 /* Project object */;
@@ -87,6 +102,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F2292E41C271A0800A3CB8D /* 0_5zfjxyk3_0_ek1xeib2_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0_5zfjxyk3_0_ek1xeib2_2.mp4; sourceTree = "<group>"; };
+		5F64F4C41C30085F00BF6642 /* KPTAudioSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTAudioSelect.h; sourceTree = "<group>"; };
+		5F64F4C51C30085F00BF6642 /* KPTAudioSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTAudioSelect.m; sourceTree = "<group>"; };
+		5F64F4C91C300BDB00BF6642 /* KPTAudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTAudioPlayerViewController.h; sourceTree = "<group>"; };
+		5F64F4CA1C300BDB00BF6642 /* KPTAudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTAudioPlayerViewController.m; sourceTree = "<group>"; };
+		5F64F4CC1C3020FF00BF6642 /* KPTRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTRequestBuilder.h; sourceTree = "<group>"; };
+		5F64F4CD1C3020FF00BF6642 /* KPTRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTRequestBuilder.m; sourceTree = "<group>"; };
+		5FF325031C318A32003446A1 /* KPTAudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KPTAudioPlayerViewController.h; path = ../../../soundSHELL/BarcodeScanner/KPTAudioPlayerViewController.h; sourceTree = "<group>"; };
+		5FF325041C318A32003446A1 /* KPTAudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KPTAudioPlayerViewController.m; path = ../../../soundSHELL/BarcodeScanner/KPTAudioPlayerViewController.m; sourceTree = "<group>"; };
+		5FF325051C318A32003446A1 /* KPTAudioSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KPTAudioSelect.h; path = ../../../soundSHELL/BarcodeScanner/KPTAudioSelect.h; sourceTree = "<group>"; };
+		5FF325061C318A32003446A1 /* KPTAudioSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KPTAudioSelect.m; path = ../../../soundSHELL/BarcodeScanner/KPTAudioSelect.m; sourceTree = "<group>"; };
+		5FF325071C318A32003446A1 /* KPTRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KPTRequestBuilder.h; path = ../../../soundSHELL/BarcodeScanner/KPTRequestBuilder.h; sourceTree = "<group>"; };
+		5FF325081C318A32003446A1 /* KPTRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KPTRequestBuilder.m; path = ../../../soundSHELL/BarcodeScanner/KPTRequestBuilder.m; sourceTree = "<group>"; };
 		B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B31D104B1BB0087D00D3955B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B3248E3E1BCAA04C005A7C2F /* KalturaPlayerToolkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KalturaPlayerToolkit.entitlements; sourceTree = "<group>"; };
@@ -272,6 +300,7 @@
 		BF299EA61989602500474BE5 /* KalturaPlayerToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				5F2292E41C271A0800A3CB8D /* 0_5zfjxyk3_0_ek1xeib2_2.mp4 */,
 				B3248E3E1BCAA04C005A7C2F /* KalturaPlayerToolkit.entitlements */,
 				BF299EAF1989602500474BE5 /* KPTAppDelegate.h */,
 				BF299EB01989602500474BE5 /* KPTAppDelegate.m */,
@@ -281,6 +310,18 @@
 				BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */,
 				BF299EB81989602500474BE5 /* KPTViewController.h */,
 				BF299EB91989602500474BE5 /* KPTViewController.m */,
+				5F64F4C41C30085F00BF6642 /* KPTAudioSelect.h */,
+				5F64F4C51C30085F00BF6642 /* KPTAudioSelect.m */,
+				5F64F4C91C300BDB00BF6642 /* KPTAudioPlayerViewController.h */,
+				5F64F4CA1C300BDB00BF6642 /* KPTAudioPlayerViewController.m */,
+				5F64F4CC1C3020FF00BF6642 /* KPTRequestBuilder.h */,
+				5F64F4CD1C3020FF00BF6642 /* KPTRequestBuilder.m */,
+				5FF325031C318A32003446A1 /* KPTAudioPlayerViewController.h */,
+				5FF325041C318A32003446A1 /* KPTAudioPlayerViewController.m */,
+				5FF325051C318A32003446A1 /* KPTAudioSelect.h */,
+				5FF325061C318A32003446A1 /* KPTAudioSelect.m */,
+				5FF325071C318A32003446A1 /* KPTRequestBuilder.h */,
+				5FF325081C318A32003446A1 /* KPTRequestBuilder.m */,
 				BF299EBB1989602500474BE5 /* Images.xcassets */,
 				BFEA7A1919C6281400684FC6 /* images */,
 				BF299EA71989602500474BE5 /* Supporting Files */,
@@ -356,6 +397,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5F2292EB1C271B8300A3CB8D /* PBXTargetDependency */,
 				BFDBD6DA1C1591E900DC3629 /* PBXTargetDependency */,
 			);
 			name = KalturaPlayerToolkit;
@@ -445,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F60F1FD1C2722200079D752 /* KALTURAPlayerSDKResources.bundle in Resources */,
 				BFEA7A1B19C6291900684FC6 /* logo.png in Resources */,
 				BFEA7A1519C6280A00684FC6 /* bg-Portrait~ipad.png in Resources */,
 				BFEA7A1719C6280A00684FC6 /* bg~iphone.png in Resources */,
@@ -452,6 +495,7 @@
 				BF299EBC1989602500474BE5 /* Images.xcassets in Resources */,
 				BFEA7A1419C6280A00684FC6 /* bg-Portrait@2x~ipad.png in Resources */,
 				BFEA7A1619C6280A00684FC6 /* bg@2x~iphone.png in Resources */,
+				5F2292E51C271A0800A3CB8D /* 0_5zfjxyk3_0_ek1xeib2_2.mp4 in Resources */,
 				BFEA7A2319C6CFEF00684FC6 /* logo@2x.png in Resources */,
 				BF299EB41989602500474BE5 /* Main_iPhone.storyboard in Resources */,
 				BFEA7A2119C6CFEF00684FC6 /* demo_button.png in Resources */,
@@ -476,9 +520,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F64F4CE1C3020FF00BF6642 /* KPTRequestBuilder.m in Sources */,
 				BF299EBA1989602500474BE5 /* KPTViewController.m in Sources */,
+				5F64F4C61C30085F00BF6642 /* KPTAudioSelect.m in Sources */,
+				5FF3250B1C318A32003446A1 /* KPTRequestBuilder.m in Sources */,
+				5F64F4CB1C300BDB00BF6642 /* KPTAudioPlayerViewController.m in Sources */,
+				5FF3250A1C318A32003446A1 /* KPTAudioSelect.m in Sources */,
 				BFC574AE19980ED8000511B8 /* KPTURLEnterViewController.m in Sources */,
 				BF299EB11989602500474BE5 /* KPTAppDelegate.m in Sources */,
+				5FF325091C318A32003446A1 /* KPTAudioPlayerViewController.m in Sources */,
 				BF299EAD1989602500474BE5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +536,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5F2292EB1C271B8300A3CB8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KALTURAPlayerSDKResources;
+			targetProxy = 5F2292EA1C271B8300A3CB8D /* PBXContainerItemProxy */;
+		};
 		B3410DA01A7123F600275F00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BF299E9C1989602500474BE5 /* KalturaPlayerToolkit */;

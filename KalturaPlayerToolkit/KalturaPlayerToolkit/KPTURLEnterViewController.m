@@ -120,6 +120,7 @@ static NSURL *urlScheme;
     config = [[KPPlayerConfig alloc] initWithDomain:@"https://cdnapisec.kaltura.com"
                                            uiConfID:@"26698911"
                                           partnerId:@"1831271"];
+    config.cacheSize = 1.0;
     config.entryId = @"1_1fncksnw";
 //    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
 //    [config addConfigKey:@"LeadWithHLSOnFlash" withValue:@"true"];
@@ -152,7 +153,8 @@ static NSURL *urlScheme;
 //    link = [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 //    urlScheme = [NSURL URLWithString:link];
     
-    [self performSegueWithIdentifier: @"showPlayer" sender: self];
+//    [self performSegueWithIdentifier: @"showPlayer" sender: self];
+    [self performSegueWithIdentifier: @"ShowAudios" sender: self];
     KPLogTrace(@"Exit");
 }
 

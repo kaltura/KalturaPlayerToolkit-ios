@@ -4,11 +4,13 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9D8688BA0939DA65BD9D56AE0DD46A9B17DF4B0D" : 0,
     "8296827830AC58E2D9B998EE954287640082D651" : 0,
     "C8599C6442C2751A61AE351C616FCB28200CC541" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "312B9EA6-C572-4AD8-AC31-66F22BBDD2D6",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9D8688BA0939DA65BD9D56AE0DD46A9B17DF4B0D" : "soundSHELL\/",
     "8296827830AC58E2D9B998EE954287640082D651" : "KalturaPlayerToolkit-ios",
     "C8599C6442C2751A61AE351C616FCB28200CC541" : "player-sdk-native-ios"
   },
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kaltura\/KalturaPlayerToolkit-ios.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8296827830AC58E2D9B998EE954287640082D651"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ElizaSapir\/soundSHELL",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9D8688BA0939DA65BD9D56AE0DD46A9B17DF4B0D"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kaltura\/player-sdk-native-ios.git",

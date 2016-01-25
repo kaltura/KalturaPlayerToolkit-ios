@@ -9,7 +9,7 @@
 #import "KPTViewController.h"
 
 
-@interface KPTViewController () <KPControllerDelegate>
+@interface KPTViewController () <KPControllerDelegate, KPViewControllerDatasource>
 @property (nonatomic, strong) UIView *playerView;
 @end
 
@@ -34,7 +34,8 @@
         } else {
             self.player = [[KPViewController alloc] initWithURL:[NSURL URLWithString:iframeUrl]];
         }
-            [self presentViewController:self.player animated:YES completion:nil];
+        self.player.datasource = self;
+        [self presentViewController:self.player animated:YES completion:nil];
     }
 }
 
@@ -45,6 +46,12 @@
     iframeUrl = url;
     KPLogTrace(@"Exit");
 }
+
+- (NSString *)localURLForEntryId:(NSString *)entryId {
+    NSURL *url = [NSBundle.mainBundle URLForResource:@"0_5zfjxyk3_0_ek1xeib2_2" withExtension:@"mp4"];
+    return url.absoluteString;
+}
+
 
 
 
