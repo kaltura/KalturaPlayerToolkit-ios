@@ -42,6 +42,7 @@
 		BF4FEEA51BEB955D00E9033C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA01989602500474BE5 /* Foundation.framework */; };
 		BF4FEEA61BEB96B700E9033C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A5CE81A27219E0051DC7F /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BFC574AE19980ED8000511B8 /* KPTURLEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */; };
+		BFCCBA2E1C5E4C140086AE9A /* KALTURAPlayerSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFDBD6D81C1591DC00DC3629 /* KALTURAPlayerSDKResources.bundle */; };
 		BFDBD6DB1C1591F000DC3629 /* libKALTURAPlayerSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDBD6D61C1591DC00DC3629 /* libKALTURAPlayerSDK.a */; };
 		BFDF5FD919B33FF600C9F9AC /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDF5FD819B33FF600C9F9AC /* MediaAccessibility.framework */; };
 		BFEA7A1019C6280A00684FC6 /* bg-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0819C6280A00684FC6 /* bg-568h@2x~iphone.png */; };
@@ -370,7 +371,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KPT;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Kaltura;
 				TargetAttributes = {
 					B3410D981A7123F600275F00 = {
@@ -447,6 +448,7 @@
 			files = (
 				BFEA7A1B19C6291900684FC6 /* logo.png in Resources */,
 				BFEA7A1519C6280A00684FC6 /* bg-Portrait~ipad.png in Resources */,
+				BFCCBA2E1C5E4C140086AE9A /* KALTURAPlayerSDKResources.bundle in Resources */,
 				BFEA7A1719C6280A00684FC6 /* bg~iphone.png in Resources */,
 				BF299EB71989602500474BE5 /* Main_iPad.storyboard in Resources */,
 				BF299EBC1989602500474BE5 /* Images.xcassets in Resources */,
@@ -547,6 +549,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KalturaPlayerToolkit.app/KalturaPlayerToolkit";
@@ -569,6 +572,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KalturaPlayerToolkit.app/KalturaPlayerToolkit";
@@ -595,6 +599,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -680,6 +685,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaltura.playertoolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -713,6 +719,7 @@
 					"-ObjC",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaltura.playertoolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;

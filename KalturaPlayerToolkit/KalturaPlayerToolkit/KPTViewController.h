@@ -9,14 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <KALTURAPlayerSDK/KPViewController.h>
 
-@interface KPTViewController : UIViewController {
+@interface KPTViewController : UIViewController <KPViewControllerDelegate> {
     NSString *iframeUrl;
 }
 
-@property (retain, nonatomic) KPViewController *player;
+@property (strong, nonatomic) KPViewController *player;
+@property (nonatomic, strong) KPPlayerConfig *config;
 
 - (void)setIframeUrl:(NSString*)url;
-
-@property (nonatomic, strong) KPPlayerConfig *config;
 
 @end

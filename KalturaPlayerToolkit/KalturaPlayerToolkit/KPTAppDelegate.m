@@ -11,8 +11,8 @@
 
 
 @implementation KPTAppDelegate
-//@synthesize urlSchemeParameters;
-@synthesize urlSchemeIframeUrlParam;
+
+static NSURL *urlScheme;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -20,36 +20,52 @@
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    
-//    NSMutableDictionary *parameters = [NSMutableDictionary new];
-//    for (NSString *param in [[url query] componentsSeparatedByString:@"&"]) {
-//        NSArray *paramSplitted = [param componentsSeparatedByString:@"="];
-//        // in url space (' ') is represented by '+'
-//        [parameters setObject:[[[paramSplitted objectAtIndex:1] stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] forKey:[paramSplitted objectAtIndex:0]];
-//    }
-
+// iOS8
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {   
+    self.URLScheme = url;
     KPTURLEnterViewController.URLScheme = url;
-//    NSArray *paramSplitted = [[url query] componentsSeparatedByString:@":="];
-////    paramSplitted = [[url query] componentsSeparatedByString:@"="];
-//    
-//    
-//    NSLog(@"%@", [paramSplitted objectAtIndex:1]);
-//    urlSchemeIframeUrlParam = [paramSplitted objectAtIndex:1];
-////    urlSchemeParameters = [[NSDictionary alloc] initWithDictionary:parameters];
 
-    
     return YES;
 }
-							
+
+// iOS7
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     KPTURLEnterViewController.URLScheme = url;
     return YES;
 }
 
+// iOS9
 - (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity restorationHandler:(nonnull void (^)(NSArray * _Nullable))restorationHandler {
-    KPTURLEnterViewController.URLScheme = userActivity.webpageURL;
+    self.iframeUrl = userActivity.webpageURL;
+    self.URLScheme = userActivity.webpageURL;
     return YES;
+}
+
+- (void)setURLScheme:(NSURL *)url {
+    @synchronized(self) {
+        NSDictionary* parameters = [self parseQueryString:url];
+        NSString* embedFrameURL = parameters[@"embedFrameURL"];
+        if (embedFrameURL) {
+            self.iframeUrl = [NSURL URLWithString:embedFrameURL];
+        }
+    }
+}
+
+- (NSDictionary*)parseQueryString:(NSURL*)url {
+    
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+    for (NSString *pair in [url.query componentsSeparatedByString:@"&"]) {
+        NSArray* keyValue = [pair componentsSeparatedByString:@"="];
+        NSString *key = keyValue.firstObject;
+        NSString *value = keyValue.lastObject;
+        
+        value = [value stringByReplacingOccurrencesOfString:@"+" withString:@" "];
+        value = [value stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        
+        dict[key] = value;
+    }
+    
+    return dict;
 }
 
 - (void)application:(UIApplication *)application didFailToContinueUserActivityWithType:(NSString *)userActivityType error:(NSError *)error NS_AVAILABLE_IOS(8_0) {

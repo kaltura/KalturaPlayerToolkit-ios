@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 //@property (nonatomic, strong) NSDictionary *urlSchemeParameters;
-@property (nonatomic, strong) NSString *urlSchemeIframeUrlParam;
+@property (nonatomic, strong) NSURL *iframeUrl;
 
 @end

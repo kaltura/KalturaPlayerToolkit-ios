@@ -22,5 +22,6 @@
  *  @param NSURL the url from the urlScheme stored into static var
  */
 + (void)setURLScheme:(NSURL *)url;
++ (NSURL *)URLScheme;
 
 @end
