@@ -13,53 +13,104 @@
 
 #pragma mark IMAAdEventType
 
-/// Different event types sent by the IMAAdsManager to its delegate.
-typedef enum {
-  /// Ad break ready.
+/**
+ *  Different event types sent by the IMAAdsManager to its delegate.
+ */
+typedef NS_ENUM(NSInteger, IMAAdEventType){
+  /**
+   *  Ad break ready.
+   */
   kIMAAdEvent_AD_BREAK_READY,
-  /// All ads managed by the ads manager have completed.
+  /**
+   *  Ad break ended (only used for server side ad insertion).
+   */
+  kIMAAdEvent_AD_BREAK_ENDED,
+  /**
+   *  Ad break started (only used for server side ad insertion).
+   */
+  kIMAAdEvent_AD_BREAK_STARTED,
+  /**
+   *  All ads managed by the ads manager have completed.
+   */
   kIMAAdEvent_ALL_ADS_COMPLETED,
-  /// Ad clicked.
+  /**
+   *  Ad clicked.
+   */
   kIMAAdEvent_CLICKED,
-  /// Single ad has finished.
+  /**
+   *  Single ad has finished.
+   */
   kIMAAdEvent_COMPLETE,
-  /// First quartile of a linear ad was reached.
+  /**
+   *  First quartile of a linear ad was reached.
+   */
   kIMAAdEvent_FIRST_QUARTILE,
-  /// An ad was loaded.
+  /**
+   *  An ad was loaded.
+   */
   kIMAAdEvent_LOADED,
-  /// Midpoint of a linear ad was reached.
+  /**
+   *  Midpoint of a linear ad was reached.
+   */
   kIMAAdEvent_MIDPOINT,
-  /// Ad paused.
+  /**
+   *  Ad paused.
+   */
   kIMAAdEvent_PAUSE,
-  /// Ad resumed.
+  /**
+   *  Ad resumed.
+   */
   kIMAAdEvent_RESUME,
-  /// Ad has skipped.
+  /**
+   *  Ad has skipped.
+   */
   kIMAAdEvent_SKIPPED,
-  /// Ad has started.
+  /**
+   *  Ad has started.
+   */
   kIMAAdEvent_STARTED,
-  /// Ad tapped.
+  /**
+   *  Ad tapped.
+   */
   kIMAAdEvent_TAPPED,
-  /// Third quartile of a linear ad was reached.
+  /**
+   *  Third quartile of a linear ad was reached.
+   */
   kIMAAdEvent_THIRD_QUARTILE
-} IMAAdEventType;
+};
 
 #pragma mark - Ad Data Keys
 
-/// The key for the time in seconds when the AD_BREAK_READY event fired.
+/**
+ *  The key for the time in seconds when the AD_BREAK_READY event fired.
+ */
 static NSString *const kIMAAdBreakTime = @"kIMAAdBreakTime";
 
 #pragma mark - IMAAdEvent
 
-/// Simple data class used to transport ad playback information.
+/**
+ *  Simple data class used to transport ad playback information.
+ */
 @interface IMAAdEvent : NSObject
 
-/// Type of the event.
+/**
+ *  Type of the event.
+ */
 @property(nonatomic, readonly) IMAAdEventType type;
 
-/// The current ad that is playing or just played. Can be nil.
+/**
+ *  Stringified type of the event.
+ */
+@property(nonatomic, copy, readonly) NSString *typeString;
+
+/**
+ *  The current ad that is playing or just played. Can be nil.
+ */
 @property(nonatomic, strong, readonly) IMAAd *ad;
 
-/// Extra data about the ad. Can be nil.
+/**
+ *  Extra data about the ad. Can be nil.
+ */
 @property(nonatomic, copy, readonly) NSDictionary *adData;
 
 - (instancetype)init NS_UNAVAILABLE;

@@ -132,11 +132,11 @@ static NSURL *urlScheme;
 
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
-    config = [[KPPlayerConfig alloc] initWithDomain:@"http://cdnapi.kaltura.com/"
-                                           uiConfID:@"32855491"
-                                          partnerId:@"1424501"];
-    config.entryId = @"1_jqlytpfw";
-    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
+    config = [[KPPlayerConfig alloc] initWithDomain:@"http://kgit.html5video.org/tags/v2.41.rc5/mwEmbedFrame.php"
+                                           uiConfID:@"29802711"
+                                          partnerId:@"1831271"];
+    config.entryId = @"1_o426d3i4";
+//    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
     [self performSegueWithIdentifier: @"showPlayer" sender: self];
     KPLogTrace(@"Exit");
 }

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FDBFCC91C74B3E000EF3594 /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDBFCC81C74B3E000EF3594 /* GoogleInteractiveMediaAds.framework */; };
 		B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */; };
 		B31D104C1BB0087D00D3955B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31D104B1BB0087D00D3955B /* StoreKit.framework */; };
-		B3248E3D1BCAA010005A7C2F /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DB1B87158C000408C9 /* GoogleInteractiveMediaAds.framework */; };
 		B3248E411BCAA153005A7C2F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E401BCAA153005A7C2F /* libc++.tbd */; };
 		B3248E431BCAA284005A7C2F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E421BCAA284005A7C2F /* libxml2.tbd */; };
 		B3248E451BCAA29B005A7C2F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E441BCAA29B005A7C2F /* libresolv.tbd */; };
@@ -22,7 +22,6 @@
 		B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D451A6C114400275F00 /* SystemConfiguration.framework */; };
 		B3410D9E1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3410D9D1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m */; };
 		B356290C1B846FBC00BBFBF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D411A6C111300275F00 /* CoreMedia.framework */; };
-		B37A34D81B871579000408C9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34D71B871579000408C9 /* GoogleMobileAds.framework */; };
 		B37A34DE1B8715E5000408C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */; };
 		B37A34E11B8715F8000408C9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DF1B8715F8000408C9 /* EventKit.framework */; };
 		B37A34E21B8715F8000408C9 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34E01B8715F8000408C9 /* EventKitUI.framework */; };
@@ -88,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FDBFCC81C74B3E000EF3594 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 		B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B31D104B1BB0087D00D3955B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B3248E3E1BCAA04C005A7C2F /* KalturaPlayerToolkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KalturaPlayerToolkit.entitlements; sourceTree = "<group>"; };
@@ -97,7 +97,6 @@
 		B3248E461BCAA2AB005A7C2F /* libSystem.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.tbd; path = usr/lib/libSystem.tbd; sourceTree = SDKROOT; };
 		B3248E481BCAA2B7005A7C2F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B32A5CE81A27219E0051DC7F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		B3301D591AB6F07000E9778C /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../player-sdk-native-ios/PlayerSDK/GoogleCast.framework"; sourceTree = "<group>"; };
 		B338C60E1B846F4C00407F92 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B3410D261A6C0E7900275F00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -110,8 +109,6 @@
 		B3410D9C1A7123F600275F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3410D9D1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KalturaPlayerToolkit_Tests.m; sourceTree = "<group>"; };
 		B372888E1A84DB340076DD33 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		B37A34D71B871579000408C9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		B37A34DB1B87158C000408C9 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 		B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B37A34DF1B8715F8000408C9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		B37A34E01B8715F8000408C9 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
@@ -161,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDBFCC91C74B3E000EF3594 /* GoogleInteractiveMediaAds.framework in Frameworks */,
 				BFDBD6DB1C1591F000DC3629 /* libKALTURAPlayerSDK.a in Frameworks */,
 				B3248E491BCAA2B7005A7C2F /* libz.tbd in Frameworks */,
 				B3248E471BCAA2AB005A7C2F /* libSystem.tbd in Frameworks */,
@@ -170,8 +168,6 @@
 				BF4FEEA51BEB955D00E9033C /* Foundation.framework in Frameworks */,
 				BF4FEEA61BEB96B700E9033C /* WebKit.framework in Frameworks */,
 				B3CECC2E1BCAC07C00C7043D /* GoogleCast.framework in Frameworks */,
-				B3248E3D1BCAA010005A7C2F /* GoogleInteractiveMediaAds.framework in Frameworks */,
-				B37A34D81B871579000408C9 /* GoogleMobileAds.framework in Frameworks */,
 				B31D104C1BB0087D00D3955B /* StoreKit.framework in Frameworks */,
 				B37A34E11B8715F8000408C9 /* EventKit.framework in Frameworks */,
 				B37A34E21B8715F8000408C9 /* EventKitUI.framework in Frameworks */,
@@ -235,6 +231,7 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FDBFCC81C74B3E000EF3594 /* GoogleInteractiveMediaAds.framework */,
 				B3CECC2D1BCAC07C00C7043D /* GoogleCast.framework */,
 				B3248E481BCAA2B7005A7C2F /* libz.tbd */,
 				B3248E461BCAA2AB005A7C2F /* libSystem.tbd */,
@@ -245,11 +242,8 @@
 				B37A34DF1B8715F8000408C9 /* EventKit.framework */,
 				B37A34E01B8715F8000408C9 /* EventKitUI.framework */,
 				B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */,
-				B37A34DB1B87158C000408C9 /* GoogleInteractiveMediaAds.framework */,
-				B37A34D71B871579000408C9 /* GoogleMobileAds.framework */,
 				B338C60E1B846F4C00407F92 /* MobileCoreServices.framework */,
 				B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */,
-				B3301D591AB6F07000E9778C /* GoogleCast.framework */,
 				B372888E1A84DB340076DD33 /* CoreData.framework */,
 				B3410D451A6C114400275F00 /* SystemConfiguration.framework */,
 				B3410D431A6C113000275F00 /* QuartzCore.framework */,
