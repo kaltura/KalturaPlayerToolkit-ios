@@ -12,10 +12,16 @@
 
 #pragma mark IMAUiElementType
 
-/// Different UI elements that can be customized.
-typedef enum {
-  /// Ad attribution UI element.
+/**
+ *  Different UI elements that can be customized.
+ */
+typedef NS_ENUM(NSInteger, IMAUiElementType){
+  /**
+   *  Ad attribution UI element.
+   */
   kIMAUiElements_AD_ATTRIBUTION,
-  /// Ad countdown element.
+  /**
+   *  Ad countdown element.
+   */
   kIMAUiElements_COUNTDOWN
-} IMAUiElementType;
+};

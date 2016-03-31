@@ -9,18 +9,30 @@
 
 #import <UIKit/UIKit.h>
 
-/// The IMAAdDisplayContainer is responsible for managing the ad container view
-/// and companion ad slots used for ad playback.
+/**
+ *  The IMAAdDisplayContainer is responsible for managing the ad container view
+ *  and companion ad slots used for ad playback.
+ */
 @interface IMAAdDisplayContainer : NSObject
 
-/// View containing the video display and ad related UI.
+/**
+ *  View containing the video display and ad related UI.
+ */
 @property(nonatomic, strong, readonly) UIView *adContainer;
 
-/// List of companion ad slots. Can be nil or empty.
+/**
+ *  List of companion ad slots. Can be nil or empty.
+ */
 @property(nonatomic, copy, readonly) NSArray *companionSlots;
 
-/// Initializes with the |adContainer| and |companionSlots| to use for ad
-/// playback. |companionSlots| is an array of IMACompanionAdSlots.
+/**
+ *  Initializes IMAAdDisplayContainer for rendering the ad and displaying the ad UI.
+ *
+ *  @param adContainer    the UIView where the ad will be rendered. Fills the view's bounds
+ *  @param companionSlots the array of IMACompanionAdSlots. Can be nil or empty.
+ *
+ *  @return the IMAAdDisplayContainer instance
+ */
 - (instancetype)initWithAdContainer:(UIView *)adContainer
                      companionSlots:(NSArray *)companionSlots NS_DESIGNATED_INITIALIZER;
 

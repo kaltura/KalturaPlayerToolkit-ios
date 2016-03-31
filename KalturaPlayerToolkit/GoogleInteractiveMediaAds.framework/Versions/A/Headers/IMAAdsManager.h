@@ -33,91 +33,185 @@
 
 #import <Foundation/Foundation.h>
 
-#import "IMAAdError.h"
-#import "IMAAdEvent.h"
+@class IMAAdDisplayContainer;
+@class IMAAdError;
+@class IMAAdEvent;
+@class IMAAdsRenderingSettings;
+
 #import "IMAAdPlaybackInfo.h"
-#import "IMAAdsRenderingSettings.h"
 #import "IMAContentPlayhead.h"
 
 @class IMAAdsManager;
 
 #pragma mark IMAAdsManagerDelegate
 
-/// A callback protocol for IMAAdsManager.
+/**
+ *  A callback protocol for IMAAdsManager.
+ */
 @protocol IMAAdsManagerDelegate
 
-/// Called when there is an IMAAdEvent.
-- (void)adsManager:(IMAAdsManager *)adsManager
-    didReceiveAdEvent:(IMAAdEvent *)event;
+/**
+ *  Called when there is an IMAAdEvent.
+ *
+ *  @param adsManager the IMAAdsManager receiving the event
+ *  @param event      the IMAAdEvent received
+ */
+- (void)adsManager:(IMAAdsManager *)adsManager didReceiveAdEvent:(IMAAdEvent *)event;
 
-/// Called when there was an error playing the ad.
-/// Only resume playback when didRequestContentResumeForAdsManager: is called.
-/// Continue to listen for callbacks until didReceiveAdEvent: with
-/// kIMAAdEvent_ALL_ADS_COMPLETED is called.
-- (void)adsManager:(IMAAdsManager *)adsManager
-    didReceiveAdError:(IMAAdError *)error;
+/**
+ *  Called when there was an error playing the ad.
+ *  Only resume playback when didRequestContentResumeForAdsManager: is called.
+ *  Continue to listen for callbacks until didReceiveAdEvent: with
+ *  kIMAAdEvent_ALL_ADS_COMPLETED is called.
+ *
+ *  @param adsManager the IMAAdsManager that errored
+ *  @param error      the IMAAdError received
+ */
+- (void)adsManager:(IMAAdsManager *)adsManager didReceiveAdError:(IMAAdError *)error;
 
-/// Called when an ad is ready to play.
-/// The implementing code should pause the content playback and prepare the UI
-/// for ad playback.
+/**
+ *  Called when an ad is ready to play.
+ *  The implementing code should pause the content playback and prepare the UI
+ *  for ad playback.
+ *
+ *  @param adsManager the IMAAdsManager requesting content pause
+ */
 - (void)adsManagerDidRequestContentPause:(IMAAdsManager *)adsManager;
 
-/// Called when an ad has finished or an error occurred during the playback.
-/// The implementing code should resume the content playback.
+/**
+ *  Called when an ad has finished or an error occurred during the playback.
+ *  The implementing code should resume the content playback.
+ *
+ *  @param adsManager the IMAAdsManager requesting content resume
+ */
 - (void)adsManagerDidRequestContentResume:(IMAAdsManager *)adsManager;
 
 @optional
-/// @deprecated Replaced by adsManager:adDidProgressToTime:totalTime:
-- (void)adDidProgressToTime:(NSTimeInterval)mediaTime
-                  totalTime:(NSTimeInterval)totalTime DEPRECATED_ATTRIBUTE;
 
-/// Called every 200ms to provide time updates for the current ad.
+/**
+ *  Called every 200ms to provide time updates for the current ad.
+ *
+ *  @param adsManager the IMAAdsManager tracking ad playback
+ *  @param mediaTime  the current media time in seconds
+ *  @param totalTime  the total media length in seconds
+ */
 - (void)adsManager:(IMAAdsManager *)adsManager
     adDidProgressToTime:(NSTimeInterval)mediaTime
               totalTime:(NSTimeInterval)totalTime;
+
+/**
+ *  @deprecated Replaced by adsManager:adDidProgressToTime:totalTime:
+ *
+ *  @param mediaTime  the current media time in seconds
+ *  @param totalTime  the total media length in seconds
+ */
+- (void)adDidProgressToTime:(NSTimeInterval)mediaTime
+                  totalTime:(NSTimeInterval)totalTime DEPRECATED_ATTRIBUTE;
+
+/**
+ *  Called when the current ad is sufficiently buffered and playback is likely
+ *  to keep up.
+ *
+ *  @param adsManager the IMAAdsManager with ad playback ready
+ */
+- (void)adsManagerAdPlaybackReady:(IMAAdsManager *)adsManager;
+
+/**
+ *  Called when the current ad media buffer is empty and playback did stall.
+ *
+ *  @param adsManager the IMAAdsManager tracking the stalled ad
+ */
+- (void)adsManagerAdDidStartBuffering:(IMAAdsManager *)adsManager;
+
+/**
+ *  Called as the current ad media buffers.
+ *
+ *  @param adsManager the IMAAdsManager tracking the ad's media buffer
+ *  @param mediaTime  the current buffered media time in seconds
+ */
+- (void)adsManager:(IMAAdsManager *)adsManager adDidBufferToMediaTime:(NSTimeInterval)mediaTime;
 
 @end
 
 #pragma mark - IMAAdsManager
 
-/// The IMAAdsManager class is responsible for playing ads.
+/**
+ *  The IMAAdsManager class is responsible for playing ads.
+ */
 @interface IMAAdsManager : NSObject
 
-/// The delegate to notify with events during ad playback.
+/**
+ *  The IMAAdsManagerDelegate to notify with events during ad playback.
+ */
 @property(nonatomic, weak) NSObject<IMAAdsManagerDelegate> *delegate;
 
-/// List of content time offsets at which ad breaks are scheduled.
-/// Array of NSNumber double values in seconds.
-/// Empty NSArray for single ads or if no ad breaks are scheduled.
+/**
+ *  List of content time offsets at which ad breaks are scheduled.
+ *  Array of NSNumber double values in seconds.
+ *  Empty NSArray for single ads or if no ad breaks are scheduled.
+ */
 @property(nonatomic, copy, readonly) NSArray *adCuePoints;
 
-/// Groups various properties about the linear ad playback.
-/// See |IMAAdPlaybackInfo|.
+/**
+ *  Groups various properties about the linear ad playback.
+ */
 @property(nonatomic, strong, readonly) id<IMAAdPlaybackInfo> adPlaybackInfo;
 
-/// Initializes and loads the ad. Pass in |contentPlayhead| to
-/// enable content tracking and automatically scheduled ad breaks. Use nil
-/// to disable this feature.
-/// Pass in |adsRenderingSettings| to influence ad rendering. Use nil to
-/// default to standard rendering.
+/**
+ *  Initializes and loads the ad.
+ *
+ *  @param adsRenderingSettings the IMAAdsRenderingSettings. Pass in to influence ad rendering.
+ *                              Use nil to default to standard rendering.
+ */
+- (void)initializeWithAdsRenderingSettings:(IMAAdsRenderingSettings *)adsRenderingSettings;
+
+/**
+ *  @deprectated Replaced by initializeWithAdsRenderingSettings:. The IMAContentPlayhead
+ *  is now passed as an argument when creating an IMAAdsRequest object.
+ *
+ *  Initializes and loads the ad.
+ *
+ *  @param contentPlayhead      the IMAContentPlayhead. Pass in to enable content tracking
+ *                              and automatically scheduled ad breaks. Use nil to disable
+ *                              this feature.
+ *  @param adsRenderingSettings the IMAAdsRenderingSettings. Pass in to influence ad rendering.
+ *                              Use nil to default to standard rendering.
+ */
 - (void)initializeWithContentPlayhead:(NSObject<IMAContentPlayhead> *)contentPlayhead
-                 adsRenderingSettings:(IMAAdsRenderingSettings *)adsRenderingSettings;
+                 adsRenderingSettings:(IMAAdsRenderingSettings *)adsRenderingSettings
+                                                                  DEPRECATED_ATTRIBUTE;
 
 - (instancetype)init NS_UNAVAILABLE;
 
-/// Starts advertisement playback.
+/**
+ *  Starts advertisement playback.
+ */
 - (void)start;
 
-/// Pauses advertisement.
+/**
+ *  Pauses advertisement.
+ */
 - (void)pause;
 
-/// Resumes the advertisement.
+/**
+ *  Resumes the advertisement.
+ */
 - (void)resume;
 
-/// Skips the advertisement.
+/**
+ *  Skips the advertisement.
+ */
 - (void)skip;
 
-/// Causes the ads manager to stop the ad and clean its internal state.
+/**
+ *  Causes the ads manager to stop the ad and clean its internal state.
+ */
 - (void)destroy;
+
+/**
+ *  If an ad break is currently playing, discard it and resume content.
+ *  Otherwise, ignore the next scheduled ad break.
+ */
+- (void)discardAdBreak;
 
 @end

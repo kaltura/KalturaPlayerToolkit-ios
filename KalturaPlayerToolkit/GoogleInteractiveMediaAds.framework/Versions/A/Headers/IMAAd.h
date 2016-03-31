@@ -12,46 +12,75 @@
 
 #import "IMAAdPodInfo.h"
 
-/// Data object representing a single ad.
+/**
+ *  Data object representing a single ad.
+ */
 @interface IMAAd : NSObject
 
-/// The ad ID as specified in the VAST response.
+/**
+ *  The ad ID as specified in the VAST response.
+ */
 @property(nonatomic, copy, readonly) NSString *adId;
 
-/// The ad title from the VAST response.
+/**
+ *  The ad title from the VAST response.
+ */
 @property(nonatomic, copy, readonly) NSString *adTitle;
 
-/// The ad description.
+/**
+ *  The ad description.
+ */
 @property(nonatomic, copy, readonly) NSString *adDescription;
 
-/// Content type of the currently selected creative. For linear creatives
-/// returns the content type of the currently selected media file. Returns
-/// empty string if no creative or media file is selected on this ad.
+/**
+ *  Content type of the currently selected creative. For linear creatives
+ *  returns the content type of the currently selected media file. Returns
+ *  empty string if no creative or media file is selected on this ad.
+ */
 @property(nonatomic, copy, readonly) NSString *contentType;
 
-/// The duration of the ad from the VAST response.
+/**
+ *  The duration of the ad from the VAST response.
+ */
 @property(nonatomic, readonly) NSTimeInterval duration;
 
-/// The UI elements that will be displayed during ad playback.
+/**
+ *  The UI elements that will be displayed during ad playback.
+ */
 @property(nonatomic, copy, readonly) NSArray *uiElements;
 
-/// The size of the ad asset. For non-linear ads, this is the actual width and
-/// height of the ad representation. For linear ads, since
-/// they scale seamlessly, we currently return 0 for width and height.
+/**
+ *  The width of the ad asset. For non-linear ads, this is the actual width
+ *  of the ad representation. For linear ads, since they scale seamlessly, we
+ *  currently return 0 for width.
+ */
 @property(nonatomic, readonly) int width;
+
+/**
+ *  The height of the ad asset. For non-linear ads, this is the actual height
+ *  of the ad representation. For linear ads, since they scale seamlessly, we
+ *  currently return 0 for height.
+ */
 @property(nonatomic, readonly) int height;
 
-/// Specifies whether the ad is linear or non-linear.
+/**
+ *  Specifies whether the ad is linear or non-linear.
+ */
 @property(nonatomic, readonly, getter=isLinear) BOOL linear;
 
-/// Specifies whether the ad is skippable.
+/**
+ *  Specifies whether the ad is skippable.
+ */
 @property(nonatomic, readonly, getter=isSkippable) BOOL skippable;
 
-/// Set of ad podding properties.
+/**
+ *  Set of ad podding properties.
+ */
 @property(nonatomic, strong, readonly) IMAAdPodInfo *adPodInfo;
 
-/// String representing custom trafficking parameters from the VAST
-/// response.
+/**
+ *  String representing custom trafficking parameters from the VAST response.
+ */
 @property(nonatomic, copy, readonly) NSString *traffickingParameters;
 
 - (instancetype)init NS_UNAVAILABLE;
