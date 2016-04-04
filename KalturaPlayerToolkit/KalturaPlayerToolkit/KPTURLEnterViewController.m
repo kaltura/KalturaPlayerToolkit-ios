@@ -110,10 +110,9 @@ static NSURL *urlScheme;
 - (void)prepareForSegue: (UIStoryboardSegue *)segue sender: (id)sender {
     if ( [segue.identifier isEqualToString: @"showPlayer"] ) {
         if (self.class.URLScheme) {
-            [(KPTViewController *)[segue destinationViewController] setIframeUrl: [((KPTAppDelegate *)[UIApplication sharedApplication].delegate).iframeUrl absoluteString]];
-        } else {
-            [(KPTViewController *)[segue destinationViewController] setConfig: config];
+            config = [KPPlayerConfig configWithEmbedFrameURL:[((KPTAppDelegate *)[UIApplication sharedApplication].delegate).iframeUrl absoluteString]];
         }
+        [(KPTViewController *)[segue destinationViewController] setConfig: config];
     }
 }
 
