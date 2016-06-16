@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <KALTURAPlayerSDK/KPViewController.h>
+#import <KALTURAPlayerSDKFW/KALTURAPlayerSDKFW.h>
 
 @interface KPTViewController : UIViewController <KPViewControllerDelegate> {
     NSString *iframeUrl;

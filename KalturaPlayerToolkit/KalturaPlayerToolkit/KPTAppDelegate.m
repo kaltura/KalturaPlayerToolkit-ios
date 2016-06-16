@@ -8,7 +8,7 @@
 
 #import "KPTAppDelegate.h"
 #import "KPTURLEnterViewController.h"
-
+#import <KALTURAPlayerSDKFW/KALTURAPlayerSDKFW.h>
 
 @implementation KPTAppDelegate
 
@@ -16,6 +16,8 @@ static NSURL *urlScheme;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[[Foo alloc] init] bar];
+    
     // Override point for customization after application launch.
     return YES;
 }

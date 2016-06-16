@@ -135,7 +135,8 @@ static NSURL *urlScheme;
                                            uiConfID:@"32855491"
                                           partnerId:@"1424501"];
     config.entryId = @"1_jqlytpfw";
-    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
+//    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
+    [config addConfigKey:@"airPlay.plugin" withValue:@"true"];
     [self performSegueWithIdentifier: @"showPlayer" sender: self];
     KPLogTrace(@"Exit");
 }
