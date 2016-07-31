@@ -131,11 +131,11 @@ static NSURL *urlScheme;
 
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
-    config = [[KPPlayerConfig alloc] initWithDomain:@"http://cdnapi.kaltura.com/"
-                                           uiConfID:@"32855491"
-                                          partnerId:@"1424501"];
-    config.entryId = @"1_jqlytpfw";
-    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
+    config = [[KPPlayerConfig alloc] initWithDomain:@"http://qa-apache-testing-ubu-01.dev.kaltura.com/html5/html5lib/v2.46.rc10/mwEmbedFrame.php"
+                                           uiConfID:@"15068781"
+                                          partnerId:@"1091"];
+    config.entryId = @"0_cb9k71rb";
+//    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
     [self performSegueWithIdentifier: @"showPlayer" sender: self];
     KPLogTrace(@"Exit");
 }
