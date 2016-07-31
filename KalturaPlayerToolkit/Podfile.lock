@@ -1,20 +1,16 @@
 PODS:
-  - KalturaPlayerSDK (2.4.2-dev):
-    - KalturaPlayerSDK/Core (= 2.4.2-dev)
-    - KalturaPlayerSDK/Widevine (= 2.4.2-dev)
-  - KalturaPlayerSDK/Core (2.4.2-dev)
-  - KalturaPlayerSDK/Widevine (2.4.2-dev)
+  - KalturaPlayerSDK (2.4.1):
+    - KalturaPlayerSDK/Core (= 2.4.1)
+    - KalturaPlayerSDK/Widevine (= 2.4.1)
+  - KalturaPlayerSDK/Core (2.4.1)
+  - KalturaPlayerSDK/Widevine (2.4.1)
 
 DEPENDENCIES:
-  - KalturaPlayerSDK (from `../../player-sdk-native-ios`)
-
-EXTERNAL SOURCES:
-  KalturaPlayerSDK:
-    :path: ../../player-sdk-native-ios
+  - KalturaPlayerSDK
 
 SPEC CHECKSUMS:
-  KalturaPlayerSDK: b04af796fb537e50244712b5685ef58ec19e4abb
+  KalturaPlayerSDK: f4606564f7e3f40cf364869ceeacdddb1569f2d6
 
-PODFILE CHECKSUM: 602c6835673b7b914fce9795d00b8b2abf27ed06
+PODFILE CHECKSUM: 6161295d6d864acff45e8eace3481840337af08a
 
 COCOAPODS: 1.0.1
