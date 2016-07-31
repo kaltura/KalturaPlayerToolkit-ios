@@ -8,30 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		28C3EFA1E3EDE27A9C4494BF /* libPods-KalturaPlayerToolkit Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E33D10C4F5F68CBBCEA4C080 /* libPods-KalturaPlayerToolkit Tests.a */; };
-		A2DD032CDA5BB11AC3589361 /* libPods-KalturaPlayerToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC049B9F90D30B6B15F2A62 /* libPods-KalturaPlayerToolkit.a */; };
-		B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30D92851AF38BC000CCCC30 /* MediaPlayer.framework */; };
-		B31D104C1BB0087D00D3955B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31D104B1BB0087D00D3955B /* StoreKit.framework */; };
-		B3248E411BCAA153005A7C2F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E401BCAA153005A7C2F /* libc++.tbd */; };
-		B3248E431BCAA284005A7C2F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E421BCAA284005A7C2F /* libxml2.tbd */; };
-		B3248E451BCAA29B005A7C2F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E441BCAA29B005A7C2F /* libresolv.tbd */; };
-		B3248E471BCAA2AB005A7C2F /* libSystem.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E461BCAA2AB005A7C2F /* libSystem.tbd */; };
-		B3248E491BCAA2B7005A7C2F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3248E481BCAA2B7005A7C2F /* libz.tbd */; };
-		B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3B1A6C10D700275F00 /* AudioToolbox.framework */; };
-		B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3D1A6C10EB00275F00 /* AVFoundation.framework */; };
-		B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D3F1A6C10FA00275F00 /* CoreFoundation.framework */; };
-		B3410D441A6C113000275F00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D431A6C113000275F00 /* QuartzCore.framework */; };
-		B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D451A6C114400275F00 /* SystemConfiguration.framework */; };
+		9244112C23DFC696642AEB19 /* libPods-KalturaPlayerToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC049B9F90D30B6B15F2A62 /* libPods-KalturaPlayerToolkit.a */; };
 		B3410D9E1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3410D9D1A7123F600275F00 /* KalturaPlayerToolkit_Tests.m */; };
-		B356290C1B846FBC00BBFBF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3410D411A6C111300275F00 /* CoreMedia.framework */; };
-		B37A34DE1B8715E5000408C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DD1B8715E5000408C9 /* CoreTelephony.framework */; };
-		B37A34E11B8715F8000408C9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34DF1B8715F8000408C9 /* EventKit.framework */; };
-		B37A34E21B8715F8000408C9 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37A34E01B8715F8000408C9 /* EventKitUI.framework */; };
-		B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC7E1A0A7F890085BA26 /* Social.framework */; };
-		B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39BEC901A0B77A90085BA26 /* MessageUI.framework */; };
-		B3CECC2E1BCAC07C00C7043D /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CECC2D1BCAC07C00C7043D /* GoogleCast.framework */; };
-		B3FA59601B32BD55006FABEC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39393201A2C59DD00B32686 /* AdSupport.framework */; };
-		BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA21989602500474BE5 /* CoreGraphics.framework */; };
-		BF299EA51989602500474BE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA41989602500474BE5 /* UIKit.framework */; };
 		BF299EAB1989602500474BE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF299EA91989602500474BE5 /* InfoPlist.strings */; };
 		BF299EAD1989602500474BE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF299EAC1989602500474BE5 /* main.m */; };
 		BF299EB11989602500474BE5 /* KPTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF299EB01989602500474BE5 /* KPTAppDelegate.m */; };
@@ -39,11 +17,7 @@
 		BF299EB71989602500474BE5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF299EB51989602500474BE5 /* Main_iPad.storyboard */; };
 		BF299EBA1989602500474BE5 /* KPTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF299EB91989602500474BE5 /* KPTViewController.m */; };
 		BF299EBC1989602500474BE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF299EBB1989602500474BE5 /* Images.xcassets */; };
-		BF35E5311C91561300EC9D98 /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF35E5301C91561300EC9D98 /* GoogleInteractiveMediaAds.framework */; };
-		BF4FEEA51BEB955D00E9033C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF299EA01989602500474BE5 /* Foundation.framework */; };
-		BF4FEEA61BEB96B700E9033C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32A5CE81A27219E0051DC7F /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BFC574AE19980ED8000511B8 /* KPTURLEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */; };
-		BFDF5FD919B33FF600C9F9AC /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDF5FD819B33FF600C9F9AC /* MediaAccessibility.framework */; };
 		BFEA7A1019C6280A00684FC6 /* bg-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0819C6280A00684FC6 /* bg-568h@2x~iphone.png */; };
 		BFEA7A1419C6280A00684FC6 /* bg-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0C19C6280A00684FC6 /* bg-Portrait@2x~ipad.png */; };
 		BFEA7A1519C6280A00684FC6 /* bg-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEA7A0D19C6280A00684FC6 /* bg-Portrait~ipad.png */; };
@@ -113,7 +87,6 @@
 		BF299EB81989602500474BE5 /* KPTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPTViewController.h; sourceTree = "<group>"; };
 		BF299EB91989602500474BE5 /* KPTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPTViewController.m; sourceTree = "<group>"; };
 		BF299EBB1989602500474BE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BF35E5301C91561300EC9D98 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 		BFC574AC19980ED8000511B8 /* KPTURLEnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTURLEnterViewController.h; sourceTree = "<group>"; };
 		BFC574AD19980ED8000511B8 /* KPTURLEnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTURLEnterViewController.m; sourceTree = "<group>"; };
 		BFDF5FD819B33FF600C9F9AC /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
@@ -143,33 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF35E5311C91561300EC9D98 /* GoogleInteractiveMediaAds.framework in Frameworks */,
-				B3248E491BCAA2B7005A7C2F /* libz.tbd in Frameworks */,
-				B3248E471BCAA2AB005A7C2F /* libSystem.tbd in Frameworks */,
-				B3248E451BCAA29B005A7C2F /* libresolv.tbd in Frameworks */,
-				B3248E431BCAA284005A7C2F /* libxml2.tbd in Frameworks */,
-				B3248E411BCAA153005A7C2F /* libc++.tbd in Frameworks */,
-				BF4FEEA51BEB955D00E9033C /* Foundation.framework in Frameworks */,
-				BF4FEEA61BEB96B700E9033C /* WebKit.framework in Frameworks */,
-				B3CECC2E1BCAC07C00C7043D /* GoogleCast.framework in Frameworks */,
-				B31D104C1BB0087D00D3955B /* StoreKit.framework in Frameworks */,
-				B37A34E11B8715F8000408C9 /* EventKit.framework in Frameworks */,
-				B37A34E21B8715F8000408C9 /* EventKitUI.framework in Frameworks */,
-				B37A34DE1B8715E5000408C9 /* CoreTelephony.framework in Frameworks */,
-				B356290C1B846FBC00BBFBF8 /* CoreMedia.framework in Frameworks */,
-				B3FA59601B32BD55006FABEC /* AdSupport.framework in Frameworks */,
-				B30D92861AF38BC000CCCC30 /* MediaPlayer.framework in Frameworks */,
-				B3410D461A6C114400275F00 /* SystemConfiguration.framework in Frameworks */,
-				B3410D441A6C113000275F00 /* QuartzCore.framework in Frameworks */,
-				B39BEC911A0B77A90085BA26 /* MessageUI.framework in Frameworks */,
-				B3410D401A6C10FA00275F00 /* CoreFoundation.framework in Frameworks */,
-				B3410D3E1A6C10EB00275F00 /* AVFoundation.framework in Frameworks */,
-				B3410D3C1A6C10D700275F00 /* AudioToolbox.framework in Frameworks */,
-				B39BEC7F1A0A7F890085BA26 /* Social.framework in Frameworks */,
-				BFDF5FD919B33FF600C9F9AC /* MediaAccessibility.framework in Frameworks */,
-				BF299EA31989602500474BE5 /* CoreGraphics.framework in Frameworks */,
-				BF299EA51989602500474BE5 /* UIKit.framework in Frameworks */,
-				A2DD032CDA5BB11AC3589361 /* libPods-KalturaPlayerToolkit.a in Frameworks */,
+				9244112C23DFC696642AEB19 /* libPods-KalturaPlayerToolkit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +163,6 @@
 		BF299E9F1989602500474BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF35E5301C91561300EC9D98 /* GoogleInteractiveMediaAds.framework */,
 				B3CECC2D1BCAC07C00C7043D /* GoogleCast.framework */,
 				B3248E481BCAA2B7005A7C2F /* libz.tbd */,
 				B3248E461BCAA2AB005A7C2F /* libSystem.tbd */,
@@ -340,8 +286,8 @@
 				BF299E991989602500474BE5 /* Sources */,
 				BF299E9A1989602500474BE5 /* Frameworks */,
 				BF299E9B1989602500474BE5 /* Resources */,
-				C754D7240933C6F9550F4EA0 /* [CP] Embed Pods Frameworks */,
-				A3380C621915A0E5AE84C648 /* [CP] Copy Pods Resources */,
+				0B280B54C93EE5F767DFA7B1 /* [CP] Embed Pods Frameworks */,
+				40BB5A2126C5EAF011B88138 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -430,6 +376,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B280B54C93EE5F767DFA7B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalturaPlayerToolkit/Pods-KalturaPlayerToolkit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0FC5F2D25F2359E24BE52F16 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -460,6 +421,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		40BB5A2126C5EAF011B88138 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalturaPlayerToolkit/Pods-KalturaPlayerToolkit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		74C26BD7BE771653F4CD43B3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,21 +451,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalturaPlayerToolkit Tests/Pods-KalturaPlayerToolkit Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A3380C621915A0E5AE84C648 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalturaPlayerToolkit/Pods-KalturaPlayerToolkit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C5B2158172C8D37ACA077416 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -503,21 +464,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalturaPlayerToolkit Tests/Pods-KalturaPlayerToolkit Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C754D7240933C6F9550F4EA0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalturaPlayerToolkit/Pods-KalturaPlayerToolkit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -723,23 +669,21 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"\"${PODS_ROOT}/../../../player-sdk-native-ios\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KalturaPlayerSDK\"",
 				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaltura.playertoolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -759,22 +703,21 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KalturaPlayerToolkit/KalturaPlayerToolkit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
 				INFOPLIST_FILE = "KalturaPlayerToolkit/KalturaPlayerToolkit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KalturaPlayerSDK\"",
+					"\"${PODS_ROOT}/../../../player-sdk-native-ios\"",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaltura.playertoolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
