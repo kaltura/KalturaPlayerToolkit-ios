@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'KalturaPlayerToolkit' do
+platform :ios, '8.0'
+  pod 'KalturaPlayerSDK'      #, :path => '../../player-sdk-native-ios'
+
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for KalturaPlayerToolkit
+
+  target 'KalturaPlayerToolkit Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

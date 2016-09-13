@@ -131,11 +131,11 @@ static NSURL *urlScheme;
 
 - (IBAction)enterClicked: (id)sender {
     KPLogTrace(@"Enter");
-    config = [[KPPlayerConfig alloc] initWithDomain:@"http://cdnapi.kaltura.com/"
+    config = [[KPPlayerConfig alloc] initWithServer:@"http://cdnapi.kaltura.com/"
                                            uiConfID:@"32855491"
                                           partnerId:@"1424501"];
     config.entryId = @"1_jqlytpfw";
-    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
+//    [config addConfigKey:@"chromecast.plugin" withValue:@"true"];
     [self performSegueWithIdentifier: @"showPlayer" sender: self];
     KPLogTrace(@"Exit");
 }
