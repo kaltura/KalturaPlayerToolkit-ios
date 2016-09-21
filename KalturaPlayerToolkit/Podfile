@@ -4,6 +4,7 @@
 target 'KalturaPlayerToolkit' do
 platform :ios, '8.0'
   pod 'KalturaPlayerSDK'      #, :path => '../../player-sdk-native-ios'
+  pod 'GoogleAds-IMA-iOS-SDK’ , '~> 3.2.1’
 
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
